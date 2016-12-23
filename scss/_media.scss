@@ -1,0 +1,12 @@
+@import "bourbon";
+@import "vars.scss";
+
+// 599
+@include for-size(phone-only) {}
+@media screen and (max-width: 600px){}
+// 600 -899
+@include for-size(tablet-portait-only) {}
+@media screen and (max-width: 900px){}
+// 900 - 1199
+@include for-size(tablet-landscape-only) {}
+@media screen and (max-width: 1200px){}
