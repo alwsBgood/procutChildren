@@ -1,47 +1,53 @@
 @import "bourbon";
 @import "vars.scss";
 
-body{
+body {
 	position: relative;
-	font: 18px/24px  $main_font;
-  color: #373f41;;
+	font: 18px/24px $main_font;
+	color: #373f41;
 	background-color: #fff;
 }
 
-a,button,input,textarea{
+a,
+button,
+input,
+textarea {
 	text-decoration: none;
 	outline: 0;
 	border: 0;
 	@include transition(color 0.4s ease, background-color 0.4s ease, background-image 0.4s ease, border-color 0.4s ease);
-	&:focus{
+
+	&:focus {
 		outline: 0;
 	}
 }
 
-input,textarea{
+input,
+textarea {
 	box-sizing: border-box;
 }
 
-textarea{
-	resize:none;
+textarea {
+	resize: none;
 }
 
-button{
-	&:hover{
+button {
+	&:hover {
 		cursor: pointer;
 	}
 }
 
-.hidden{
+.hidden {
 	width: 0;
 	height: 0;
 }
 
-.bar-long{
-  height: 5px;
-  width: 0px;
-  z-index: 1000;
-  position: fixed;
-  top: 0px; left: 0;
-  background: $main_color;
+.bar-long {
+	height: 5px;
+	width: 0;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: $main_color;
 }
