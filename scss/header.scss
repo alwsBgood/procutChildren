@@ -4,8 +4,8 @@
 body {
 	position: relative;
 	font: 18px/24px $main_font;
-	color: #373f41;
-	background-color: #fff;
+	color: $main_text_color;
+	background-color: #f5f6f8;
 }
 
 a,
@@ -50,4 +50,228 @@ button {
 	top: 0;
 	left: 0;
 	background: $main_color;
+}
+
+.btn{
+	width: 326px;
+	height: 54px;
+	box-shadow: 1px 9px 32px rgba(255, 250, 0, 0.4);
+	border-radius: 26px;
+	background-color: $second_color;
+	// background-image: linear-gradient(to top, #edcc00 0%, #feed01 100%);
+
+	font-family: $Raleway_700;
+	color: #000;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.btn:hover{
+	background-color: #ffffff;
+}
+
+.btn:active{
+	background-color: #edcc00;
+}
+
+
+#sec_01{
+	position: relative;
+	background-image: linear-gradient(180deg, #0a5979 0%, #a84285 56%, #f5f6f8 100%);
+	background-color: #744279;
+	overflow: hidden;
+	.top{
+		.logo{
+			float: left;
+		}
+		nav{
+			float: left;
+			margin: 35px 0 0 125px;
+			a{
+				display: inline-block;
+				color: #7c97a9;
+				font-family: $Raleway_500;
+				font-size: 16px;
+				line-height: 24px;
+			}
+			a+a{margin-left: 12px;}
+			a:hover{
+				color: #fff;
+			}
+		}
+		.call{
+			float: right;
+			width: 190px;
+			height: 40px;
+			border-radius: 19px;
+			background-color: #ffffff;
+			margin-top: 30px;
+
+			color: #165679;
+			font-family: $Raleway_700;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 24px;
+			letter-spacing: 0.05em;
+		}
+		.call:hover{
+			background-color: $main_color;
+			color: #fff;
+		}
+		.call:active{
+			background-color: #06425c;
+		}
+	}
+	.container{
+		background: url(../img/sec_01-bg_letter.png) top 140px left 405px no-repeat;
+	}
+	.content_left{
+		float: left;
+		margin-top: 135px;
+		position: relative;
+		z-index: 10;
+	}
+	.wrap_text{
+		position: relative;
+		width: 355px;
+		.small_text{
+			position: absolute;
+			bottom: -6px;
+			right: -200px;
+			color: #fff;
+		}
+	}
+	.beforeheader{
+		color: $second_color;
+		font-family: $Raleway_700;
+		font-size: 70px;
+		line-height: 80px;
+		span{
+			position: relative;
+		}
+		span:before{
+			position: absolute;
+			content: '';
+			left: 0px;
+			bottom: 0px;
+			width: 0;
+			height: 10px;
+			background: $second_color;
+			animation: scale_bar 2.5s;
+			animation-fill-mode: forwards;
+			animation-delay: 2s;
+		}
+	}
+	h1{
+		color: #ffffff;
+		font-family: $Raleway_700;
+		font-size: 100px;
+		line-height: 78px;
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+	.btn{float: left;}
+	.price{
+		display: inline-block;
+		margin: -20px 0 0 30px;
+		color: #ffffff;
+		font-family: $Accuratist;
+		font-size: 48px;
+		line-height: 80px;
+		span{
+			font-family: $Raleway_700;
+			font-size: 24px;
+			line-height: 80px;
+		}
+	}
+	.picture{
+		position: relative;
+		z-index: 11;
+		// display: flex;
+		// align-items: flex-end;
+		background: url(../img/girl_masked.png) top right 115px no-repeat;
+		float: right;
+		padding-right: 115px;
+		margin-top: 20px;
+		min-height: 735px;
+		.img{
+			overflow: hidden;
+			height: 0;
+			vertical-align: bottom;
+			animation: image_paint 2s;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+		}
+	}
+	.picture:before{
+		position: absolute;
+		content: '';
+		width: 652px;
+		height: 403px;
+		right: 0px;
+		top: 130px;
+		background: url(../img/focus.png) center no-repeat;
+		animation: blinc_cam 2s;
+		animation-fill-mode: forwards;
+		animation-delay: 1s;
+	}
+	.wave_1{
+		position: absolute;
+		z-index: 0;
+		background: url(../img/sec_01-wave-1.png) center repeat-x;
+		height: 226px;
+		bottom: 175px;
+		animation: wave 240s linear infinite;
+		width: 100%;
+	}
+	.wave_2{
+		position: absolute;
+		z-index: 12;
+		background: url(../img/wave-2.png) center repeat-x;
+		height: 171px;
+		bottom: 0;
+		animation: wave_2 200s linear infinite;
+		width: 100%;
+	}
+	.wave_3{
+		position: absolute;
+		z-index: 0;
+		background: url(../img/sec_01-wave-3.png) center repeat-x;
+		height: 226px;
+		bottom: 70px;
+		animation: wave 150s linear infinite;
+		width: 100%;
+	}
+}
+
+@keyframes wave {
+	0%{width: 400%;}
+	50%{width: 100%;}
+	100%{width: 400%;}
+}
+
+@keyframes wave_2 {
+	0%{width: 100%;}
+	50%{width: 450%;}
+	100%{width: 100%;}
+}
+
+@keyframes scale_bar {
+	0%{width: 0;}
+	100%{width: 335px;}
+}
+
+@keyframes image_paint {
+	0%{height: 0;}
+	100%{height: 735px;}
+}
+
+@keyframes blinc_cam {
+	0% {background: url(../img/focus.png) center no-repeat;}
+	20% {background: none;}
+	40% {background: url(../img/focus.png) center no-repeat;}
+	60% {background: none;}
+	70% {background: url(../img/focus.png) center no-repeat;}
+	90% {background: none;}
+	100% {background: url(../img/focus.png) center no-repeat;}
 }

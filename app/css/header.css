@@ -1,8 +1,8 @@
 body {
   position: relative;
-  font: 18px/24px "MyriadPro-Regular", sans-serif;
-  color: #373f41;
-  background-color: #fff; }
+  font: 18px/24px "Raleway-Regular", sans-serif;
+  color: #7b7b7b;
+  background-color: #f5f6f8; }
 
 a,
 button,
@@ -41,4 +41,268 @@ button:hover {
   position: fixed;
   top: 0;
   left: 0;
-  background: #1988cc; }
+  background: #dc3fa8; }
+
+.btn {
+  width: 326px;
+  height: 54px;
+  -webkit-box-shadow: 1px 9px 32px rgba(255, 250, 0, 0.4);
+  box-shadow: 1px 9px 32px rgba(255, 250, 0, 0.4);
+  -webkit-border-radius: 26px;
+  border-radius: 26px;
+  background-color: #f7ff00;
+  font-family: "Raleway-Bold", sans-serif;
+  color: #000;
+  font-weight: 700;
+  line-height: 24px; }
+
+.btn:hover {
+  background-color: #ffffff; }
+
+.btn:active {
+  background-color: #edcc00; }
+
+#sec_01 {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0a5979), color-stop(56%, #a84285), to(#f5f6f8));
+  background-image: -webkit-linear-gradient(top, #0a5979 0%, #a84285 56%, #f5f6f8 100%);
+  background-image: linear-gradient(180deg, #0a5979 0%, #a84285 56%, #f5f6f8 100%);
+  background-color: #744279;
+  overflow: hidden; }
+  #sec_01 .top .logo {
+    float: left; }
+  #sec_01 .top nav {
+    float: left;
+    margin: 35px 0 0 125px; }
+    #sec_01 .top nav a {
+      display: inline-block;
+      color: #7c97a9;
+      font-family: "Raleway-Medium", sans-serif;
+      font-size: 16px;
+      line-height: 24px; }
+    #sec_01 .top nav a + a {
+      margin-left: 12px; }
+    #sec_01 .top nav a:hover {
+      color: #fff; }
+  #sec_01 .top .call {
+    float: right;
+    width: 190px;
+    height: 40px;
+    -webkit-border-radius: 19px;
+    border-radius: 19px;
+    background-color: #ffffff;
+    margin-top: 30px;
+    color: #165679;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.05em; }
+  #sec_01 .top .call:hover {
+    background-color: #dc3fa8;
+    color: #fff; }
+  #sec_01 .top .call:active {
+    background-color: #06425c; }
+  #sec_01 .container {
+    background: url(../img/sec_01-bg_letter.png) top 140px left 405px no-repeat; }
+  #sec_01 .content_left {
+    float: left;
+    margin-top: 135px;
+    position: relative;
+    z-index: 10; }
+  #sec_01 .wrap_text {
+    position: relative;
+    width: 355px; }
+    #sec_01 .wrap_text .small_text {
+      position: absolute;
+      bottom: -6px;
+      right: -200px;
+      color: #fff; }
+  #sec_01 .beforeheader {
+    color: #f7ff00;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 70px;
+    line-height: 80px; }
+    #sec_01 .beforeheader span {
+      position: relative; }
+    #sec_01 .beforeheader span:before {
+      position: absolute;
+      content: '';
+      left: 0px;
+      bottom: 0px;
+      width: 0;
+      height: 10px;
+      background: #f7ff00;
+      -webkit-animation: scale_bar 2.5s;
+      animation: scale_bar 2.5s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s; }
+  #sec_01 h1 {
+    color: #ffffff;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 100px;
+    line-height: 78px;
+    margin-top: 20px;
+    margin-bottom: 50px; }
+  #sec_01 .btn {
+    float: left; }
+  #sec_01 .price {
+    display: inline-block;
+    margin: -20px 0 0 30px;
+    color: #ffffff;
+    font-family: "Accuratist", sans-serif;
+    font-size: 48px;
+    line-height: 80px; }
+    #sec_01 .price span {
+      font-family: "Raleway-Bold", sans-serif;
+      font-size: 24px;
+      line-height: 80px; }
+  #sec_01 .picture {
+    position: relative;
+    z-index: 11;
+    background: url(../img/girl_masked.png) top right 115px no-repeat;
+    float: right;
+    padding-right: 115px;
+    margin-top: 20px;
+    min-height: 735px; }
+    #sec_01 .picture .img {
+      overflow: hidden;
+      height: 0;
+      vertical-align: bottom;
+      -webkit-animation: image_paint 2s;
+      animation: image_paint 2s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s; }
+  #sec_01 .picture:before {
+    position: absolute;
+    content: '';
+    width: 652px;
+    height: 403px;
+    right: 0px;
+    top: 130px;
+    background: url(../img/focus.png) center no-repeat;
+    -webkit-animation: blinc_cam 2s;
+    animation: blinc_cam 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s; }
+  #sec_01 .wave_1 {
+    position: absolute;
+    z-index: 0;
+    background: url(../img/sec_01-wave-1.png) center repeat-x;
+    height: 226px;
+    bottom: 175px;
+    -webkit-animation: wave 240s linear infinite;
+    animation: wave 240s linear infinite;
+    width: 100%; }
+  #sec_01 .wave_2 {
+    position: absolute;
+    z-index: 12;
+    background: url(../img/wave-2.png) center repeat-x;
+    height: 171px;
+    bottom: 0;
+    -webkit-animation: wave_2 200s linear infinite;
+    animation: wave_2 200s linear infinite;
+    width: 100%; }
+  #sec_01 .wave_3 {
+    position: absolute;
+    z-index: 0;
+    background: url(../img/sec_01-wave-3.png) center repeat-x;
+    height: 226px;
+    bottom: 70px;
+    -webkit-animation: wave 150s linear infinite;
+    animation: wave 150s linear infinite;
+    width: 100%; }
+
+@-webkit-keyframes wave {
+  0% {
+    width: 400%; }
+  50% {
+    width: 100%; }
+  100% {
+    width: 400%; } }
+
+@keyframes wave {
+  0% {
+    width: 400%; }
+  50% {
+    width: 100%; }
+  100% {
+    width: 400%; } }
+
+@-webkit-keyframes wave_2 {
+  0% {
+    width: 100%; }
+  50% {
+    width: 450%; }
+  100% {
+    width: 100%; } }
+
+@keyframes wave_2 {
+  0% {
+    width: 100%; }
+  50% {
+    width: 450%; }
+  100% {
+    width: 100%; } }
+
+@-webkit-keyframes scale_bar {
+  0% {
+    width: 0; }
+  100% {
+    width: 335px; } }
+
+@keyframes scale_bar {
+  0% {
+    width: 0; }
+  100% {
+    width: 335px; } }
+
+@-webkit-keyframes image_paint {
+  0% {
+    height: 0; }
+  100% {
+    height: 735px; } }
+
+@keyframes image_paint {
+  0% {
+    height: 0; }
+  100% {
+    height: 735px; } }
+
+@-webkit-keyframes blinc_cam {
+  0% {
+    background: url(../img/focus.png) center no-repeat; }
+  20% {
+    background: none; }
+  40% {
+    background: url(../img/focus.png) center no-repeat; }
+  60% {
+    background: none; }
+  70% {
+    background: url(../img/focus.png) center no-repeat; }
+  90% {
+    background: none; }
+  100% {
+    background: url(../img/focus.png) center no-repeat; } }
+
+@keyframes blinc_cam {
+  0% {
+    background: url(../img/focus.png) center no-repeat; }
+  20% {
+    background: none; }
+  40% {
+    background: url(../img/focus.png) center no-repeat; }
+  60% {
+    background: none; }
+  70% {
+    background: url(../img/focus.png) center no-repeat; }
+  90% {
+    background: none; }
+  100% {
+    background: url(../img/focus.png) center no-repeat; } }
