@@ -309,26 +309,62 @@ div[id*="modal_politics"]{
 
 
 .slick-next{
-      z-index: 10;
-      right: 0;
-      background: url(../img/slider-next.png) top center no-repeat;
-    }
+  z-index: 10;
+  background: url(../img/slider-next.png) top center no-repeat;
+  transition: all .3s;
+}
 .slick-prev{
-      background: url(../img/slider-prev.png) top center no-repeat;
-      z-index: 10;
-      right: 180px;
-  }
+    background: url(../img/slider-prev.png) top center no-repeat;
+    z-index: 10;
+    transition: all .3s;
+}
+
+.slick-next:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: url(../img/slider-next-hvr.png) top center no-repeat;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.slick-prev:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../img/slider-prev-hvr.png) top center no-repeat;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.slick-prev:hover:before{
+  opacity: 1;
+}
+
+.slick-next:hover:before{
+  opacity: 1;
+}
 
 .slick-next, .slick-prev{
-    position: absolute;
-    display: block;
-    cursor: pointer !important;
-    width: 75px;
-    height: 13px;
-    border: none;
-    outline: none;
-    top: -40px;
-  }
+  position: absolute;
+  display: block;
+  cursor: pointer !important;
+  width: 10px;
+  height: 16px;
+  border: none;
+  outline: none;
+}
 
 .slick-slide{outline: none;}
 
@@ -336,27 +372,27 @@ div[id*="modal_politics"]{
 input::-webkit-input-placeholder{
   color: black;
   letter-spacing: 0.16em;
-  color: $main_color;
+  color: $main_text_color;
   font: 18px $main_font;
 }
 
 input:-moz-placeholder{
   color: black;
   letter-spacing: 0.16em;
-  color: $main_color;
+  color: $main_text_color;
   font: 18px $main_font;
 }
 
 input::-moz-placeholder{
   color: black;
   letter-spacing: 0.16em;
-  color: $main_color;
+  color: $main_text_color;
   font: 18px $main_font;
 }
 
 input:-ms-input-placeholder{
   color: black;
   letter-spacing: 0.16em;
-  color: $main_color;
+  color: $main_text_color;
   font: 18px $main_font;
 }

@@ -172,6 +172,18 @@ $(document).ready(function() {
 });
 
 
+// Waypoint
+
+// $('#sec_03 .wrapper .wrap1').waypoint(
+//   function() {
+//     $( "#sec_03 .wrapper .text_block" ).addClass( "animation" );
+//   },
+//   {offset: "200px"}
+// );
+
+// $('.wrapper').delay(1000).addClass('animation')
+
+
 // Perfect Pxel
 
 $('body').each(function() {
