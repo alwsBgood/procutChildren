@@ -8,6 +8,21 @@ body {
 	background-color: #f5f6f8;
 }
 
+h2{
+	font: 48px/50px $Raleway_700;
+	color: #000;
+}
+
+.title{
+	font: 26px/30px $Raleway_700;
+	color: #000;
+}
+
+.title_small{
+	font: 18px/24px $Raleway_700;
+	color: #000;
+}
+
 a,
 button,
 input,
@@ -159,7 +174,7 @@ button {
 			background: $second_color;
 			animation: scale_bar 2.5s;
 			animation-fill-mode: forwards;
-			animation-delay: 2s;
+			animation-delay: 3s;
 		}
 	}
 	h1{
@@ -187,24 +202,22 @@ button {
 	.picture{
 		position: relative;
 		z-index: 11;
-		// display: flex;
-		// align-items: flex-end;
-		background: url(../img/girl_masked.png) top right 115px no-repeat;
+		display: flex;
+		align-items: flex-end;
+		// background: url(../img/girl_masked.png) top right 115px no-repeat;
 		float: right;
 		padding-right: 115px;
 		margin-top: 20px;
 		min-height: 735px;
-		.img{
-			overflow: hidden;
-			height: 0;
-			vertical-align: bottom;
+		img{
 			animation: image_paint 2s;
 			animation-fill-mode: forwards;
-			animation-delay: 1s;
+			// animation-delay: 1s;
 		}
 	}
 	.picture:before{
 		position: absolute;
+		z-index: 10;
 		content: '';
 		width: 652px;
 		height: 403px;
@@ -213,7 +226,7 @@ button {
 		background: url(../img/focus.png) center no-repeat;
 		animation: blinc_cam 2s;
 		animation-fill-mode: forwards;
-		animation-delay: 1s;
+		// animation-delay: 1s;
 	}
 	.wave_1{
 		position: absolute;
@@ -229,7 +242,7 @@ button {
 		z-index: 12;
 		background: url(../img/wave-2.png) center repeat-x;
 		height: 171px;
-		bottom: 0;
+		bottom: -1px;
 		animation: wave_2 200s linear infinite;
 		width: 100%;
 	}
@@ -262,16 +275,34 @@ button {
 }
 
 @keyframes image_paint {
-	0%{height: 0;}
-	100%{height: 735px;}
+	0%{filter: blur(10px)}
+	10%{filter: blur(8px)}
+	30%{filter: blur(4px)}
+	50%{filter: blur(10px)}
+	90%{filter: blur(3px)}
+	100%{filter: blur(0px)}
 }
 
 @keyframes blinc_cam {
 	0% {background: url(../img/focus.png) center no-repeat;}
 	20% {background: none;}
-	40% {background: url(../img/focus.png) center no-repeat;}
-	60% {background: none;}
-	70% {background: url(../img/focus.png) center no-repeat;}
-	90% {background: none;}
+	35% {background: url(../img/focus.png) center no-repeat;}
+	45% {background: none;}
+	54% {background: url(../img/focus.png) center no-repeat;}
+	63% {background: none;}
+	71% {background: url(../img/focus.png) center no-repeat;}
+	83% {background: none;}
+	90% {background: url(../img/focus.png) center no-repeat;}
+	96% {background: none;}
 	100% {background: url(../img/focus.png) center no-repeat;}
+}
+
+.paralax_letter{
+	position: absolute;
+	z-index: -1;
+	color: $second_color;
+	font-family: $Raleway_700;
+	font-size: 933px;
+	line-height: 1040px;
+	text-transform: uppercase;
 }

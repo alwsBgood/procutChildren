@@ -2,6 +2,60 @@
 @import "vars.scss";
 
 //Custom Styles Here
+#sec_02{
+  padding: 50px;
+  h2{
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .item{
+    img{
+      margin: 30px 0 -15px -25px;
+    }
+    [alt="Separator"]{
+      margin: 5px 0 -10px -13px;
+    }
+    .text{line-height: 28px;}
+  }
+  .content_row{
+    margin-top: 55px;
+    .item{margin-top: -12px;}
+  }
+  .cta_row{
+    text-align: center;
+    margin-top: 90px;
+    background: url(../img/cta-bg.png) top center no-repeat;
+    a{
+      display: block;
+      background: url(../img/sec_02-btn-bg.png) top center no-repeat;
+      width: 556px;
+      min-height: 125px;
+      margin: 0 auto;
+      padding-top: 15px;
+      margin-top: -15px;
+    }
+    .pink{
+      color: $main_color;
+      font-family: $Raleway_700;
+      font-size: 26px;
+      line-height: 38px;
+      margin-bottom: 5px;
+    }
+    .text{font-size: 20px;  }
+  }
+}
+
+#sec_03{
+  padding: 145px 0;
+  h2{
+    margin-bottom: 30px;
+  }
+  .item{
+    .title{margin-bottom: 5px}
+  }
+  .item+.item{margin-top: 21px}
+}
+
 
 //ALWAYS END
 @import "_sketches.scss";

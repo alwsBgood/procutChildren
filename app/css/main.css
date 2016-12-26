@@ -1,8 +1,53 @@
-/* ================================*/
-/* CURSOR STYLES*/
 @import url(../libs/niftymodal/component.css);
 @import url(../libs/slick/slick.min.css);
 @import url(../fonts/font-awesome/font-awesome.min.css);
+#sec_02 {
+  padding: 50px; }
+  #sec_02 h2 {
+    text-align: center;
+    margin-bottom: 70px; }
+  #sec_02 .item img {
+    margin: 30px 0 -15px -25px; }
+  #sec_02 .item [alt="Separator"] {
+    margin: 5px 0 -10px -13px; }
+  #sec_02 .item .text {
+    line-height: 28px; }
+  #sec_02 .content_row {
+    margin-top: 55px; }
+    #sec_02 .content_row .item {
+      margin-top: -12px; }
+  #sec_02 .cta_row {
+    text-align: center;
+    margin-top: 90px;
+    background: url(../img/cta-bg.png) top center no-repeat; }
+    #sec_02 .cta_row a {
+      display: block;
+      background: url(../img/sec_02-btn-bg.png) top center no-repeat;
+      width: 556px;
+      min-height: 125px;
+      margin: 0 auto;
+      padding-top: 15px;
+      margin-top: -15px; }
+    #sec_02 .cta_row .pink {
+      color: #dc3fa8;
+      font-family: "Raleway-Bold", sans-serif;
+      font-size: 26px;
+      line-height: 38px;
+      margin-bottom: 5px; }
+    #sec_02 .cta_row .text {
+      font-size: 20px; }
+
+#sec_03 {
+  padding: 145px 0; }
+  #sec_03 h2 {
+    margin-bottom: 30px; }
+  #sec_03 .item .title {
+    margin-bottom: 5px; }
+  #sec_03 .item + .item {
+    margin-top: 21px; }
+
+/* ================================*/
+/* CURSOR STYLES*/
 .touch_mode_grab {
   cursor: grab !important;
   cursor: -webkit-grab !important; }

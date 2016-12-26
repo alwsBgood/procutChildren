@@ -4,6 +4,18 @@ body {
   color: #7b7b7b;
   background-color: #f5f6f8; }
 
+h2 {
+  font: 48px/50px "Raleway-Bold", sans-serif;
+  color: #000; }
+
+.title {
+  font: 26px/30px "Raleway-Bold", sans-serif;
+  color: #000; }
+
+.title_small {
+  font: 18px/24px "Raleway-Bold", sans-serif;
+  color: #000; }
+
 a,
 button,
 input,
@@ -137,8 +149,8 @@ button:hover {
       animation: scale_bar 2.5s;
       -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
-      -webkit-animation-delay: 2s;
-      animation-delay: 2s; }
+      -webkit-animation-delay: 3s;
+      animation-delay: 3s; }
   #sec_01 h1 {
     color: #ffffff;
     font-family: "Raleway-Bold", sans-serif;
@@ -162,23 +174,26 @@ button:hover {
   #sec_01 .picture {
     position: relative;
     z-index: 11;
-    background: url(../img/girl_masked.png) top right 115px no-repeat;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     float: right;
     padding-right: 115px;
     margin-top: 20px;
     min-height: 735px; }
-    #sec_01 .picture .img {
-      overflow: hidden;
-      height: 0;
-      vertical-align: bottom;
+    #sec_01 .picture img {
       -webkit-animation: image_paint 2s;
       animation: image_paint 2s;
       -webkit-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation-delay: 1s;
-      animation-delay: 1s; }
+      animation-fill-mode: forwards; }
   #sec_01 .picture:before {
     position: absolute;
+    z-index: 10;
     content: '';
     width: 652px;
     height: 403px;
@@ -188,9 +203,7 @@ button:hover {
     -webkit-animation: blinc_cam 2s;
     animation: blinc_cam 2s;
     -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s; }
+    animation-fill-mode: forwards; }
   #sec_01 .wave_1 {
     position: absolute;
     z-index: 0;
@@ -205,7 +218,7 @@ button:hover {
     z-index: 12;
     background: url(../img/wave-2.png) center repeat-x;
     height: 171px;
-    bottom: 0;
+    bottom: -1px;
     -webkit-animation: wave_2 200s linear infinite;
     animation: wave_2 200s linear infinite;
     width: 100%; }
@@ -265,28 +278,64 @@ button:hover {
 
 @-webkit-keyframes image_paint {
   0% {
-    height: 0; }
+    -webkit-filter: blur(10px);
+    filter: blur(10px); }
+  10% {
+    -webkit-filter: blur(8px);
+    filter: blur(8px); }
+  30% {
+    -webkit-filter: blur(4px);
+    filter: blur(4px); }
+  50% {
+    -webkit-filter: blur(10px);
+    filter: blur(10px); }
+  90% {
+    -webkit-filter: blur(3px);
+    filter: blur(3px); }
   100% {
-    height: 735px; } }
+    -webkit-filter: blur(0px);
+    filter: blur(0px); } }
 
 @keyframes image_paint {
   0% {
-    height: 0; }
+    -webkit-filter: blur(10px);
+    filter: blur(10px); }
+  10% {
+    -webkit-filter: blur(8px);
+    filter: blur(8px); }
+  30% {
+    -webkit-filter: blur(4px);
+    filter: blur(4px); }
+  50% {
+    -webkit-filter: blur(10px);
+    filter: blur(10px); }
+  90% {
+    -webkit-filter: blur(3px);
+    filter: blur(3px); }
   100% {
-    height: 735px; } }
+    -webkit-filter: blur(0px);
+    filter: blur(0px); } }
 
 @-webkit-keyframes blinc_cam {
   0% {
     background: url(../img/focus.png) center no-repeat; }
   20% {
     background: none; }
-  40% {
+  35% {
     background: url(../img/focus.png) center no-repeat; }
-  60% {
+  45% {
     background: none; }
-  70% {
+  54% {
     background: url(../img/focus.png) center no-repeat; }
+  63% {
+    background: none; }
+  71% {
+    background: url(../img/focus.png) center no-repeat; }
+  83% {
+    background: none; }
   90% {
+    background: url(../img/focus.png) center no-repeat; }
+  96% {
     background: none; }
   100% {
     background: url(../img/focus.png) center no-repeat; } }
@@ -296,13 +345,30 @@ button:hover {
     background: url(../img/focus.png) center no-repeat; }
   20% {
     background: none; }
-  40% {
+  35% {
     background: url(../img/focus.png) center no-repeat; }
-  60% {
+  45% {
     background: none; }
-  70% {
+  54% {
     background: url(../img/focus.png) center no-repeat; }
+  63% {
+    background: none; }
+  71% {
+    background: url(../img/focus.png) center no-repeat; }
+  83% {
+    background: none; }
   90% {
+    background: url(../img/focus.png) center no-repeat; }
+  96% {
     background: none; }
   100% {
     background: url(../img/focus.png) center no-repeat; } }
+
+.paralax_letter {
+  position: absolute;
+  z-index: -1;
+  color: #f7ff00;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 933px;
+  line-height: 1040px;
+  text-transform: uppercase; }
