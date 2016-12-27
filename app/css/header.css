@@ -42,9 +42,58 @@ textarea {
 button:hover {
   cursor: pointer; }
 
+.md-modal.md-show {
+  opacity: 1; }
+
+.md-modal {
+  opacity: 0; }
+
+/* SCROLL BAR STYLES*/
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3); }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: #dc3fa8;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #dc3fa8; }
+
+/* BUTTON scrollUP SYLES*/
+#scrollup {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  width: 30px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  display: none;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 40px;
+  text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  #scrollup svg {
+    fill: #848484;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+
+#scrollup:hover svg {
+  fill: #dc3fa8; }
+
 .hidden {
-  width: 0;
-  height: 0; }
+  height: 0;
+  width: 0; }
 
 .bar-long {
   height: 5px;
@@ -64,6 +113,7 @@ button:hover {
   border-radius: 26px;
   background-color: #f7ff00;
   font-family: "Raleway-Bold", sans-serif;
+  font-size: 18px;
   color: #000;
   font-weight: 700;
   line-height: 24px; }
@@ -116,7 +166,7 @@ button:hover {
   #sec_01 .top .call:active {
     background-color: #06425c; }
   #sec_01 .container {
-    background: url(../img/sec_01-bg_letter.png) top 140px left 405px no-repeat; }
+    background: url(img/sec_01-bg_letter.png) top 140px left 405px no-repeat; }
   #sec_01 .content_left {
     float: left;
     margin-top: 135px;
@@ -159,7 +209,9 @@ button:hover {
     margin-top: 20px;
     margin-bottom: 50px; }
   #sec_01 .btn {
-    float: left; }
+    float: left;
+    position: relative;
+    z-index: 20; }
   #sec_01 .price {
     display: inline-block;
     margin: -20px 0 0 30px;
@@ -184,8 +236,7 @@ button:hover {
     align-items: flex-end;
     float: right;
     padding-right: 115px;
-    margin-top: 20px;
-    min-height: 735px; }
+    margin-top: 20px; }
     #sec_01 .picture img {
       -webkit-animation: image_paint 2s;
       animation: image_paint 2s;
@@ -199,7 +250,7 @@ button:hover {
     height: 403px;
     right: 0px;
     top: 130px;
-    background: url(../img/focus.png) center no-repeat;
+    background: url(img/focus.png) center no-repeat;
     -webkit-animation: blinc_cam 2s;
     animation: blinc_cam 2s;
     -webkit-animation-fill-mode: forwards;
@@ -207,7 +258,7 @@ button:hover {
   #sec_01 .wave_1 {
     position: absolute;
     z-index: 0;
-    background: url(../img/sec_01-wave-1.png) center repeat-x;
+    background: url(img/sec_01-wave-1.png) center repeat-x;
     height: 226px;
     bottom: 175px;
     -webkit-animation: wave 240s linear infinite;
@@ -216,7 +267,7 @@ button:hover {
   #sec_01 .wave_2 {
     position: absolute;
     z-index: 12;
-    background: url(../img/wave-2.png) center repeat-x;
+    background: url(img/wave-2.png) center repeat-x;
     height: 171px;
     bottom: -1px;
     -webkit-animation: wave_2 200s linear infinite;
@@ -225,7 +276,7 @@ button:hover {
   #sec_01 .wave_3 {
     position: absolute;
     z-index: 0;
-    background: url(../img/sec_01-wave-3.png) center repeat-x;
+    background: url(img/sec_01-wave-3.png) center repeat-x;
     height: 226px;
     bottom: 70px;
     -webkit-animation: wave 150s linear infinite;
@@ -268,13 +319,13 @@ button:hover {
   0% {
     width: 0; }
   100% {
-    width: 335px; } }
+    width: 101%; } }
 
 @keyframes scale_bar {
   0% {
     width: 0; }
   100% {
-    width: 335px; } }
+    width: 101%; } }
 
 @-webkit-keyframes image_paint {
   0% {
@@ -318,51 +369,73 @@ button:hover {
 
 @-webkit-keyframes blinc_cam {
   0% {
-    background: url(../img/focus.png) center no-repeat; }
+    background: url(img/focus.png) center no-repeat; }
   20% {
     background: none; }
   35% {
-    background: url(../img/focus.png) center no-repeat; }
+    background: url(img/focus.png) center no-repeat; }
   45% {
     background: none; }
   54% {
-    background: url(../img/focus.png) center no-repeat; }
+    background: url(img/focus.png) center no-repeat; }
   63% {
     background: none; }
   71% {
-    background: url(../img/focus.png) center no-repeat; }
+    background: url(img/focus.png) center no-repeat; }
   83% {
     background: none; }
   90% {
-    background: url(../img/focus.png) center no-repeat; }
+    background: url(img/focus.png) center no-repeat; }
   96% {
     background: none; }
   100% {
-    background: url(../img/focus.png) center no-repeat; } }
+    background: url(img/focus.png) center no-repeat; } }
 
 @keyframes blinc_cam {
   0% {
-    background: url(../img/focus.png) center no-repeat; }
+    background: url(img/focus.png) center no-repeat; }
   20% {
     background: none; }
   35% {
-    background: url(../img/focus.png) center no-repeat; }
+    background: url(img/focus.png) center no-repeat; }
   45% {
     background: none; }
   54% {
-    background: url(../img/focus.png) center no-repeat; }
+    background: url(img/focus.png) center no-repeat; }
   63% {
     background: none; }
   71% {
-    background: url(../img/focus.png) center no-repeat; }
+    background: url(img/focus.png) center no-repeat; }
   83% {
     background: none; }
   90% {
-    background: url(../img/focus.png) center no-repeat; }
+    background: url(img/focus.png) center no-repeat; }
   96% {
     background: none; }
   100% {
-    background: url(../img/focus.png) center no-repeat; } }
+    background: url(img/focus.png) center no-repeat; } }
+
+@-webkit-keyframes cta {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes cta {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 
 .paralax_letter, ._letter {
   position: absolute;

@@ -8,5 +8,143 @@
 @include for-size(tablet-portait-only) {}
 @media screen and (max-width: 900px){}
 // 900 - 1199
-@include for-size(tablet-landscape-only) {}
-@media screen and (max-width: 1200px){}
+@include for-size(tablet-landscape-only) {
+  body{font-size: 16px;}
+  h2{font: 38px/40px "Raleway-Bold", sans-serif;}
+  .title{
+    font-size: 23px;
+    line-height: 28px;
+  }
+  #sec_01{
+    .top{
+      .logo{
+        img{
+          width: 60px;
+        }
+      }
+      nav{
+        margin-left: 15px;
+        margin-top: 25px;
+        a{font-size: 15px;}
+        a+a{margin-left: 5px;}
+      }
+      .call{
+        margin-top: 20px;
+      }
+    }
+    .beforeheader{
+      font-size: 50px;
+      line-height: 60px;
+    }
+    .small_text{
+      right: -110px !important;
+    }
+    h1{
+      font-size: 70px;
+      line-height: 40px;
+    }
+    .picture{
+      padding-right: 30px;
+      margin-top: 55px;
+      img{
+        width: 320px;
+      }
+    }
+    .picture:before{
+      display: none;
+    }
+    .price{
+      font-size: 30px;
+      margin-left: 20px;
+    }
+  }
+  #sec_02{
+    [alt="Image"]{
+      width: 100%;
+      margin-top: 80px;
+    }
+    .text{
+      br{
+        display: none;
+      }
+    }
+    // .item{mt-50}
+  }
+  #sec_03{
+    padding: 90px 0;
+    .item{
+      font-size: 16px;
+      .title{font-size: 20px;}
+    }
+    [alt="Image"] {
+      width: 600px;
+        margin: 40px 0 0 -260px;
+    }
+    .tc h2{
+      margin-top: 40px;
+    }
+    .tc .text br{
+      display: none;
+    }
+  }
+  #sec_04{
+    [alt="Image"]{
+      width: 100%;
+    }
+    [alt="Icon"]{display: none;}
+  }
+  #sec_05{
+    padding: 80px 0;
+    img{
+      width: 90%;
+      margin: 20px auto !important;
+      display: block;
+    }
+    .text br {display: none;}
+  }
+  #sec_06{
+    padding: 60px 0;
+    h2{margin-top: 0px;}
+    .paralax_letter{display:none;}
+  }
+  #sec_07{
+    .item{
+      background: none !important;
+    }
+  }
+  #sec_08{
+    [alt="Image"]{
+      width: 100%;
+    }
+    [alt="Separator"]{
+      display: none;
+    }
+    .title{margin-bottom: 10px;}
+  }
+  #sec_09{
+    h2{
+      margin-top: 80px;
+      text-align: center;
+    }
+    [alt="Separator"]{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  #sec_10{
+    .slide{
+      .text_block{
+        width: 500px;
+      }
+    }
+  }
+  #sec_11{
+    padding: 60px 0;
+    li br {display: none}
+  }
+  .cta_row{background: none !important;}
+}
+@media screen and (max-width: 1200px){
+  // .paralax_letter, ._letter{display:none;}
+  .text br{display: none}
+}

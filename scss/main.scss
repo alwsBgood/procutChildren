@@ -3,7 +3,7 @@
 
 //Custom Styles Here
 #sec_02{
-  padding: 50px;
+  padding: 50px 0;
   h2{
     text-align: center;
     margin-bottom: 70px;
@@ -28,11 +28,13 @@
     a{
       display: block;
       background: url(../img/sec_02-btn-bg.png) top center no-repeat;
+      background-size: 100% 100%;
       width: 556px;
       min-height: 125px;
       margin: 0 auto;
       padding-top: 15px;
       margin-top: -15px;
+      animation: cta 1.5s linear infinite;
     }
     .pink{
       color: $main_color;
@@ -304,11 +306,13 @@
     a{
       display: block;
       background: url(../img/sec_02-btn-bg-1.png) top center no-repeat;
+      background-size: 100% 100%;
       width: 556px;
       min-height: 125px;
       margin: 0 auto;
       padding-top: 15px;
       margin-top: -15px;
+      animation: cta 1.5s linear infinite;
     }
     .pink{
       color: $main_color;
@@ -379,7 +383,195 @@
   }
 }
 
+#sec_11{
+  padding: 100px 0;
+  .container{position: relative}
+  ._letter{
+    right: 140px;
+    top: -360px;
+  }
+  h2{
+    margin-bottom: 35px;
+  }
+  ul{
+    padding-left: 15px;
+    li{position: relative;}
+    li+li{margin-top: 10px;}
+    li:before{
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      top: 50%;
+      margin-top: -2px;
+      left: -15px;
+      background: url(../img/list.png)
+    }
+  }
+  .pink{
+    margin-top: 20px;
+    font-family: $Raleway_700;
+    color: $main_color;
+  }
+  .price{
+    color: #000;
+    margin-top: 5px;
+    font: 20px $Raleway_700;
+    span{
+      font-family: $Accuratist;
+      font-size: 36px;
+    }
+  }
+  form{
+    padding: 40px 40px 65px;
+    background: #fff;
+    text-align: center;
+    .field{
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 420px;
+      width: 100%;
+    }
+    .btn{
+      width: 306px;
+      margin: 40px auto 0;
+    }
+  }
+}
 
+#sec_12{
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0 92px;
+  background-image: linear-gradient(to top, #ad4688 0%, #f5f6f8 100%);
+  .wave_1{
+    position: absolute;
+    z-index: 0;
+    background: url(../img/footer-wave-1.png) center repeat-x;
+    height: 203px;
+    bottom: 60px;
+    animation: wave_2 240s linear infinite;
+    width: 100%;
+  }
+  .wave_2{
+    position: absolute;
+    z-index: 0;
+    background: url(../img/footer-wave-2.png) center repeat-x;
+    height: 216px;
+    bottom: 30px;
+    animation: wave 200s linear infinite;
+    width: 100%;
+  }
+  .wave_3{
+    position: absolute;
+    z-index: 0;
+    background: url(../img/footer-wave-3.png) center repeat-x;
+    height: 148px;
+    top: 0;
+    animation: wave 150s linear infinite;
+    width: 100%;
+  }
+  .container{
+    position: relative;
+    z-index: 1;
+  }
+  a{
+    font: 16px/21px $Raleway_500;
+    color: #000;
+  }
+  a:hover{color: $main_color;}
+  .out_links{
+    a{line-height: 24px;}
+  }
+  .contacts{
+    padding-left: 30px;
+    line-height: 21px;
+    li+li{margin-top: 5px;}
+    li{
+      position: relative;
+    }
+    .place:before{
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 23px;
+      left: -30px;
+      top: 0px;
+      background: url(../img/place.png) center no-repeat;
+    }
+    .tel:before{
+      position: absolute;
+      content: '';
+      width: 23px;
+      height: 23px;
+      left: -30px;
+      top: 0px;
+      background: url(../img/phone.png) center no-repeat;
+    }
+  }
+  .social{
+    margin-top: 25px;
+    li{
+      display: inline-block;
+      svg{
+        width: 18px;
+        height: 28px;
+        fill: #000;
+
+      }
+      path{transition: 0.4s;}
+      a:hover{
+        svg path{fill: $main_color;}
+      }
+    }
+    li+li{margin-left: 5px;}
+  }
+  .call{
+    float: right;
+    width: 190px;
+    height: 40px;
+    border-radius: 19px;
+    background-color: #ffffff;
+    margin-top: 45px;
+
+    color: #165679;
+    font-family: $Raleway_700;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+  }
+  .call:hover{
+    background-color: $main_color;
+    color: #fff;
+  }
+  .call:active{
+    background-color: #06425c;
+  }
+}
+
+footer{
+  padding: 15px 0 5px;
+  background-color: #202020;
+  .politics{
+    margin-top: 17px;
+    a{
+      color: #65666a;
+      font-size: 14px;
+    }
+    a:hover{color: $main_color;}
+    a+a{margin-left: 10px;}
+  }
+  .logo_rezart{
+    margin-top: 5px;
+    margin-left: 25px;
+    // margin-right: 20px;
+    float: right;
+  }
+  .logo_wcf{
+    float: right;
+  }
+}
 
 
 //ALWAYS END
