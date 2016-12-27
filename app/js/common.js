@@ -174,23 +174,38 @@ $(document).ready(function() {
 
 // Waypoint
 
-// $('#sec_03 .wrapper .wrap1').waypoint(
-//   function() {
-//     $( "#sec_03 .wrapper .text_block" ).addClass( "animation" );
-//   },
-//   {offset: "200px"}
-// );
+$('#sec_03').waypoint(
+  function() {
+    $( "#sec_03 .item" ).addClass( "animated" );
+    $( "#sec_03 .item" ).addClass( "flipInX" );
+  },
+  {offset: "300px"}
+);
 
-// $('.wrapper').delay(1000).addClass('animation')
+// Parallax
 
+$(window).scroll(function() {
+
+    var st = $(this).scrollTop() /100;
+    var tt = $(this).scrollTop() /100;
+
+    $(".paralax_letter").css({
+        "transform" : "translate3d(0px, " + st  + "%, .01px)",
+        "-webkit-transform" : "translate3d(0px, " + st  + "%, .01px)",
+        "-ms-transform" : "translate3d(0px, " + st  + "%, .01px)"
+    });
+
+});
 
 // Perfect Pxel
 
 $('body').each(function() {
+
     var body = $(this);
     var img_url = $(this).data('img');
     var img = new Image();
     img.src = img_url;
+
     img.onload = function(){
         var ppbox = '<div id="pp" style="background: url('+img_url+') no-repeat 50% 0%;top:0;width:100%;position:absolute;z-index:1000000;opacity:0.5;height:'+img.height+'px"></div>';
         var ppbtn = '<button onclick="myOff()" id="ppbtn" style="position:fixed;top:0;right:0;z-index:1000001">ON</button>'
@@ -198,6 +213,7 @@ $('body').each(function() {
         body.append(ppbtn);
     };
 });
+
 function myOff() {
     var ppbtntext = $('#ppbtn').text();
     if (ppbtntext == 'ON') {

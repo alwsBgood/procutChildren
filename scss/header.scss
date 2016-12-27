@@ -170,7 +170,7 @@ button {
 			left: 0px;
 			bottom: 0px;
 			width: 0;
-			height: 10px;
+			height: 5px;
 			background: $second_color;
 			animation: scale_bar 2.5s;
 			animation-fill-mode: forwards;
@@ -297,7 +297,7 @@ button {
 	100% {background: url(../img/focus.png) center no-repeat;}
 }
 
-.paralax_letter{
+.paralax_letter, ._letter{
 	position: absolute;
 	z-index: -1;
 	color: $second_color;
