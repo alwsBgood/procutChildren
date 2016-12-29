@@ -1,6 +1,5 @@
 @import url(../libs/niftymodal/component.css);
 @import url(../libs/slick/slick.min.css);
-@import url(../fonts/font-awesome/font-awesome.min.css);
 #sec_02 {
   padding: 50px 0; }
   #sec_02 h2 {
@@ -1132,7 +1131,9 @@ textarea:active + .bar, textarea:focus + .bar {
       display: flex;
       margin-top: 20px; }
     #sec_02 .cta_row .pink {
-      font-size: 22px; }
+      font-size: 19px; }
+    #sec_02 .cta_row .text {
+      font-size: 16px; }
     #sec_02 .cta_row .desctop_button {
       -webkit-animation: none;
       animation: none;
@@ -1344,7 +1345,7 @@ textarea:active + .bar, textarea:focus + .bar {
         display: block; }
       footer .politics a + a {
         margin-left: 0; }
-    footer .logo_wcf, footer .logo_rezart {
+    footer .footer-fire, footer .logo_rezart {
       float: none;
       margin: 15px 20px 10px; } }
 
@@ -1391,8 +1392,9 @@ textarea:active + .bar, textarea:focus + .bar {
     #sec_01 .container {
       background: none; }
   #sec_02 [alt="Image"] {
-    width: 100%;
     margin-top: 80px; }
+  #sec_02 .floated {
+    float: right; }
   #sec_02 .text br {
     display: none; }
   #sec_03 {
@@ -1504,13 +1506,16 @@ textarea:active + .bar, textarea:focus + .bar {
       left: 10px;
       margin: 0; }
   #sec_08 {
-    padding: 60px 0; }
-    #sec_08 [alt="Image"] {
-      width: 100%; }
+    padding: 60px 0;
+    overflow: hidden; }
     #sec_08 [alt="Separator"] {
       display: none; }
     #sec_08 .title {
       margin-bottom: 10px; }
+    #sec_08 .first_row [alt="Image"], #sec_08 .third_row [alt="Image"] {
+      float: right;
+      width: 300px;
+      width: 420px; }
   #sec_09 {
     padding: 60px 0; }
     #sec_09 h2 {
@@ -1568,7 +1573,7 @@ textarea:active + .bar, textarea:focus + .bar {
         display: block; }
       footer .politics a + a {
         margin-left: 0; }
-    footer .logo_wcf, footer .logo_rezart {
+    footer .footer-fire, footer .logo_rezart {
       float: none;
       margin: 15px 20px 10px; } }
 

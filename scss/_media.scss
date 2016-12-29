@@ -52,9 +52,13 @@
   //     }
   //   }
   //   .beforeheader{
+  //    br{display:none}
   //     font-size: 44px;
   //     margin-bottom: 20px;
   //     line-height: 48px;
+          // span{
+          //   display: block;
+          // }
   //   }
   //   .small_text{
   //     position: static !important;
@@ -100,7 +104,10 @@
         margin-top: 20px;
       }
       .pink{
-        font-size: 22px;
+        font-size: 19px;
+      }
+      .text{
+        font-size: 16px;
       }
       .desctop_button{
         animation: none;
@@ -348,7 +355,7 @@
       a{display: block;}
       a+a{margin-left: 0;}
     }
-    .logo_wcf, .logo_rezart{
+    .footer-fire, .logo_rezart{
       float: none;
       margin: 15px 20px 10px;
     }
@@ -409,9 +416,10 @@
   }
   #sec_02{
     [alt="Image"]{
-      width: 100%;
+      // width: 100%;
       margin-top: 80px;
     }
+    .floated{float: right;}
     .text{
       br{
         display: none;
@@ -535,13 +543,21 @@
   }
   #sec_08{
     padding: 60px 0;
-    [alt="Image"]{
-      width: 100%;
-    }
+    overflow: hidden;
+    // [alt="Image"]{
+    //   width: 100%;
+    // }
     [alt="Separator"]{
       display: none;
     }
     .title{margin-bottom: 10px;}
+    .first_row, .third_row{
+      [alt="Image"]{
+        float: right;
+        width: 300px;
+        width: 420px;
+      }
+    }
   }
   #sec_09{
     padding: 60px 0;
@@ -605,7 +621,7 @@
       a{display: block;}
       a+a{margin-left: 0;}
     }
-    .logo_wcf, .logo_rezart{
+    .footer-fire, .logo_rezart{
       float: none;
       margin: 15px 20px 10px;
     }

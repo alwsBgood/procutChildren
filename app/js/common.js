@@ -10,6 +10,8 @@ $(function() {
     var msg = btn.closest('form').find('input, textarea, select');
     var send_btn = btn.closest('form').find('[name=send]');
     var send_options = btn.closest('form').find('[name=campaign_token]');
+    var redirect = btn.closest('form').find('[name=redirect]').val();
+    var goal = btn.closest('form').find('[name=goal]').val();
 
 
 
@@ -56,9 +58,11 @@ $(function() {
               $('form').trigger("reset");
               setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
                     // Настройки модального окна после удачной отправки
-                        $('div.md-show').removeClass('md-show');
-                        $('form').trigger("reset");
-                        $("#call_ok")[0].click();
+                        if($("#modal_question").hasClass('md-show')) {
+                          window.location = "http://yurvov.com.ua/bgood/procut/success/index_question.html"
+                        } else {
+                          window.location = "http://yurvov.com.ua/bgood/procut/success/index.html"
+                        }
                   },
                   error: function(xhr, str) {
                     alert('Возникла ошибка: ' + xhr.responseCode);
@@ -80,9 +84,7 @@ $(function() {
                 $('form').trigger("reset");
                 setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
                 // Настройки модального окна после удачной отправки
-                $('div.md-show').removeClass('md-show');
-                $('form').trigger("reset");
-                $("#call_ok")[0].click();
+                window.location = "http://yurvov.com.ua/bgood/procut/success/"
               }}
             }),
             error:  function(xhr, str) {
