@@ -542,7 +542,7 @@
     background-color: #06425c; }
 
 footer {
-  padding: 15px 0 5px;
+  padding: 15px 0 15px;
   background-color: #202020; }
   footer .politics {
     margin-top: 17px; }
@@ -556,6 +556,7 @@ footer {
   footer .logo_rezart {
     margin-top: 5px;
     margin-left: 25px;
+    width: 80px;
     float: right; }
   footer .logo_wcf {
     float: right; }
