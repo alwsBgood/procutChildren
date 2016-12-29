@@ -1,0 +1,208 @@
+body {
+  position: relative;
+  font: 18px/24px "Raleway-Regular", sans-serif;
+  color: #7b7b7b;
+  background-color: #f5f6f8; }
+
+body.unscroll {
+  overflow: hidden; }
+
+h2 {
+  font: 48px/50px "Raleway-Bold", sans-serif;
+  color: #000; }
+
+.title {
+  font: 26px/30px "Raleway-Bold", sans-serif;
+  color: #000; }
+
+.title_small {
+  font: 18px/24px "Raleway-Bold", sans-serif;
+  color: #000; }
+
+a,
+button,
+input,
+textarea {
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  -webkit-transition: color 0.4s ease, background-color 0.4s ease, background-image 0.4s ease, border-color 0.4s ease;
+  transition: color 0.4s ease, background-color 0.4s ease, background-image 0.4s ease, border-color 0.4s ease; }
+  a:focus,
+  button:focus,
+  input:focus,
+  textarea:focus {
+    outline: 0; }
+
+input,
+textarea {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+textarea {
+  resize: none; }
+
+button:hover {
+  cursor: pointer; }
+
+.md-modal.md-show {
+  opacity: 1; }
+
+.md-modal {
+  opacity: 0; }
+
+/* SCROLL BAR STYLES*/
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3); }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: #dc3fa8;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #dc3fa8; }
+
+/* BUTTON scrollUP SYLES*/
+#scrollup {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  width: 30px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  display: none;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 40px;
+  text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  #scrollup svg {
+    fill: #848484;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+
+#scrollup:hover svg {
+  fill: #dc3fa8; }
+
+.hidden {
+  height: 0;
+  width: 0; }
+
+.bar-long {
+  height: 5px;
+  width: 0;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #dc3fa8; }
+
+.btn {
+  width: 326px;
+  height: 54px;
+  -webkit-box-shadow: 1px 9px 32px rgba(255, 250, 0, 0.4);
+  box-shadow: 1px 9px 32px rgba(255, 250, 0, 0.4);
+  -webkit-border-radius: 26px;
+  border-radius: 26px;
+  background-color: #f7ff00;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+  line-height: 24px; }
+
+.btn:hover {
+  background-color: #F8EB00; }
+
+.btn:active {
+  background-color: #edcc00; }
+
+#sec_01 {
+  position: relative;
+  background: url(../img/bg.png) top center no-repeat;
+  padding-bottom: 200px; }
+  #sec_01 .top .logo {
+    float: left; }
+  #sec_01 .top nav {
+    float: left;
+    margin: 35px 0 0 125px; }
+    #sec_01 .top nav a {
+      display: inline-block;
+      color: #7c97a9;
+      font-family: "Raleway-Medium", sans-serif;
+      font-size: 16px;
+      line-height: 24px; }
+    #sec_01 .top nav a + a {
+      margin-left: 12px; }
+    #sec_01 .top nav a:hover {
+      color: #fff; }
+  #sec_01 .top .call {
+    float: right;
+    width: 190px;
+    height: 40px;
+    -webkit-border-radius: 19px;
+    border-radius: 19px;
+    background-color: #ffffff;
+    margin-top: 30px;
+    color: #165679;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.05em; }
+  #sec_01 .top .call:hover {
+    background-color: #dc3fa8;
+    color: #fff; }
+  #sec_01 .top .call:active {
+    background-color: #06425c; }
+
+@-webkit-keyframes wave {
+  0% {
+    width: 400%; }
+  50% {
+    width: 100%; }
+  100% {
+    width: 400%; } }
+
+@keyframes wave {
+  0% {
+    width: 400%; }
+  50% {
+    width: 100%; }
+  100% {
+    width: 400%; } }
+
+@-webkit-keyframes wave_2 {
+  0% {
+    width: 100%; }
+  50% {
+    width: 450%; }
+  100% {
+    width: 100%; } }
+
+@keyframes wave_2 {
+  0% {
+    width: 100%; }
+  50% {
+    width: 450%; }
+  100% {
+    width: 100%; } }
+
+.paralax_letter, ._letter {
+  position: absolute;
+  z-index: -1;
+  color: #f7ff00;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 933px;
+  line-height: 1040px;
+  text-transform: uppercase; }
