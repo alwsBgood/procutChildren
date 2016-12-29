@@ -25,10 +25,36 @@
     text-align: center;
     margin-top: 90px;
     background: url(../img/cta-bg.png) top center no-repeat;
-    a{
+    .mobile{display: none;}
+    .desctop_button{
       display: block;
-      background: url(../img/sec_02-btn-bg.png) top center no-repeat;
-      background-size: 100% 100%;
+      position: relative;
+      // background: url(../img/sec_02-btn-bg.png) top center no-repeat;
+      .tl{
+        position: absolute;
+        z-index: 5;
+        top: -5px;
+        left: -10px;
+      }
+      .tr{
+        position: absolute;
+        z-index: 5;
+        top: -5px;
+        right: -10px;
+      }
+      .br{
+        position: absolute;
+        z-index: 5;
+        bottom: 0px;
+        right: -10px;
+      }
+      .bl{
+        position: absolute;
+        z-index: 5;
+        bottom: -5px;
+        left: -10px;
+      }
+      // background-size: 100% 100%;
       width: 556px;
       min-height: 125px;
       margin: 0 auto;
@@ -64,6 +90,11 @@
   .item{
     opacity: 0;
     .title{margin-bottom: 5px}
+  }
+  .item:hover{
+    color: $main_color;
+    transition: all 0.5s;
+    cursor: default;
   }
   .item+.item{margin-top: 21px}
   [alt="Image"]{margin: -25px 0 0 -390px;}
@@ -248,6 +279,9 @@
     left: 50%;
     margin-left: -60px;
   }
+  .mobile{
+    display: none;
+  }
 }
 
 
@@ -300,19 +334,45 @@
     line-height: 28px;
   }
   .cta_row{
+    .mobile{display: none;}
     text-align: center;
     margin-top: 70px;
     background: url(../img/cta-bg.png) top center no-repeat;
-    a{
+    .desctop_button{
       display: block;
-      background: url(../img/sec_02-btn-bg-1.png) top center no-repeat;
-      background-size: 100% 100%;
+      position: relative;
+      // background: url(../img/sec_02-btn-bg-1.png) top center no-repeat;
+      // background-size: 100% 100%;
       width: 556px;
       min-height: 125px;
       margin: 0 auto;
       padding-top: 15px;
       margin-top: -15px;
       animation: cta 1.5s linear infinite;
+      .tl{
+        position: absolute;
+        z-index: 5;
+        top: -5px;
+        left: 5px;
+      }
+      .tr{
+        position: absolute;
+        z-index: 5;
+        top: -5px;
+        right: 5px;
+      }
+      .br{
+        position: absolute;
+        z-index: 5;
+        bottom: 0px;
+        right: 5px;
+      }
+      .bl{
+        position: absolute;
+        z-index: 5;
+        bottom: -5px;
+        left: 5px;
+      }
     }
     .pink{
       color: $main_color;
@@ -343,7 +403,15 @@
       float: left;
       .title{
         margin-bottom: 10px;
+        display: inline-block;
+        margin-right: 20px;
       }
+      .soc a{
+        font: 16px $Raleway_500;
+        color: $main_text_color;
+        text-decoration: underline;
+      }
+      .soc a:hover{color: $main_color;}
       .text{
         line-height: 28px;
       }
@@ -570,6 +638,75 @@ footer{
   }
   .logo_wcf{
     float: right;
+  }
+  .footer-fire:hover {
+      animation-name: fire;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: step-end;
+      animation-direction: normal;
+      opacity: 1;
+  }
+  @keyframes fire {
+    0% {
+      background-position: 0 center;
+    }
+    25% {
+      background-position: -46px center;
+    }
+    50% {
+      background-position: -84px center;
+    }
+    75% {
+      background-position: -128px center;
+    }
+    100% {
+      background-position: -160px center;
+    }
+  }
+  .footer-fire {
+      display: inline-block;
+      height: 45px;
+      width: 35px;
+      overflow: hidden;
+      background-image: url(../img/fire.svg);
+      background-repeat: no-repeat;
+      position: relative;
+      background-position: 0 center;
+      padding: 0;
+      transition: 1s ease;
+      background-size: 200px;
+      float: right;
+      opacity: .5;
+  }
+}
+
+form{
+  position: relative;
+  padding: 0px 25px;
+  .tl{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+  }
+  .tr{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+  }
+  .br{
+    position: absolute;
+    z-index: 5;
+    bottom: 70px;
+    right: 0;
+  }
+  .bl{
+    position: absolute;
+    z-index: 5;
+    bottom: 70px;
+    left: 0;
   }
 }
 

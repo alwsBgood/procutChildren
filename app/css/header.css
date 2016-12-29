@@ -4,6 +4,9 @@ body {
   color: #7b7b7b;
   background-color: #f5f6f8; }
 
+body.unscroll {
+  overflow: hidden; }
+
 h2 {
   font: 48px/50px "Raleway-Bold", sans-serif;
   color: #000; }
@@ -119,7 +122,7 @@ button:hover {
   line-height: 24px; }
 
 .btn:hover {
-  background-color: #ffffff; }
+  background-color: #F8EB00; }
 
 .btn:active {
   background-color: #edcc00; }
@@ -166,7 +169,7 @@ button:hover {
   #sec_01 .top .call:active {
     background-color: #06425c; }
   #sec_01 .container {
-    background: url(img/sec_01-bg_letter.png) top 140px left 405px no-repeat; }
+    background: url(../img/sec_01-bg_letter.png) top 140px left 405px no-repeat; }
   #sec_01 .content_left {
     float: left;
     margin-top: 135px;
@@ -186,7 +189,8 @@ button:hover {
     font-size: 70px;
     line-height: 80px; }
     #sec_01 .beforeheader span {
-      position: relative; }
+      position: relative;
+      display: inline-block; }
     #sec_01 .beforeheader span:before {
       position: absolute;
       content: '';
@@ -250,7 +254,7 @@ button:hover {
     height: 403px;
     right: 0px;
     top: 130px;
-    background: url(img/focus.png) center no-repeat;
+    background: url(../img/focus.png) center no-repeat;
     -webkit-animation: blinc_cam 2s;
     animation: blinc_cam 2s;
     -webkit-animation-fill-mode: forwards;
@@ -258,7 +262,7 @@ button:hover {
   #sec_01 .wave_1 {
     position: absolute;
     z-index: 0;
-    background: url(img/sec_01-wave-1.png) center repeat-x;
+    background: url(../img/sec_01-wave-1.png) center repeat-x;
     height: 226px;
     bottom: 175px;
     -webkit-animation: wave 240s linear infinite;
@@ -267,8 +271,8 @@ button:hover {
   #sec_01 .wave_2 {
     position: absolute;
     z-index: 12;
-    background: url(img/wave-2.png) center repeat-x;
-    height: 171px;
+    background: url(../img/wave-2.png) center repeat-x;
+    height: 168px;
     bottom: -1px;
     -webkit-animation: wave_2 200s linear infinite;
     animation: wave_2 200s linear infinite;
@@ -276,7 +280,7 @@ button:hover {
   #sec_01 .wave_3 {
     position: absolute;
     z-index: 0;
-    background: url(img/sec_01-wave-3.png) center repeat-x;
+    background: url(../img/sec_01-wave-3.png) center repeat-x;
     height: 226px;
     bottom: 70px;
     -webkit-animation: wave 150s linear infinite;
@@ -369,51 +373,51 @@ button:hover {
 
 @-webkit-keyframes blinc_cam {
   0% {
-    background: url(img/focus.png) center no-repeat; }
+    background: url(../img/focus.png) center no-repeat; }
   20% {
     background: none; }
   35% {
-    background: url(img/focus.png) center no-repeat; }
+    background: url(../img/focus.png) center no-repeat; }
   45% {
     background: none; }
   54% {
-    background: url(img/focus.png) center no-repeat; }
+    background: url(../img/focus.png) center no-repeat; }
   63% {
     background: none; }
   71% {
-    background: url(img/focus.png) center no-repeat; }
+    background: url(../img/focus.png) center no-repeat; }
   83% {
     background: none; }
   90% {
-    background: url(img/focus.png) center no-repeat; }
+    background: url(../img/focus.png) center no-repeat; }
   96% {
     background: none; }
   100% {
-    background: url(img/focus.png) center no-repeat; } }
+    background: url(../img/focus.png) center no-repeat; } }
 
 @keyframes blinc_cam {
   0% {
-    background: url(img/focus.png) center no-repeat; }
+    background: url(../img/focus.png) center no-repeat; }
   20% {
     background: none; }
   35% {
-    background: url(img/focus.png) center no-repeat; }
+    background: url(../img/focus.png) center no-repeat; }
   45% {
     background: none; }
   54% {
-    background: url(img/focus.png) center no-repeat; }
+    background: url(../img/focus.png) center no-repeat; }
   63% {
     background: none; }
   71% {
-    background: url(img/focus.png) center no-repeat; }
+    background: url(../img/focus.png) center no-repeat; }
   83% {
     background: none; }
   90% {
-    background: url(img/focus.png) center no-repeat; }
+    background: url(../img/focus.png) center no-repeat; }
   96% {
     background: none; }
   100% {
-    background: url(img/focus.png) center no-repeat; } }
+    background: url(../img/focus.png) center no-repeat; } }
 
 @-webkit-keyframes cta {
   0% {

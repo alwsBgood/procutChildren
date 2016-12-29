@@ -154,6 +154,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         dots: false,
         arrows: true,
+        fade: true,
         slidesToScroll: 1,
         autoplay: false,
         adaptiveHeight: false
@@ -190,9 +191,9 @@ $(window).scroll(function() {
     var tt = $(this).scrollTop() /100;
 
     $(".paralax_letter").css({
-        "transform" : "translate3d(0px, " + st  + "%, .01px)",
-        "-webkit-transform" : "translate3d(0px, " + st  + "%, .01px)",
-        "-ms-transform" : "translate3d(0px, " + st  + "%, .01px)"
+        "transform" : "translate3d(0px, " + st  + "%, .0px)",
+        "-webkit-transform" : "translate3d(0px, " + st  + "%, .0px)",
+        "-ms-transform" : "translate3d(0px, " + st  + "%, .0px)"
     });
 
 });
@@ -217,6 +218,17 @@ $( document ).ready(function() {
     $('#scrollup').click(function() {
         $('body,html').animate({scrollTop:0},1000);
     });
+});
+
+// PREVENT SCROLLING
+
+$('*').click(function() {
+  var modal= $(".md-modal");
+    if( modal.hasClass('md-show')){
+      $("body").addClass('unscroll')
+    } else {
+      $("body").removeClass('unscroll');
+    }
 });
 
 // Perfect Pxel

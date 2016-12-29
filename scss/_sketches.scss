@@ -38,7 +38,7 @@ div[id*="modal_question"]{
   h2{
     font-size: 29px;
     line-height: 36px;
-    margin: 30px 30px 10px;
+    margin: 30px 40px 10px;
   }
   .h2_desc{margin-bottom: 25px;}
   .md-content{
@@ -422,6 +422,7 @@ textarea:active+.bar, textarea:focus+.bar{
   margin: 10px auto 0;
 }
 
+
 @-webkit-keyframes flipInX {
   0% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
@@ -455,6 +456,9 @@ textarea:active+.bar, textarea:focus+.bar{
     opacity: 1;
   }
 }
+
+
+
 
 @keyframes flipInX {
   0% {

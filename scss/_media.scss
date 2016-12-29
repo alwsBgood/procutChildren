@@ -1,8 +1,25 @@
 @import "bourbon";
 @import "vars.scss";
 
+@media screen and (max-height: 600px){
+  div[id*="modal_callback"] .md-content, div[id*="modal_subscribe"] .md-content, div[id*="modal_question"] .md-content{
+    padding: 10px;
+  }
+  .field input{
+    padding: 20 0;
+  }
+}
 // 599
 @include for-size(phone-only) {
+  div[id*="modal_callback"] .md-content, div[id*="modal_subscribe"] .md-content, div[id*="modal_question"] .md-content{
+    padding: 10px;
+  }
+  .field input{
+    padding: 20 0;
+  }
+  div[id*="modal_politics"] h2{
+    padding-top: 60px;
+  }
   [class*="col-"]{width: 100% !important;}
   body{font-size: 15px;}
   h2{font: 34px/40px "Raleway-Bold", sans-serif;}
@@ -35,20 +52,20 @@
       }
     }
     .beforeheader{
-      font-size: 34px;
+      font-size: 44px;
       margin-bottom: 20px;
-      line-height: 38px;
+      line-height: 48px;
     }
     .small_text{
       position: static !important;
       display: block;
-      margin-top: -126px;
+      margin-top: -176px;
       margin-bottom: 100px;
       br{display: none;}
     }
     h1{
-      font-size: 34px;
-      line-height: 20px;
+      font-size: 44px;
+      line-height: 50px;
     }
     .picture{
       display: none;
@@ -59,13 +76,13 @@
     .btn{
       margin: 30px auto 200px;
       float: none;
-      max-width: 300px;
+      max-width: 400px;
       width: 100%;
     }
     .container{background: none;}
   }
   #sec_02{
-    text-align: center;
+    // text-align: center;
     padding-top: 0;
     h2{margin-bottom: 40px;}
     [alt="Image"]{
@@ -78,13 +95,17 @@
       }
     }
     .cta_row{
+      .mobile{
+        display: flex;
+        margin-top: 20px;
+      }
       .pink{
         font-size: 22px;
       }
-      a{
+      .desctop_button{
         animation: none;
         width: 100%;
-        background: none;
+        // background: none;
       }
     }
   }
@@ -94,7 +115,9 @@
     h2{text-align: center;}
     .item{
       font-size: 16px;
-      margin-top: 21px;
+      // margin-top: 21px;
+      width: 240px;
+      margin: 21px auto 0;
       .title{font-size: 20px;}
     }
     [alt="Image"] {
@@ -111,21 +134,22 @@
   }
   #sec_04{
     h2{margin-bottom: 30px;}
-    text-align: center;
+    // text-align: center;
     [alt="Image"]{
       display: none;
     }
     .row{margin: 0 -15px !important;}
     .item{
-      margin-top: 25px;
+      margin-top: 45px !important;
         [alt="Icon"]{
-        margin: 0 0 -10px;
+        display: none;
       }
     }
   }
   #sec_05{
     padding: 60px 0;
-    text-align: center;
+    // text-align: center;
+    .tc{text-align: left;}
     h2{margin-bottom: 40px;}
     img{
       width: 90%;
@@ -138,7 +162,7 @@
   }
   #sec_06{
     padding: 60px 0;
-    text-align: center;
+    // text-align: center;
     h2{margin-top: 0px;}
     .paralax_letter{display:none;}
     [alt="Image"]{display: none;}
@@ -148,22 +172,28 @@
     h2{margin-bottom: 90px;}
     .col-4{width: 100%;}
     .item{
-      text-align: center;
+      // text-align: center;
       width: 100%;
       min-height: auto;
       min-height: initial;
       padding-top: 15px;
-      padding-left: 5px;
+      padding-left: 60px;
       padding-right: 5px;
       float: none;;
       background: none !important;
-      .title{
-        font-size: 15px;
-      }
       .img{
-        display: none;
+        img{width: 30px;}
+        left: 5px;
+      }
+      .img:before{
+        width: 30px;
+        height: 30px;
       }
     }
+    .right_block, .left_block{
+      display: none;
+    }
+    .mobile{display: block;}
     .item+.item{margin-top: 0;}
     .teacher_photo{
       margin: 25px 0;
@@ -181,7 +211,37 @@
     }
     .slick-next, .slick-prev{
       bottom: initial;
-      top: -40px;
+      top: 200px;
+      background: none;
+      width: 20px;
+      height: 20px;
+    }
+    .slick-next{
+      border-top: 4px solid #000;
+      border-right: 4px solid #000;
+      transform: rotate(45deg);
+      right: 10px;
+      margin: 0;
+    }
+    .slick-prev{
+      border-top: 4px solid #000;
+      border-left: 4px solid #000;
+      transform: rotate(-45deg);
+      left: 10px;
+      margin: 0;
+    }
+    .slick-next:hover{
+      border-top: 4px solid $main_color;
+      border-right: 4px solid $main_color;
+      // background: none !important;
+    }
+    .slick-prev:hover{
+      border-top: 4px solid $main_color;
+      border-left: 4px solid $main_color;
+      // background: none !important;
+    }
+    .slick-next:before, .slick-prev:before{
+      display: none;
     }
   }
   #sec_08{
@@ -198,23 +258,30 @@
   }
   #sec_09{
     padding: 60px 0;
-    text-align: center;
+    // text-align: center;
     h2{
       margin-top: 0px;
-      text-align: center;
+      // text-align: center;
     }
-    [alt="Separator"]{
-      display: block;
-      margin: 0 auto;
-    }
+    // [alt="Separator"]{
+    //   display: block;
+    //   margin: 0 auto;
+    // }
     .cta_row{
-      .pink{
-        font-size: 22px;
+      .mobile{
+        display: flex;
+        margin-top: 20px;
       }
-      a{
+      .pink{
+        font-size: 18px;
+      }
+      .text{
+        font-size: 16px;
+      }
+      .desctop_button{
         animation: none;
         width: 100%;
-        background: none;
+        // background: none;
       }
     }
   }
@@ -247,7 +314,7 @@
   }
   #sec_11{
     padding: 60px 0;
-    text-align: center;
+    // text-align: center;
     li:before{display: none !important}
     .col-6{
       width: 100%;
@@ -315,7 +382,7 @@
       }
     }
     .beforeheader{
-      font-size: 50px;
+      font-size: 60px;
       margin-bottom: 20px;
       line-height: 60px;
     }
@@ -367,6 +434,9 @@
       width: 600px;
         margin: 40px 0 0 -390px;
     }
+    .tc{
+      transform: translate3d(2px, 2px, 1px);
+    }
     .tc h2{
       margin-top: 40px;
       font-size: 28px;
@@ -377,10 +447,18 @@
     .btn{width: 300px;}
   }
   #sec_04{
+    overflow: hidden;
     [alt="Image"]{
-      width: 100%;
+      width: 380px;
     }
     [alt="Icon"]{display: none;}
+    .img_r{
+      float: right !important;
+    }
+    .img_l{
+      float: left !important;
+    }
+    .first_row .img_r{margin-right: -90px;}
   }
   #sec_05{
     padding: 80px 0;
@@ -435,7 +513,24 @@
     }
     .slick-next, .slick-prev{
       bottom: initial;
-      top: -40px;
+      top: 300px;
+      background: none;
+      width: 20px;
+      height: 20px;
+    }
+    .slick-next{
+      border-top: 4px solid #000;
+      border-right: 4px solid #000;
+      transform: rotate(45deg);
+      right: 10px;
+      margin: 0;
+    }
+    .slick-prev{
+      border-top: 4px solid #000;
+      border-left: 4px solid #000;
+      transform: rotate(-45deg);
+      left: 10px;
+      margin: 0;
     }
   }
   #sec_08{
@@ -606,8 +701,10 @@
   #sec_04{
     [alt="Image"]{
       width: 100%;
+      margin-top: 0 !important;
     }
     [alt="Icon"]{display: none;}
+
   }
   #sec_05{
     padding: 80px 0;
