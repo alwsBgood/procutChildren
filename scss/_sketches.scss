@@ -62,7 +62,8 @@ div[id*="modal_question"]{
    margin-top: 5px
   }
   .btn{
-    width: 306px;
+    width: 100%;
+    max-width: 306px;
     margin: 40px auto 0;
   }
 }

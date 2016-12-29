@@ -167,7 +167,7 @@ $(document).ready(function() {
         arrows: true,
         slidesToScroll: 1,
         autoplay: false,
-        adaptiveHeight: false
+        adaptiveHeight: true
     });
 });
 

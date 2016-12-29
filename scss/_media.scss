@@ -2,11 +2,526 @@
 @import "vars.scss";
 
 // 599
-@include for-size(phone-only) {}
+@include for-size(phone-only) {
+  [class*="col-"]{width: 100% !important;}
+  body{font-size: 15px;}
+  h2{font: 34px/40px "Raleway-Bold", sans-serif;}
+  .title{
+    font-size: 21px;
+    line-height: 24px;
+    br{display: none;}
+  }
+  .btn{
+    font-size: 16px;
+    width: 100% !important;
+    max-width: 300px !important;
+  }
+  #sec_01{
+    text-align: center;
+    .top{
+      nav{
+        display: none;
+      }
+      .call{
+        margin-top: 20px;
+      }
+    }
+    .content_left{
+      margin-top: 90px;
+      float: none;
+      .wrap_text{
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+    .beforeheader{
+      font-size: 34px;
+      margin-bottom: 20px;
+      line-height: 38px;
+    }
+    .small_text{
+      position: static !important;
+      display: block;
+      margin-top: -126px;
+      margin-bottom: 100px;
+      br{display: none;}
+    }
+    h1{
+      font-size: 34px;
+      line-height: 20px;
+    }
+    .picture{
+      display: none;
+    }
+    .price{
+      display: none;
+    }
+    .btn{
+      margin: 30px auto 200px;
+      float: none;
+      max-width: 300px;
+      width: 100%;
+    }
+    .container{background: none;}
+  }
+  #sec_02{
+    text-align: center;
+    padding-top: 0;
+    h2{margin-bottom: 40px;}
+    [alt="Image"]{
+      width: 100%;
+      margin-top: 20px;
+    }
+    .text{
+      br{
+        display: none;
+      }
+    }
+    .cta_row{
+      .pink{
+        font-size: 22px;
+      }
+      a{
+        animation: none;
+        width: 100%;
+        background: none;
+      }
+    }
+  }
+  #sec_03{
+    padding: 40px 0;
+    text-align: center;
+    h2{text-align: center;}
+    .item{
+      font-size: 16px;
+      margin-top: 21px;
+      .title{font-size: 20px;}
+    }
+    [alt="Image"] {
+      display: none;
+    }
+    .tc h2{
+      margin-top: 40px;
+      font-size: 28px;
+    }
+    .tc .text br{
+      display: none;
+    }
+    .btn{width: 300px;}
+  }
+  #sec_04{
+    h2{margin-bottom: 30px;}
+    text-align: center;
+    [alt="Image"]{
+      display: none;
+    }
+    .row{margin: 0 -15px !important;}
+    .item{
+      margin-top: 25px;
+        [alt="Icon"]{
+        margin: 0 0 -10px;
+      }
+    }
+  }
+  #sec_05{
+    padding: 60px 0;
+    text-align: center;
+    h2{margin-bottom: 40px;}
+    img{
+      width: 90%;
+      max-width: 200px;
+      margin: 20px auto !important;
+      display: block;
+    }
+    .text br {display: none;}
+    .second_column{margin-top: 30px;}
+  }
+  #sec_06{
+    padding: 60px 0;
+    text-align: center;
+    h2{margin-top: 0px;}
+    .paralax_letter{display:none;}
+    [alt="Image"]{display: none;}
+  }
+  #sec_07{
+    padding: 60px 0;
+    h2{margin-bottom: 90px;}
+    .col-4{width: 100%;}
+    .item{
+      text-align: center;
+      width: 100%;
+      min-height: auto;
+      min-height: initial;
+      padding-top: 15px;
+      padding-left: 5px;
+      padding-right: 5px;
+      float: none;;
+      background: none !important;
+      .title{
+        font-size: 15px;
+      }
+      .img{
+        display: none;
+      }
+    }
+    .item+.item{margin-top: 0;}
+    .teacher_photo{
+      margin: 25px 0;
+      img{
+        width: 100%;
+        max-width: 361px;
+        margin: 0 auto;
+      }
+      .name{
+        top: 20px;
+      }
+    }
+    .number{
+      display: none;
+    }
+    .slick-next, .slick-prev{
+      bottom: initial;
+      top: -40px;
+    }
+  }
+  #sec_08{
+    padding: 40px 0;
+    .small_text{text-align: center;}
+    [alt="Image"]{
+      width: 100%;
+      margin: 20px 0 !important;
+    }
+    [alt="Separator"]{
+      display: none;
+    }
+    .title{margin-bottom: 10px;}
+  }
+  #sec_09{
+    padding: 60px 0;
+    text-align: center;
+    h2{
+      margin-top: 0px;
+      text-align: center;
+    }
+    [alt="Separator"]{
+      display: block;
+      margin: 0 auto;
+    }
+    .cta_row{
+      .pink{
+        font-size: 22px;
+      }
+      a{
+        animation: none;
+        width: 100%;
+        background: none;
+      }
+    }
+  }
+  #sec_10{
+    padding: 60px 0 30px;
+    .slide{
+      padding: 50px 25px;;
+      .text_block{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      .content_block{
+        float: none;
+        width: 100px;
+        margin: 0 auto;
+      }
+    }
+    .slick-next{
+      left: initial;
+      right: 50%;
+      margin-right: -70px;
+      top: 180px;
+    }
+    .slick-prev{
+      left: 50%;
+      margin-left: -70px;
+      top: 180px;
+    }
+  }
+  #sec_11{
+    padding: 60px 0;
+    text-align: center;
+    li:before{display: none !important}
+    .col-6{
+      width: 100%;
+    }
+    ul{padding: 0;}
+    li br {display: none}
+    form{margin-top: 40px;}
+  }
+  #sec_12{
+    padding-bottom: 50px;
+    text-align: center;
+    .logo{margin-bottom: 20px;  }
+    .contacts{
+      padding-left: 0;
+      margin-top: 20px;
+      li:before{
+        display: none;
+      }
+    }
+    .call{
+      float: none;
+      margin: 20px auto;
+    }
+  }
+  footer{
+    text-align: center;
+    .col-9, .col-3{width: 100%;}
+    .politics{
+      float: none;
+      text-align: center;
+      a{display: block;}
+      a+a{margin-left: 0;}
+    }
+    .logo_wcf, .logo_rezart{
+      float: none;
+      margin: 15px 20px 10px;
+    }
+  }
+}
 @media screen and (max-width: 600px){}
 // 600 -899
-@include for-size(tablet-portait-only) {}
-@media screen and (max-width: 900px){}
+@include for-size(tablet-portait-only) {
+  body{font-size: 15px;}
+  h2{font: 34px/40px "Raleway-Bold", sans-serif;}
+  .title{
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .btn{font-size: 16px;}
+  #sec_01{
+    text-align: center;
+    .top{
+      nav{
+        display: none;
+      }
+      .call{
+        margin-top: 20px;
+      }
+    }
+    .content_left{
+      margin-top: 60px;
+      float: none;
+      .wrap_text{
+        margin: 0 auto;
+      }
+    }
+    .beforeheader{
+      font-size: 50px;
+      margin-bottom: 20px;
+      line-height: 60px;
+    }
+    .small_text{
+      position: static !important;
+      display: block;
+      br{display: none;}
+    }
+    h1{
+      font-size: 70px;
+      line-height: 40px;
+    }
+    .picture{
+      display: none;
+    }
+    .price{
+      display: none;
+    }
+    .btn{
+      margin: 30px auto 200px;
+      float: none;
+    }
+    .container{background: none;}
+  }
+  #sec_02{
+    [alt="Image"]{
+      width: 100%;
+      margin-top: 80px;
+    }
+    .text{
+      br{
+        display: none;
+      }
+    }
+    // .item{mt-50}
+  }
+  #sec_03{
+    padding: 60px 0;
+    h2{text-align: center;}
+    .custom{
+      .col-5{width: 100%; text-align: center;}
+      .col-2, .col-3{width: 33.3333%;}
+    }
+    .item{
+      font-size: 16px;
+      .title{font-size: 20px;}
+    }
+    [alt="Image"] {
+      width: 600px;
+        margin: 40px 0 0 -390px;
+    }
+    .tc h2{
+      margin-top: 40px;
+      font-size: 28px;
+    }
+    .tc .text br{
+      display: none;
+    }
+    .btn{width: 300px;}
+  }
+  #sec_04{
+    [alt="Image"]{
+      width: 100%;
+    }
+    [alt="Icon"]{display: none;}
+  }
+  #sec_05{
+    padding: 80px 0;
+    img{
+      width: 90%;
+      margin: 20px auto !important;
+      display: block;
+    }
+    .text br {display: none;}
+  }
+  #sec_06{
+    padding: 60px 0;
+    h2{margin-top: 0px;}
+    .paralax_letter{display:none;}
+  }
+  #sec_07{
+    padding: 60px 0;
+    h2{margin-bottom: 90px;}
+    .col-4{width: 100%;}
+    .item{
+      text-align: center;
+      width: 33.333%;
+      padding-top: 40px;
+      padding-left: 5px;
+      padding-right: 5px;
+      float: left;
+      background: none !important;
+      .title{
+        font-size: 15px;
+      }
+      .img{
+        left: 50%;
+        margin-left: -15px;
+        top: 0;
+        img{width: 30px;}
+      }
+    }
+    .item+.item{margin-top: 0;}
+    .teacher_photo{
+      margin: 20px 0;
+      img{
+        width: 100%;
+        max-width: 361px;
+        margin: 0 auto;
+      }
+      .name{
+        left: 100px;
+      }
+    }
+    .number{
+      display: none;
+    }
+    .slick-next, .slick-prev{
+      bottom: initial;
+      top: -40px;
+    }
+  }
+  #sec_08{
+    padding: 60px 0;
+    [alt="Image"]{
+      width: 100%;
+    }
+    [alt="Separator"]{
+      display: none;
+    }
+    .title{margin-bottom: 10px;}
+  }
+  #sec_09{
+    padding: 60px 0;
+    h2{
+      margin-top: 80px;
+      text-align: center;
+    }
+    [alt="Separator"]{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  #sec_10{
+    padding: 60px 0;
+    .slide{
+      padding: 50px;
+      .text_block{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      .content_block{
+        float: none;
+        width: 100px;
+        margin: 0 auto;
+      }
+    }
+    .slick-next{
+      left: initial;
+      right: 50%;
+      margin-right: -70px;
+      top: 180px;
+    }
+    .slick-prev{
+      left: 50%;
+      margin-left: -70px;
+      top: 180px;
+    }
+  }
+  #sec_11{
+    padding: 60px 0;
+    text-align: center;
+    li:before{display: none !important}
+    .col-6{
+      width: 100%;
+    }
+    li br {display: none}
+    form{margin-top: 40px;}
+  }
+  #sec_12{
+    .row .col-3:nth-child(4){display: none;}
+    .row .col-3:nth-child(1){width: 25%;}
+    .col-3{width: 37.5%;}
+  }
+  footer{
+    text-align: center;
+    .col-9, .col-3{width: 100%;}
+    .politics{
+      float: none;
+      text-align: center;
+      a{display: block;}
+      a+a{margin-left: 0;}
+    }
+    .logo_wcf, .logo_rezart{
+      float: none;
+      margin: 15px 20px 10px;
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  .paralax_letter, ._letter {
+    display: none;
+  }
+  .cta_row{background: none !important;}
+}
 // 900 - 1199
 @include for-size(tablet-landscape-only) {
   body{font-size: 16px;}
@@ -48,6 +563,7 @@
       margin-top: 55px;
       img{
         width: 320px;
+        animation: none;
       }
     }
     .picture:before{

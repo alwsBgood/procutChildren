@@ -565,7 +565,8 @@ div[id*="modal_question"] {
   div[id*="modal_callback"] .btn,
   div[id*="modal_subscribe"] .btn,
   div[id*="modal_question"] .btn {
-    width: 306px;
+    width: 100%;
+    max-width: 306px;
     margin: 40px auto 0; }
 
 div[id*="modal_politics"] {
@@ -967,6 +968,459 @@ textarea:active + .bar, textarea:focus + .bar {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
+@media (max-width: 599px) {
+/*  [class*="col-"] {
+    width: 100% !important; }
+  body {
+    font-size: 15px; }
+  h2 {
+    font: 34px/40px "Raleway-Bold", sans-serif; }
+  .title {
+    font-size: 21px;
+    line-height: 24px; }
+    .title br {
+      display: none; }
+  .btn {
+    font-size: 16px;
+    width: 100% !important;
+    max-width: 300px !important; }
+  #sec_01 {
+    text-align: center; }
+    #sec_01 .top nav {
+      display: none; }
+    #sec_01 .top .call {
+      margin-top: 20px; }
+    #sec_01 .content_left {
+      margin-top: 90px;
+      float: none; }
+      #sec_01 .content_left .wrap_text {
+        margin: 0 auto;
+        width: 100%; }
+    #sec_01 .beforeheader {
+      font-size: 34px;
+      margin-bottom: 20px;
+      line-height: 38px; }
+    #sec_01 .small_text {
+      position: static !important;
+      display: block;
+      margin-top: -126px;
+      margin-bottom: 100px; }
+      #sec_01 .small_text br {
+        display: none; }
+    #sec_01 h1 {
+      font-size: 34px;
+      line-height: 20px; }
+    #sec_01 .picture {
+      display: none; }
+    #sec_01 .price {
+      display: none; }
+    #sec_01 .btn {
+      margin: 30px auto 200px;
+      float: none;
+      max-width: 300px;
+      width: 100%; }
+    #sec_01 .container {
+      background: none; }
+
+*/  
+    .animated{animation: none !important;}
+    #sec_02 {
+    text-align: center;
+    padding-top: 0; }
+    #sec_02 h2 {
+      margin-bottom: 40px; }
+    #sec_02 [alt="Image"] {
+      width: 100%;
+      margin-top: 20px; }
+    #sec_02 .text br {
+      display: none; }
+    #sec_02 .cta_row .pink {
+      font-size: 22px; }
+    #sec_02 .cta_row a {
+      -webkit-animation: none;
+      animation: none;
+      width: 100%;
+      background: none; }
+  #sec_03 {
+    padding: 40px 0;
+    text-align: center; }
+    #sec_03 h2 {
+      text-align: center; }
+    #sec_03 .item {
+      font-size: 16px;
+      margin-top: 21px;
+      opacity: 1 !important;
+    }
+      #sec_03 .item .title {
+        font-size: 20px; }
+    #sec_03 [alt="Image"] {
+      display: none; }
+    #sec_03 .tc h2 {
+      margin-top: 40px;
+      font-size: 28px; }
+    #sec_03 .tc .text br {
+      display: none; }
+    #sec_03 .btn {
+      width: 300px; }
+  #sec_04 {
+    text-align: center; }
+    #sec_04 h2 {
+      margin-bottom: 30px; }
+    #sec_04 [alt="Image"] {
+      display: none; }
+    #sec_04 .row {
+      margin: 0 -15px !important; }
+    #sec_04 .item {
+      margin-top: 25px; }
+      #sec_04 .item [alt="Icon"] {
+        margin: 0 0 -10px; }
+  #sec_05 {
+    padding: 60px 0;
+    text-align: center; }
+    #sec_05 h2 {
+      margin-bottom: 40px; }
+    #sec_05 img {
+      width: 90%;
+      max-width: 200px;
+      margin: 20px auto !important;
+      display: block; }
+    #sec_05 .text br {
+      display: none; }
+    #sec_05 .second_column {
+      margin-top: 30px; }
+  #sec_06 {
+    padding: 60px 0;
+    text-align: center; }
+    #sec_06 h2 {
+      margin-top: 0px; }
+    #sec_06 .paralax_letter {
+      display: none; }
+    #sec_06 [alt="Image"] {
+      display: none; }
+  #sec_07 {
+    padding: 60px 0; }
+    #sec_07 h2 {
+      margin-bottom: 90px; }
+    #sec_07 .col-4 {
+      width: 100%; }
+    #sec_07 .item {
+      text-align: center;
+      width: 100%;
+      min-height: auto;
+      min-height: initial;
+      padding-top: 15px;
+      padding-left: 5px;
+      padding-right: 5px;
+      float: none;
+      background: none !important; }
+      #sec_07 .item .title {
+        font-size: 15px; }
+      #sec_07 .item .img {
+        display: none; }
+    #sec_07 .item + .item {
+      margin-top: 0; }
+    #sec_07 .teacher_photo {
+      margin: 25px 0; }
+      #sec_07 .teacher_photo img {
+        width: 100%;
+        max-width: 361px;
+        margin: 0 auto; }
+      #sec_07 .teacher_photo .name {
+        top: 20px; }
+    #sec_07 .number {
+      display: none; }
+    #sec_07 .slick-next, #sec_07 .slick-prev {
+      bottom: initial;
+      top: -40px; }
+  #sec_08 {
+    padding: 40px 0; }
+    #sec_08 .small_text {
+      text-align: center; }
+    #sec_08 [alt="Image"] {
+      width: 100%;
+      margin: 20px 0 !important; }
+    #sec_08 [alt="Separator"] {
+      display: none; }
+    #sec_08 .title {
+      margin-bottom: 10px; }
+  #sec_09 {
+    padding: 60px 0;
+    text-align: center; }
+    #sec_09 h2 {
+      margin-top: 0px;
+      text-align: center; }
+    #sec_09 [alt="Separator"] {
+      display: block;
+      margin: 0 auto; }
+    #sec_09 .cta_row .pink {
+      font-size: 22px; }
+    #sec_09 .cta_row a {
+      -webkit-animation: none;
+      animation: none;
+      width: 100%;
+      background: none; }
+  #sec_10 {
+    padding: 60px 0 30px; }
+    #sec_10 .slide {
+      padding: 50px 25px; }
+      #sec_10 .slide .text_block {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px; }
+      #sec_10 .slide .content_block {
+        float: none;
+        width: 100px;
+        margin: 0 auto; }
+    #sec_10 .slick-next {
+      left: initial;
+      right: 50%;
+      margin-right: -70px;
+      top: 180px; }
+    #sec_10 .slick-prev {
+      left: 50%;
+      margin-left: -70px;
+      top: 180px; }
+  #sec_11 {
+    padding: 60px 0;
+    text-align: center; }
+    #sec_11 li:before {
+      display: none !important; }
+    #sec_11 .col-6 {
+      width: 100%; }
+    #sec_11 ul {
+      padding: 0; }
+    #sec_11 li br {
+      display: none; }
+    #sec_11 form {
+      margin-top: 40px; }
+  #sec_12 {
+    padding-bottom: 50px;
+    text-align: center; }
+    #sec_12 .logo {
+      margin-bottom: 20px; }
+    #sec_12 .contacts {
+      padding-left: 0;
+      margin-top: 20px; }
+      #sec_12 .contacts li:before {
+        display: none; }
+    #sec_12 .call {
+      float: none;
+      margin: 20px auto; }
+  footer {
+    text-align: center; }
+    footer .col-9, footer .col-3 {
+      width: 100%; }
+    footer .politics {
+      float: none;
+      text-align: center; }
+      footer .politics a {
+        display: block; }
+      footer .politics a + a {
+        margin-left: 0; }
+    footer .logo_wcf, footer .logo_rezart {
+      float: none;
+      margin: 15px 20px 10px; } }
+
+@media (min-width: 600px) and (max-width: 899px) {
+  body {
+    font-size: 15px; }
+  h2 {
+    font: 34px/40px "Raleway-Bold", sans-serif; }
+  .title {
+    font-size: 21px;
+    line-height: 24px; }
+  .btn {
+    font-size: 16px; }
+  #sec_01 {
+    text-align: center; }
+    #sec_01 .top nav {
+      display: none; }
+    #sec_01 .top .call {
+      margin-top: 20px; }
+    #sec_01 .content_left {
+      margin-top: 60px;
+      float: none; }
+      #sec_01 .content_left .wrap_text {
+        margin: 0 auto; }
+    #sec_01 .beforeheader {
+      font-size: 50px;
+      margin-bottom: 20px;
+      line-height: 60px; }
+    #sec_01 .small_text {
+      position: static !important;
+      display: block; }
+      #sec_01 .small_text br {
+        display: none; }
+    #sec_01 h1 {
+      font-size: 70px;
+      line-height: 40px; }
+    #sec_01 .picture {
+      display: none; }
+    #sec_01 .price {
+      display: none; }
+    #sec_01 .btn {
+      margin: 30px auto 200px;
+      float: none; }
+    #sec_01 .container {
+      background: none; }
+  #sec_02 [alt="Image"] {
+    width: 100%;
+    margin-top: 80px; }
+  #sec_02 .text br {
+    display: none; }
+  #sec_03 {
+    padding: 60px 0; }
+    #sec_03 h2 {
+      text-align: center; }
+    #sec_03 .custom .col-5 {
+      width: 100%;
+      text-align: center; }
+    #sec_03 .custom .col-2, #sec_03 .custom .col-3 {
+      width: 33.3333%; }
+    #sec_03 .item {
+      font-size: 16px; }
+      #sec_03 .item .title {
+        font-size: 20px; }
+    #sec_03 [alt="Image"] {
+      width: 600px;
+      margin: 40px 0 0 -390px; }
+    #sec_03 .tc h2 {
+      margin-top: 40px;
+      font-size: 28px; }
+    #sec_03 .tc .text br {
+      display: none; }
+    #sec_03 .btn {
+      width: 300px; }
+  #sec_04 [alt="Image"] {
+    width: 100%; }
+  #sec_04 [alt="Icon"] {
+    display: none; }
+  #sec_05 {
+    padding: 80px 0; }
+    #sec_05 img {
+      width: 90%;
+      margin: 20px auto !important;
+      display: block; }
+    #sec_05 .text br {
+      display: none; }
+  #sec_06 {
+    padding: 60px 0; }
+    #sec_06 h2 {
+      margin-top: 0px; }
+    #sec_06 .paralax_letter {
+      display: none; }
+  #sec_07 {
+    padding: 60px 0; }
+    #sec_07 h2 {
+      margin-bottom: 90px; }
+    #sec_07 .col-4 {
+      width: 100%; }
+    #sec_07 .item {
+      text-align: center;
+      width: 33.333%;
+      padding-top: 40px;
+      padding-left: 5px;
+      padding-right: 5px;
+      float: left;
+      background: none !important; }
+      #sec_07 .item .title {
+        font-size: 15px; }
+      #sec_07 .item .img {
+        left: 50%;
+        margin-left: -15px;
+        top: 0; }
+        #sec_07 .item .img img {
+          width: 30px; }
+    #sec_07 .item + .item {
+      margin-top: 0; }
+    #sec_07 .teacher_photo {
+      margin: 20px 0; }
+      #sec_07 .teacher_photo img {
+        width: 100%;
+        max-width: 361px;
+        margin: 0 auto; }
+      #sec_07 .teacher_photo .name {
+        left: 100px; }
+    #sec_07 .number {
+      display: none; }
+    #sec_07 .slick-next, #sec_07 .slick-prev {
+      bottom: initial;
+      top: -40px; }
+  #sec_08 {
+    padding: 60px 0; }
+    #sec_08 [alt="Image"] {
+      width: 100%; }
+    #sec_08 [alt="Separator"] {
+      display: none; }
+    #sec_08 .title {
+      margin-bottom: 10px; }
+  #sec_09 {
+    padding: 60px 0; }
+    #sec_09 h2 {
+      margin-top: 80px;
+      text-align: center; }
+    #sec_09 [alt="Separator"] {
+      display: block;
+      margin: 0 auto; }
+  #sec_10 {
+    padding: 60px 0; }
+    #sec_10 .slide {
+      padding: 50px; }
+      #sec_10 .slide .text_block {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px; }
+      #sec_10 .slide .content_block {
+        float: none;
+        width: 100px;
+        margin: 0 auto; }
+    #sec_10 .slick-next {
+      left: initial;
+      right: 50%;
+      margin-right: -70px;
+      top: 180px; }
+    #sec_10 .slick-prev {
+      left: 50%;
+      margin-left: -70px;
+      top: 180px; }
+  #sec_11 {
+    padding: 60px 0;
+    text-align: center; }
+    #sec_11 li:before {
+      display: none !important; }
+    #sec_11 .col-6 {
+      width: 100%; }
+    #sec_11 li br {
+      display: none; }
+    #sec_11 form {
+      margin-top: 40px; }
+  #sec_12 .row .col-3:nth-child(4) {
+    display: none; }
+  #sec_12 .row .col-3:nth-child(1) {
+    width: 25%; }
+  #sec_12 .col-3 {
+    width: 37.5%; }
+  footer {
+    text-align: center; }
+    footer .col-9, footer .col-3 {
+      width: 100%; }
+    footer .politics {
+      float: none;
+      text-align: center; }
+      footer .politics a {
+        display: block; }
+      footer .politics a + a {
+        margin-left: 0; }
+    footer .logo_wcf, footer .logo_rezart {
+      float: none;
+      margin: 15px 20px 10px; } }
+
+@media screen and (max-width: 900px) {
+  .paralax_letter, ._letter {
+    display: none; }
+  .cta_row {
+    background: none !important; } }
+
 @media (min-width: 900px) and (max-width: 1199px) {
   body {
     font-size: 16px; }
@@ -998,7 +1452,9 @@ textarea:active + .bar, textarea:focus + .bar {
     padding-right: 30px;
     margin-top: 55px; }
     #sec_01 .picture img {
-      width: 320px; }
+      width: 320px;
+      -webkit-animation: none;
+      animation: none; }
   #sec_01 .picture:before {
     display: none; }
   #sec_01 .price {
