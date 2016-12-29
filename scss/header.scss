@@ -194,7 +194,7 @@ button {
 		}
 	}
 	.container{
-		background: url(../img/sec_01-bg_letter.png) top 140px left 405px no-repeat;
+		background: url(img/sec_01-bg_letter.png) top 140px left 405px no-repeat;
 	}
 	.content_left{
 		float: left;
@@ -284,7 +284,7 @@ button {
 		height: 403px;
 		right: 0px;
 		top: 130px;
-		background: url(../img/focus.png) center no-repeat;
+		background: url(img/focus.png) center no-repeat;
 		animation: blinc_cam 2s;
 		animation-fill-mode: forwards;
 		// animation-delay: 1s;
@@ -292,7 +292,7 @@ button {
 	.wave_1{
 		position: absolute;
 		z-index: 0;
-		background: url(../img/sec_01-wave-1.png) center repeat-x;
+		background: url(img/sec_01-wave-1.png) center repeat-x;
 		height: 226px;
 		bottom: 175px;
 		animation: wave 240s linear infinite;
@@ -301,7 +301,7 @@ button {
 	.wave_2{
 		position: absolute;
 		z-index: 12;
-		background: url(../img/wave-2.png) center repeat-x;
+		background: url(img/wave-2.png) center repeat-x;
 		height: 168px;
 		bottom: -1px;
 		animation: wave_2 200s linear infinite;
@@ -310,7 +310,7 @@ button {
 	.wave_3{
 		position: absolute;
 		z-index: 0;
-		background: url(../img/sec_01-wave-3.png) center repeat-x;
+		background: url(img/sec_01-wave-3.png) center repeat-x;
 		height: 226px;
 		bottom: 70px;
 		animation: wave 150s linear infinite;
@@ -345,17 +345,17 @@ button {
 }
 
 @keyframes blinc_cam {
-	0% {background: url(../img/focus.png) center no-repeat;}
+	0% {background: url(img/focus.png) center no-repeat;}
 	20% {background: none;}
-	35% {background: url(../img/focus.png) center no-repeat;}
+	35% {background: url(img/focus.png) center no-repeat;}
 	45% {background: none;}
-	54% {background: url(../img/focus.png) center no-repeat;}
+	54% {background: url(img/focus.png) center no-repeat;}
 	63% {background: none;}
-	71% {background: url(../img/focus.png) center no-repeat;}
+	71% {background: url(img/focus.png) center no-repeat;}
 	83% {background: none;}
-	90% {background: url(../img/focus.png) center no-repeat;}
+	90% {background: url(img/focus.png) center no-repeat;}
 	96% {background: none;}
-	100% {background: url(../img/focus.png) center no-repeat;}
+	100% {background: url(img/focus.png) center no-repeat;}
 }
 
 @keyframes cta {

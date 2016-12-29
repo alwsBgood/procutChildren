@@ -1115,56 +1115,6 @@ textarea:active + .bar, textarea:focus + .bar {
     padding-top: 60px; }
   [class*="col-"] {
     width: 100% !important; }
-  body {
-    font-size: 15px; }
-  h2 {
-    font: 34px/40px "Raleway-Bold", sans-serif; }
-  .title {
-    font-size: 21px;
-    line-height: 24px; }
-    .title br {
-      display: none; }
-  .btn {
-    font-size: 16px;
-    width: 100% !important;
-    max-width: 300px !important; }
-  #sec_01 {
-    text-align: center; }
-    #sec_01 .top nav {
-      display: none; }
-    #sec_01 .top .call {
-      margin-top: 20px; }
-    #sec_01 .content_left {
-      margin-top: 90px;
-      float: none; }
-      #sec_01 .content_left .wrap_text {
-        margin: 0 auto;
-        width: 100%; }
-    #sec_01 .beforeheader {
-      font-size: 44px;
-      margin-bottom: 20px;
-      line-height: 48px; }
-    #sec_01 .small_text {
-      position: static !important;
-      display: block;
-      margin-top: -176px;
-      margin-bottom: 100px; }
-      #sec_01 .small_text br {
-        display: none; }
-    #sec_01 h1 {
-      font-size: 44px;
-      line-height: 50px; }
-    #sec_01 .picture {
-      display: none; }
-    #sec_01 .price {
-      display: none; }
-    #sec_01 .btn {
-      margin: 30px auto 200px;
-      float: none;
-      max-width: 400px;
-      width: 100%; }
-    #sec_01 .container {
-      background: none; }
   #sec_02 {
     padding-top: 0; }
     #sec_02 h2 {
