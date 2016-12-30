@@ -1,0 +1,11 @@
+@import "bourbon";
+
+@include font-face("Raleway-Bold", "fonts/Raleway-Bold", $file-formats: woff woff2);
+@include font-face("Raleway-ExtraBold", "fonts/Raleway-ExtraBold", $file-formats: woff woff2);
+@include font-face("Raleway-Medium", "fonts/Raleway-Medium", $file-formats: woff woff2);
+@include font-face("Raleway-Regular", "fonts/Raleway-Regular", $file-formats: woff woff2);
+
+@include font-face("Accuratist", "fonts/Accuratist", $file-formats: woff woff2);
+
+@include font-face("DidactGothic", "fonts/DidactGothic", $file-formats: woff woff2);
+

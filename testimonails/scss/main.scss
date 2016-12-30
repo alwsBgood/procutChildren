@@ -2,397 +2,15 @@
 @import "vars.scss";
 
 //Custom Styles Here
-#sec_02{
-  padding: 50px 0;
-  h2{
-    text-align: center;
-    margin-bottom: 70px;
-  }
-  .item{
-    img{
-      margin: 30px 0 -15px -25px;
-    }
-    [alt="Separator"]{
-      margin: 5px 0 -10px -13px;
-    }
-    .text{line-height: 28px;}
-  }
-  .content_row{
-    margin-top: 55px;
-    .item{margin-top: -12px;}
-  }
-  .cta_row{
-    text-align: center;
-    margin-top: 90px;
-    background: url(../img/cta-bg.png) top center no-repeat;
-    .mobile{display: none;}
-    .desctop_button{
-      display: block;
-      position: relative;
-      // background: url(../img/sec_02-btn-bg.png) top center no-repeat;
-      .tl{
-        position: absolute;
-        z-index: 5;
-        top: -5px;
-        left: -10px;
-      }
-      .tr{
-        position: absolute;
-        z-index: 5;
-        top: -5px;
-        right: -10px;
-      }
-      .br{
-        position: absolute;
-        z-index: 5;
-        bottom: 0px;
-        right: -10px;
-      }
-      .bl{
-        position: absolute;
-        z-index: 5;
-        bottom: -5px;
-        left: -10px;
-      }
-      // background-size: 100% 100%;
-      width: 556px;
-      min-height: 125px;
-      margin: 0 auto;
-      padding-top: 15px;
-      margin-top: -15px;
-      animation: cta 1.5s linear infinite;
-    }
-    .pink{
-      color: $main_color;
-      font-family: $Raleway_700;
-      font-size: 26px;
-      line-height: 38px;
-      margin-bottom: 5px;
-    }
-    .text{font-size: 20px;  }
-  }
-}
-
-#sec_03{
-  padding: 145px 0;
-  position: relative;
-  .wrapper{
-    overflow: hidden;
-  }
-    .paralax_letter{
-      top: -100px;
-      left: 0px;
-    }
-  h2{
-    margin-bottom: 30px;
-  }
-  [alt="Separator"]{margin: -20px 0 0 -12px;}
-  .item{
-    opacity: 0;
-    .title{margin-bottom: 5px}
-  }
-  .item:hover{
-    color: $main_color;
-    transition: all 0.5s;
-    cursor: default;
-  }
-  .item+.item{margin-top: 21px}
-  [alt="Image"]{margin: -25px 0 0 -390px;}
-  .tc{
-    h2{
-      margin-top: 190px;
-      margin-bottom: 25px;
-    }
-    .btn{
-      margin: 30px auto 0;
-    }
-  }
-  .anim-del-1{animation-delay: .1s;}
-  .anim-del-2{animation-delay: .25s;}
-  .anim-del-3{animation-delay: .4s;}
-  .anim-del-4{animation-delay: .55s;}
-  .anim-del-5{animation-delay: .65s;}
-  .anim-del-6{animation-delay: .8s;}
-  .anim-del-7{animation-delay: .85s;}
-  .anim-del-8{animation-delay: 1s;}
-}
-
-#sec_04{
-  padding: 45px 0;
-  h2{
-    text-align: center;
-    margin-bottom: 70px;
-  }
-  .item{
-    [alt="Icon"]{margin: 25px 0 -10px -25px;}
-    [alt="Separator"]{margin: 6px 0 -10px -13px;}
-    p.text{
-      line-height: 28px;
-    }
-  }
-  .second_row{
-    position: relative;
-    margin-top: 25px;
-    [alt="Image"]{
-      float: right;
-      margin-top: 30px;
-    }
-  }
-  .paralax_letter{
-    top: -610px;
-    right: 95px;
-  }
-  .third_row{
-    margin-top: 60px;
-    .item{
-      margin-top: 8px;
-    }
-  }
-}
-
-#sec_05{
-  padding: 140px 0 30px;
-  h2{
-    text-align: center;
-    margin-bottom: 70px;
-  }
-  img{margin: 0px 0 30px;}
-  .item{
-    margin-bottom: 15px;
-    .title{
-      margin-bottom: 20px;
-    }
-  }
-  .first_column{
-    .item+img{
-      margin: 10px 0 20px 30px;
-    }
-  }
-  .second_column{
-    .item:nth-child(1){
-      margin-top: -5px;
-    }
-    img{
-      margin-top: 19px;
-      margin-bottom: 38px;
-    }
-  }
-  .third_column{
-    [alt="Image"]{margin: -10px 0 15px 80px}
-    [alt="Triangle"]{margin: -10px 0 30px 65px}
-  }
-}
-
-#sec_06{
-  padding: 100px 0;
-  .wrapper{overflow: hidden;}
-  position: relative;
-  h2{margin: 93px 0 0 0}
-  [alt="Separator"]{margin: 13px 0 30px -13px}
-  .item{
-    margin-bottom: 30px;
-    .title{
-      margin-bottom: 20px;
-    }
-    .pink{color: $main_color}
-  }
-  .btn{
-    margin-top: 50px;
-    width: 300px;
-  }
-  .paralax_letter{
-    top: -570px;
-    right: 140px;
-  }
-}
-
-#sec_07{
-  padding: 85px 0;
-  h2{
-    text-align: center;
-    margin-bottom: 70px;
-  }
-  .item{
-    position: relative;
-    padding-top: 30px;
-    padding-left: 97px;
-    min-height: 150px;
-    .title{
-      font-size: 18px;
-      line-height: 22px;
-      margin-bottom: 5px;
-    }
-    .img{
-      position: absolute;
-      left: 28px;
-      img{width: 40px;}
-    }
-    .img:before{
-      content: "";
-      z-index: -1;
-      border-radius: 50%;
-      position: absolute;
-      width: 42px;
-      height: 42px;
-      top: 0;
-      left: 13px;
-      background: #feed01;
-    }
-  }
-  .teacher_photo{
-    position: relative;
-    .name{
-      position: absolute;
-      top: 75px;
-      left: 0px;
-      .title{margin-bottom: 5px;}
-      img{margin: 5px 0 0 -10px;}
-    }
-  }
-  .item+.item{margin-top: 20px;}
-  .left_block{
-    .item{
-      background: url(../img/sec_07-left_botder.png) top left no-repeat
-    }
-  }
-  .right_block{
-    .item{
-      background: url(../img/sec_07-right_botder.png) top right no-repeat
-    }
-  }
-  .number{
-    text-align: center;
-    font-size: 20px;
-    color: #000;
-    margin-top: 47px;
-    .current{
-      font: 49px $Raleway_700;
-    }
-  }
-  .slick-next{
-    bottom: 15px;
-    right: 50%;
-    margin-right: -60px;
-  }
-  .slick-prev{
-    bottom: 15px;
-    left: 50%;
-    margin-left: -60px;
-  }
-  .mobile{
-    display: none;
-  }
-}
-
-
-#sec_08{
-  padding: 100px 0;
-  h2{
-    text-align: center;
-    margin-bottom: 65px;
-  }
-  .small_text{
-    color: #b8b8b8;
-    font-size: 16px;
-    line-height: 18px;
-  }
-  [alt="Separator"]{margin: 9px 0 0 -12px;}
-  ul{
-    padding-left: 15px;
-    li{position: relative;}
-    li+li{margin-top: 10px;}
-    li:before{
-      content: "";
-      position: absolute;
-      width: 4px;
-      height: 4px;
-      top: 50%;
-      margin-top: -2px;
-      left: -15px;
-      background: url(../img/list.png)
-    }
-  }
-  .item+.item{margin-top: 27px;}
-}
-
-#sec_09{
-  padding: 90px 0;
-  position: relative;
-  [alt="Separator"]{
-    margin: 5px 0 -10px -13px;
-  }
-  .paralax_letter{
-    position: absolute;
-    left: 100px;
-    top: -1400px;
-    // line-height: 500px;
-  }
-  .title{
-    margin-bottom: 15px;
-  }
-  .text{
-    line-height: 28px;
-  }
-  .cta_row{
-    .mobile{display: none;}
-    text-align: center;
-    margin-top: 70px;
-    background: url(../img/cta-bg.png) top center no-repeat;
-    .desctop_button{
-      display: block;
-      position: relative;
-      // background: url(../img/sec_02-btn-bg-1.png) top center no-repeat;
-      // background-size: 100% 100%;
-      width: 556px;
-      min-height: 125px;
-      margin: 0 auto;
-      padding-top: 15px;
-      margin-top: -15px;
-      animation: cta 1.5s linear infinite;
-      .tl{
-        position: absolute;
-        z-index: 5;
-        top: -5px;
-        left: 5px;
-      }
-      .tr{
-        position: absolute;
-        z-index: 5;
-        top: -5px;
-        right: 5px;
-      }
-      .br{
-        position: absolute;
-        z-index: 5;
-        bottom: 0px;
-        right: 5px;
-      }
-      .bl{
-        position: absolute;
-        z-index: 5;
-        bottom: -5px;
-        left: 5px;
-      }
-    }
-    .pink{
-      color: $main_color;
-      font-family: $Raleway_700;
-      font-size: 26px;
-      line-height: 31px;
-      margin-bottom: 5px;
-    }
-    .text{font-size: 20px;  }
-  }
-}
 
 #sec_10{
-  padding: 100px 0;
+  margin-top: -105px;
   h2{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
   .slide{
-    background-color: #f0f2f6;
+    background-color: #fff;
     padding: 65px 40px 60px 120px;
     .content_block{
       float: left;
@@ -401,6 +19,8 @@
     }
     .text_block{
       float: left;
+      width: 100%;
+      max-width: 775px;
       .title{
         margin-bottom: 10px;
         display: inline-block;
@@ -417,16 +37,8 @@
       }
     }
   }
-  .number{
-    position: absolute;
-    top: 55px;
-    left: 15px;
-    font-size: 20px;
-    color: #000;
-    margin-top: 47px;
-    .current{
-      font: 49px $Raleway_700;
-    }
+  .slide+.slide{
+    margin-top: 30px;
   }
   .more{
     text-align: center;
@@ -441,76 +53,35 @@
   .more:hover{
     color: $main_color;
   }
-  .slick-next{
-    top: 195px;
-    left: 215px;
+  .more_slides{
+    display: none;
+    margin-top: 30px;
   }
-  .slick-prev{
-    top: 195px;
-    left: 105px;
+  .more_slides_btn{
+    display: block;
+    width: 190px;
+    height: 50px;
+    margin: 85px auto 0;
+    border-radius: 24px;
+    border: 3px solid #e3e6ea;
+    background-color: transparent;
+
+    color: #7b7b7b;
+    font-family: $Raleway_500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .more_slides_btn:hover{
+    border: 3px solid $main_color;
+    color: $main_color;
   }
 }
 
-#sec_11{
-  padding: 100px 0;
-  .container{position: relative}
-  ._letter{
-    right: 140px;
-    top: -360px;
-  }
-  h2{
-    margin-bottom: 35px;
-  }
-  ul{
-    padding-left: 15px;
-    li{position: relative;}
-    li+li{margin-top: 10px;}
-    li:before{
-      content: "";
-      position: absolute;
-      width: 4px;
-      height: 4px;
-      top: 50%;
-      margin-top: -2px;
-      left: -15px;
-      background: url(../img/list.png)
-    }
-  }
-  .pink{
-    margin-top: 20px;
-    font-family: $Raleway_700;
-    color: $main_color;
-  }
-  .price{
-    color: #000;
-    margin-top: 5px;
-    font: 20px $Raleway_700;
-    span{
-      font-family: $Accuratist;
-      font-size: 36px;
-    }
-  }
-  form{
-    padding: 40px 40px 65px;
-    background: #fff;
-    text-align: center;
-    .field{
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 420px;
-      width: 100%;
-    }
-    .btn{
-      width: 306px;
-      margin: 40px auto 0;
-    }
-  }
-}
 
 #sec_12{
   position: relative;
   overflow: hidden;
-  padding: 90px 0 92px;
+  padding: 140px 0 92px;
   background-image: linear-gradient(to top, #ad4688 0%, #f5f6f8 100%);
   .wave_1{
     position: absolute;
@@ -534,7 +105,7 @@
     position: absolute;
     z-index: 0;
     background: url(../img/footer-wave-3.png) center repeat-x;
-    height: 148px;
+    height: 145px;
     top: 0;
     animation: wave 150s linear infinite;
     width: 100%;

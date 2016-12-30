@@ -21,276 +21,69 @@
     padding-top: 60px;
   }
   [class*="col-"]{width: 100% !important;}
-  // body{font-size: 15px;}
-  // h2{font: 34px/40px "Raleway-Bold", sans-serif;}
-  // .title{
-  //   font-size: 21px;
-  //   line-height: 24px;
-  //   br{display: none;}
-  // }
-  // .btn{
-  //   font-size: 16px;
-  //   width: 100% !important;
-  //   max-width: 300px !important;
-  // }
-  // #sec_01{
-  //   text-align: center;
-  //   .top{
-  //     nav{
-  //       display: none;
-  //     }
-  //     .call{
-  //       margin-top: 20px;
-  //     }
-  //   }
-  //   .content_left{
-  //     margin-top: 90px;
-  //     float: none;
-  //     .wrap_text{
-  //       margin: 0 auto;
-  //       width: 100%;
-  //     }
-  //   }
-  //   .beforeheader{
-  //    br{display:none}
-  //     font-size: 44px;
-  //     margin-bottom: 20px;
-  //     line-height: 48px;
-          // span{
-          //   display: block;
-          // }
-  //   }
-  //   .small_text{
-  //     position: static !important;
-  //     display: block;
-  //     margin-top: -176px;
-  //     margin-bottom: 100px;
-  //     br{display: none;}
-  //   }
-  //   h1{
-  //     font-size: 44px;
-  //     line-height: 50px;
-  //   }
-  //   .picture{
-  //     display: none;
-  //   }
-  //   .price{
-  //     display: none;
-  //   }
-  //   .btn{
-  //     margin: 30px auto 200px;
-  //     float: none;
-  //     max-width: 400px;
-  //     width: 100%;
-  //   }
-  //   .container{background: none;}
-  // }
-  #sec_02{
-    // text-align: center;
-    padding-top: 0;
-    h2{margin-bottom: 40px;}
-    [alt="Image"]{
-      width: 100%;
-      margin-top: 20px;
-    }
-    .text{
-      br{
-        display: none;
-      }
-    }
-    .cta_row{
-      .mobile{
-        display: flex;
-        margin-top: 20px;
-      }
-      .pink{
-        font-size: 19px;
-      }
-      .text{
-        font-size: 16px;
-      }
-      .desctop_button{
-        animation: none;
-        width: 100%;
-        // background: none;
-      }
-    }
+  body{font-size: 15px;}
+  h2{font: 34px/40px "Raleway-Bold", sans-serif;}
+  .title{
+    font-size: 21px;
+    line-height: 24px;
+    br{display: none;}
   }
-  #sec_03{
-    padding: 40px 0;
+  .btn{
+    font-size: 16px;
+    width: 100% !important;
+    max-width: 300px !important;
+  }
+  #sec_01{
     text-align: center;
-    h2{text-align: center;}
-    .item{
-      font-size: 16px;
-      // margin-top: 21px;
-      width: 240px;
-      margin: 21px auto 0;
-      .title{font-size: 20px;}
-    }
-    [alt="Image"] {
-      display: none;
-    }
-    .tc h2{
-      margin-top: 40px;
-      font-size: 28px;
-    }
-    .tc .text br{
-      display: none;
-    }
-    .btn{width: 300px;}
-  }
-  #sec_04{
-    h2{margin-bottom: 30px;}
-    // text-align: center;
-    [alt="Image"]{
-      display: none;
-    }
-    .row{margin: 0 -15px !important;}
-    .item{
-      margin-top: 45px !important;
-        [alt="Icon"]{
+    .top{
+      nav{
         display: none;
       }
-    }
-  }
-  #sec_05{
-    padding: 60px 0;
-    // text-align: center;
-    .tc{text-align: left;}
-    h2{margin-bottom: 40px;}
-    img{
-      width: 90%;
-      max-width: 200px;
-      margin: 20px auto !important;
-      display: block;
-    }
-    .text br {display: none;}
-    .second_column{margin-top: 30px;}
-  }
-  #sec_06{
-    padding: 60px 0;
-    // text-align: center;
-    h2{margin-top: 0px;}
-    .paralax_letter{display:none;}
-    [alt="Image"]{display: none;}
-  }
-  #sec_07{
-    padding: 60px 0;
-    h2{margin-bottom: 90px;}
-    .col-4{width: 100%;}
-    .item{
-      // text-align: center;
-      width: 100%;
-      min-height: auto;
-      min-height: initial;
-      padding-top: 15px;
-      padding-left: 60px;
-      padding-right: 5px;
-      float: none;;
-      background: none !important;
-      .img{
-        img{width: 30px;}
-        left: 5px;
-      }
-      .img:before{
-        width: 30px;
-        height: 30px;
-      }
-    }
-    .right_block, .left_block{
-      display: none;
-    }
-    .mobile{display: block;}
-    .item+.item{margin-top: 0;}
-    .teacher_photo{
-      margin: 25px 0;
-      img{
-        width: 100%;
-        max-width: 361px;
-        margin: 0 auto;
-      }
-      .name{
-        top: 20px;
-      }
-    }
-    .number{
-      display: none;
-    }
-    .slick-next, .slick-prev{
-      bottom: initial;
-      top: 200px;
-      background: none;
-      width: 20px;
-      height: 20px;
-    }
-    .slick-next{
-      border-top: 4px solid #000;
-      border-right: 4px solid #000;
-      transform: rotate(45deg);
-      right: 10px;
-      margin: 0;
-    }
-    .slick-prev{
-      border-top: 4px solid #000;
-      border-left: 4px solid #000;
-      transform: rotate(-45deg);
-      left: 10px;
-      margin: 0;
-    }
-    .slick-next:hover{
-      border-top: 4px solid $main_color;
-      border-right: 4px solid $main_color;
-      // background: none !important;
-    }
-    .slick-prev:hover{
-      border-top: 4px solid $main_color;
-      border-left: 4px solid $main_color;
-      // background: none !important;
-    }
-    .slick-next:before, .slick-prev:before{
-      display: none;
-    }
-  }
-  #sec_08{
-    padding: 40px 0;
-    .small_text{text-align: center;}
-    [alt="Image"]{
-      width: 100%;
-      margin: 20px 0 !important;
-    }
-    [alt="Separator"]{
-      display: none;
-    }
-    .title{margin-bottom: 10px;}
-  }
-  #sec_09{
-    padding: 60px 0;
-    // text-align: center;
-    h2{
-      margin-top: 0px;
-      // text-align: center;
-    }
-    // [alt="Separator"]{
-    //   display: block;
-    //   margin: 0 auto;
-    // }
-    .cta_row{
-      .mobile{
-        display: flex;
+      .call{
         margin-top: 20px;
       }
-      .pink{
-        font-size: 18px;
-      }
-      .text{
-        font-size: 16px;
-      }
-      .desctop_button{
-        animation: none;
+    }
+    .content_left{
+      margin-top: 90px;
+      float: none;
+      .wrap_text{
+        margin: 0 auto;
         width: 100%;
-        // background: none;
       }
     }
+    .beforeheader{
+     br{display:none}
+      font-size: 44px;
+      margin-bottom: 20px;
+      line-height: 48px;
+          span{
+            display: block;
+          }
+    }
+    .small_text{
+      position: static !important;
+      display: block;
+      margin-top: -176px;
+      margin-bottom: 100px;
+      br{display: none;}
+    }
+    h1{
+      font-size: 44px;
+      line-height: 50px;
+    }
+    .picture{
+      display: none;
+    }
+    .price{
+      display: none;
+    }
+    .btn{
+      margin: 30px auto 200px;
+      float: none;
+      max-width: 400px;
+      width: 100%;
+    }
+    .container{background: none;}
   }
   #sec_10{
     padding: 60px 0 30px;
@@ -303,32 +96,11 @@
       }
       .content_block{
         float: none;
-        width: 100px;
+        width: 150px;
+        text-align: center;
         margin: 0 auto;
       }
     }
-    .slick-next{
-      left: initial;
-      right: 50%;
-      margin-right: -70px;
-      top: 180px;
-    }
-    .slick-prev{
-      left: 50%;
-      margin-left: -70px;
-      top: 180px;
-    }
-  }
-  #sec_11{
-    padding: 60px 0;
-    // text-align: center;
-    li:before{display: none !important}
-    .col-6{
-      width: 100%;
-    }
-    ul{padding: 0;}
-    li br {display: none}
-    form{margin-top: 40px;}
   }
   #sec_12{
     padding-bottom: 50px;
@@ -414,162 +186,7 @@
     }
     .container{background: none;}
   }
-  #sec_02{
-    [alt="Image"]{
-      // width: 100%;
-      margin-top: 80px;
-    }
-    .floated{float: right;}
-    .text{
-      br{
-        display: none;
-      }
-    }
-    // .item{mt-50}
-  }
-  #sec_03{
-    padding: 60px 0;
-    h2{text-align: center;}
-    .custom{
-      .col-5{width: 100%; text-align: center;}
-      .col-2, .col-3{width: 33.3333%;}
-    }
-    .item{
-      font-size: 16px;
-      .title{font-size: 20px;}
-    }
-    [alt="Image"] {
-      width: 600px;
-        margin: 40px 0 0 -390px;
-    }
-    .tc{
-      transform: translate3d(2px, 2px, 1px);
-    }
-    .tc h2{
-      margin-top: 40px;
-      font-size: 28px;
-    }
-    .tc .text br{
-      display: none;
-    }
-    .btn{width: 300px;}
-  }
-  #sec_04{
-    overflow: hidden;
-    [alt="Image"]{
-      width: 380px;
-    }
-    [alt="Icon"]{display: none;}
-    .img_r{
-      float: right !important;
-    }
-    .img_l{
-      float: left !important;
-    }
-    .first_row .img_r{margin-right: -90px;}
-  }
-  #sec_05{
-    padding: 80px 0;
-    img{
-      width: 90%;
-      margin: 20px auto !important;
-      display: block;
-    }
-    .text br {display: none;}
-  }
-  #sec_06{
-    padding: 60px 0;
-    h2{margin-top: 0px;}
-    .paralax_letter{display:none;}
-  }
-  #sec_07{
-    padding: 60px 0;
-    h2{margin-bottom: 90px;}
-    .col-4{width: 100%;}
-    .item{
-      text-align: center;
-      width: 33.333%;
-      padding-top: 40px;
-      padding-left: 5px;
-      padding-right: 5px;
-      float: left;
-      background: none !important;
-      .title{
-        font-size: 15px;
-      }
-      .img{
-        left: 50%;
-        margin-left: -15px;
-        top: 0;
-        img{width: 30px;}
-      }
-    }
-    .item+.item{margin-top: 0;}
-    .teacher_photo{
-      margin: 20px 0;
-      img{
-        width: 100%;
-        max-width: 361px;
-        margin: 0 auto;
-      }
-      .name{
-        left: 100px;
-      }
-    }
-    .number{
-      display: none;
-    }
-    .slick-next, .slick-prev{
-      bottom: initial;
-      top: 300px;
-      background: none;
-      width: 20px;
-      height: 20px;
-    }
-    .slick-next{
-      border-top: 4px solid #000;
-      border-right: 4px solid #000;
-      transform: rotate(45deg);
-      right: 10px;
-      margin: 0;
-    }
-    .slick-prev{
-      border-top: 4px solid #000;
-      border-left: 4px solid #000;
-      transform: rotate(-45deg);
-      left: 10px;
-      margin: 0;
-    }
-  }
-  #sec_08{
-    padding: 60px 0;
-    overflow: hidden;
-    // [alt="Image"]{
-    //   width: 100%;
-    // }
-    [alt="Separator"]{
-      display: none;
-    }
-    .title{margin-bottom: 10px;}
-    .first_row, .third_row{
-      [alt="Image"]{
-        float: right;
-        width: 300px;
-        width: 420px;
-      }
-    }
-  }
-  #sec_09{
-    padding: 60px 0;
-    h2{
-      margin-top: 80px;
-      text-align: center;
-    }
-    [alt="Separator"]{
-      display: block;
-      margin: 0 auto;
-    }
-  }
+
   #sec_10{
     padding: 60px 0;
     .slide{
@@ -596,16 +213,6 @@
       margin-left: -70px;
       top: 180px;
     }
-  }
-  #sec_11{
-    padding: 60px 0;
-    text-align: center;
-    li:before{display: none !important}
-    .col-6{
-      width: 100%;
-    }
-    li br {display: none}
-    form{margin-top: 40px;}
   }
   #sec_12{
     .row .col-3:nth-child(4){display: none;}
@@ -685,93 +292,14 @@
       margin-left: 20px;
     }
   }
-  #sec_02{
-    [alt="Image"]{
-      width: 100%;
-      margin-top: 80px;
-    }
-    .text{
-      br{
-        display: none;
-      }
-    }
-    // .item{mt-50}
-  }
-  #sec_03{
-    padding: 90px 0;
-    .item{
-      font-size: 16px;
-      .title{font-size: 20px;}
-    }
-    [alt="Image"] {
-      width: 600px;
-        margin: 40px 0 0 -260px;
-    }
-    .tc h2{
-      margin-top: 40px;
-    }
-    .tc .text br{
-      display: none;
-    }
-  }
-  #sec_04{
-    [alt="Image"]{
-      width: 100%;
-      margin-top: 0 !important;
-    }
-    [alt="Icon"]{display: none;}
-
-  }
-  #sec_05{
-    padding: 80px 0;
-    img{
-      width: 90%;
-      margin: 20px auto !important;
-      display: block;
-    }
-    .text br {display: none;}
-  }
-  #sec_06{
-    padding: 60px 0;
-    h2{margin-top: 0px;}
-    .paralax_letter{display:none;}
-  }
-  #sec_07{
-    .item{
-      background: none !important;
-    }
-  }
-  #sec_08{
-    [alt="Image"]{
-      width: 100%;
-    }
-    [alt="Separator"]{
-      display: none;
-    }
-    .title{margin-bottom: 10px;}
-  }
-  #sec_09{
-    h2{
-      margin-top: 80px;
-      text-align: center;
-    }
-    [alt="Separator"]{
-      display: block;
-      margin: 0 auto;
-    }
-  }
   #sec_10{
     .slide{
+      padding-left: 80px;
       .text_block{
         width: 500px;
       }
     }
   }
-  #sec_11{
-    padding: 60px 0;
-    li br {display: none}
-  }
-  .cta_row{background: none !important;}
 }
 @media screen and (max-width: 1200px){
   // .paralax_letter, ._letter{display:none;}

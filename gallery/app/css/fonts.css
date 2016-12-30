@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Raleway-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Raleway-Bold.woff2") format("woff2"), url("fonts/Raleway-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Raleway-ExtraBold.woff2") format("woff2"), url("fonts/Raleway-ExtraBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Raleway-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Raleway-Medium.woff2") format("woff2"), url("fonts/Raleway-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "Raleway-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Raleway-Regular.woff2") format("woff2"), url("fonts/Raleway-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Accuratist";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Accuratist.woff2") format("woff2"), url("fonts/Accuratist.woff") format("woff"); }
+
+@font-face {
+  font-family: "DidactGothic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/DidactGothic.woff2") format("woff2"), url("fonts/DidactGothic.woff") format("woff"); }
