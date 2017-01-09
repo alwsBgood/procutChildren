@@ -1,0 +1,252 @@
+// @import "bourbon";
+@import "vars.scss";
+
+//Custom Styles Here
+
+#sec_10{
+  margin-top: -105px;
+  padding-bottom: 55px;
+  background: url(../img/bg-d.png) top 100px left 200px no-repeat;
+  h2{
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .title{
+    color: #000000;
+    font-family: $Raleway_700;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  .text{
+    color: #7b7b7b;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  [alt="Partenrs"]{
+    margin-top: 80px;
+    float: right;
+    margin-right: -20px;
+  }
+  .mobile{
+    display: none;
+  }
+  .pad{
+    display: none;
+  }
+}
+
+
+#sec_12{
+  position: relative;
+  overflow: hidden;
+  padding: 140px 0 92px;
+  background-image: linear-gradient(to top, #ad4688 0%, #f5f6f8 100%);
+  .wave_1{
+    position: absolute;
+    z-index: 0;
+    background: url(../img/footer-wave-1.png) center repeat-x;
+    height: 203px;
+    bottom: 60px;
+    animation: wave_2 240s linear infinite;
+    width: 100%;
+  }
+  .wave_2{
+    position: absolute;
+    z-index: 0;
+    background: url(../img/footer-wave-2.png) center repeat-x;
+    height: 216px;
+    bottom: 30px;
+    animation: wave 200s linear infinite;
+    width: 100%;
+  }
+  .wave_3{
+    position: absolute;
+    z-index: 0;
+    background: url(../img/footer-wave-3.png) center repeat-x;
+    height: 145px;
+    top: 0;
+    animation: wave 150s linear infinite;
+    width: 100%;
+  }
+  .container{
+    position: relative;
+    z-index: 1;
+  }
+  a{
+    font: 16px/21px $Raleway_500;
+    color: #000;
+  }
+  a:hover{color: $main_color;}
+  .out_links{
+    a{line-height: 24px;}
+  }
+  .contacts{
+    padding-left: 30px;
+    line-height: 21px;
+    li+li{margin-top: 5px;}
+    li{
+      position: relative;
+    }
+    .place:before{
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 23px;
+      left: -30px;
+      top: 0px;
+      background: url(../img/place.png) center no-repeat;
+    }
+    .tel:before{
+      position: absolute;
+      content: '';
+      width: 23px;
+      height: 23px;
+      left: -30px;
+      top: 0px;
+      background: url(../img/phone.png) center no-repeat;
+    }
+  }
+  .social{
+    margin-top: 25px;
+    li{
+      display: inline-block;
+      svg{
+        width: 18px;
+        height: 28px;
+        fill: #000;
+
+      }
+      path{transition: 0.4s;}
+      a:hover{
+        svg path{fill: $main_color;}
+      }
+    }
+    li+li{margin-left: 5px;}
+  }
+  .call{
+    float: right;
+    width: 190px;
+    height: 40px;
+    border-radius: 19px;
+    background-color: #ffffff;
+    margin-top: 45px;
+
+    color: #165679;
+    font-family: $Raleway_700;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+  }
+  .call:hover{
+    background-color: $main_color;
+    color: #fff;
+  }
+  .call:active{
+    background-color: #06425c;
+  }
+}
+
+footer{
+  padding: 15px 0 15px;
+  background-color: #202020;
+  .politics{
+    margin-top: 17px;
+    a{
+      color: #65666a;
+      font-size: 14px;
+    }
+    a:hover{color: $main_color;}
+    a+a{margin-left: 10px;}
+  }
+  .logo_rezart{
+    margin-top: 5px;
+    margin-left: 25px;
+    width: 80px;
+    // margin-right: 20px;
+    float: right;
+  }
+  .logo_wcf{
+    float: right;
+  }
+  .footer-fire:hover {
+      animation-name: fire;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: step-end;
+      animation-direction: normal;
+      opacity: 1;
+  }
+  @keyframes fire {
+    0% {
+      background-position: 0 center;
+    }
+    25% {
+      background-position: -46px center;
+    }
+    50% {
+      background-position: -84px center;
+    }
+    75% {
+      background-position: -128px center;
+    }
+    100% {
+      background-position: -160px center;
+    }
+  }
+  .footer-fire {
+      display: inline-block;
+      height: 45px;
+      width: 35px;
+      overflow: hidden;
+      background-image: url(../img/fire.svg);
+      background-repeat: no-repeat;
+      position: relative;
+      background-position: 0 center;
+      padding: 0;
+      transition: 1s ease;
+      background-size: 200px;
+      float: right;
+      opacity: .5;
+  }
+}
+
+form{
+  position: relative;
+  padding: 0px 25px;
+  .tl{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+  }
+  .tr{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+  }
+  .br{
+    position: absolute;
+    z-index: 5;
+    bottom: 70px;
+    right: 0;
+  }
+  .bl{
+    position: absolute;
+    z-index: 5;
+    bottom: 70px;
+    left: 0;
+  }
+}
+
+
+//ALWAYS END
+@import "_sketches.scss";
+@import "_media.scss";
+@import "../libs/niftymodal/component.css";
+@import "../libs/slick/slick.min.css";
+// @import "../fonts/font-awesome/font-awesome.min.css"

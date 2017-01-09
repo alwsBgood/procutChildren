@@ -86,10 +86,71 @@
     .container{background: none;}
   }
   #sec_10{
-    padding: 60px 0 0px;
-    margin-top: -200px;
-    .map{
-      height: 250px;
+    .slider{
+      .img_long{
+        max-width: 550px;
+        width: 100%;
+        display: none;
+      }
+      img{
+        float: none !important;
+        margin: 20px auto !important;
+      }
+    }
+    .slide-2{
+      .last__block_in_row{
+        width: 100%;
+      }
+    }
+    .number{
+      position: absolute;
+      bottom: -65px;
+      left: 50%;
+      margin-left: -32px;
+      font-size: 20px;
+      color: #000;
+      margin-top: 47px;
+      .current{
+        font: 49px $Raleway_700;
+      }
+    }
+    .slick-list{
+      padding: 70px 0;
+    }
+    .slick-next, .slick-prev{
+      bottom: initial;
+      bottom: 20px;
+      background: none;
+      width: 20px;
+      height: 20px;
+    }
+    .slick-next{
+      border-top: 4px solid #000;
+      border-right: 4px solid #000;
+      transform: rotate(45deg);
+      right: 10px;
+      left: initial;
+      margin: 0;
+    }
+    .slick-prev{
+      border-top: 4px solid #000;
+      border-left: 4px solid #000;
+      transform: rotate(-45deg);
+      left: 10px;
+      margin: 0;
+    }
+    .slick-next:hover{
+      border-top: 4px solid $main_color;
+      border-right: 4px solid $main_color;
+      // background: none !important;
+    }
+    .slick-prev:hover{
+      border-top: 4px solid $main_color;
+      border-left: 4px solid $main_color;
+      // background: none !important;
+    }
+    .slick-next:before, .slick-prev:before{
+      display: none;
     }
   }
   #sec_12{
@@ -176,12 +237,72 @@
     }
     .container{background: none;}
   }
-
   #sec_10{
-    padding: 60px 0 0;
-    margin-top: -200px;
-    .map{
-      height: 350px;
+    .slider{
+      .img_long{
+        max-width: 550px;
+        width: 100%;
+        display: none;
+      }
+      img{
+        float: none !important;
+        margin: 20px auto !important;
+      }
+    }
+    .slide-2{
+      .last__block_in_row{
+        width: 100%;
+      }
+    }
+    .number{
+      position: absolute;
+      bottom: -65px;
+      left: 50%;
+      margin-left: -32px;
+      font-size: 20px;
+      color: #000;
+      margin-top: 47px;
+      .current{
+        font: 49px $Raleway_700;
+      }
+    }
+    .slick-list{
+      padding: 70px 0;
+    }
+    .slick-next, .slick-prev{
+      bottom: initial;
+      top: 50%;
+      background: none;
+      width: 20px;
+      height: 20px;
+    }
+    .slick-next{
+      border-top: 4px solid #000;
+      border-right: 4px solid #000;
+      transform: rotate(45deg);
+      right: 10px;
+      left: initial;
+      margin: 0;
+    }
+    .slick-prev{
+      border-top: 4px solid #000;
+      border-left: 4px solid #000;
+      transform: rotate(-45deg);
+      left: 10px;
+      margin: 0;
+    }
+    .slick-next:hover{
+      border-top: 4px solid $main_color;
+      border-right: 4px solid $main_color;
+      // background: none !important;
+    }
+    .slick-prev:hover{
+      border-top: 4px solid $main_color;
+      border-left: 4px solid $main_color;
+      // background: none !important;
+    }
+    .slick-next:before, .slick-prev:before{
+      display: none;
     }
   }
   #sec_12{
@@ -265,15 +386,23 @@
     }
   }
   #sec_10{
-    .slide{
-      padding-left: 80px;
-      .text_block{
-        width: 500px;
+    .slider{
+      .img_long{
+        width: 550px;
+      }
+      img{
+        width: 260px;
+      }
+    }
+    .slide-2{
+      .last__block_in_row{
+        width: 550px;
+      }
+    }
+    .slide-3{
+      .top_img {
+          margin-top: -204px;
       }
     }
   }
-}
-@media screen and (max-width: 1200px){
-  // .paralax_letter, ._letter{display:none;}
-  .text br{display: none}
 }

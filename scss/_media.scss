@@ -92,6 +92,7 @@
     [alt="Image"]{
       width: 100%;
       margin-top: 20px;
+      max-width: 555px;
     }
     .text{
       br{
@@ -101,7 +102,7 @@
     .cta_row{
       .mobile{
         display: flex;
-        margin-top: 20px;
+        margin-top: 50px;
       }
       .pink{
         font-size: 19px;
@@ -277,7 +278,7 @@
     .cta_row{
       .mobile{
         display: flex;
-        margin-top: 20px;
+        margin-top: 50px;
       }
       .pink{
         font-size: 18px;
@@ -415,6 +416,7 @@
     .container{background: none;}
   }
   #sec_02{
+    overflow: hidden;
     [alt="Image"]{
       // width: 100%;
       margin-top: 80px;

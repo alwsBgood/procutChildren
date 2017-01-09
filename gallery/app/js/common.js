@@ -54,49 +54,48 @@ $(function() {
             type: 'POST',
             url: 'mail.php',
             data: msg,
-            success: function() {
-              $('form').trigger("reset");
-              setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
-                    // Настройки модального окна после удачной отправки
-                        if($("#modal_question").hasClass('md-show')) {
-                          window.location = "http://yurvov.com.ua/bgood/procut/success/index_question.html"
-                        } else {
-                          window.location = "http://yurvov.com.ua/bgood/procut/success/index.html"
-                        }
-                  },
-                  error: function(xhr, str) {
-                    alert('Возникла ошибка: ' + xhr.responseCode);
-                  }
-                });
-          } else {
-          $.ajax({
-            type: 'POST',
-            url: 'mail.php',
-            data: msg,
             success:
             $.ajax({
               type: 'POST',
-              url: 'https://app.getresponse.com/add_subscriber.html',
+              url: '../amo/amocontactlist.php',
               data: msg,
-              statusCode: {0:function() {
-                $( "#modal_callback_ok h4" ).remove();
-                $( "#modal_callback_ok" ).prepend("<h4>"+name+",</h4>");
+              success: function() {
                 $('form').trigger("reset");
                 setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
-                // Настройки модального окна после удачной отправки
-                window.location = "http://yurvov.com.ua/bgood/procut/success/"
-              }}
-            }),
-            error:  function(xhr, str) {
-              alert('Возникла ошибка: ' + xhr.responseCode);
-            }
+                      // Настройки модального окна после удачной отправки
+                      if($("#modal_question").hasClass('md-show')) {
+                        window.location = "http://kids.procut.com.ua/mc/success/index_question.html"
+                      } else {
+                        window.location = "http://kids.procut.com.ua/mc/success/index.html"
+                      }
+                    },
+                    error: function(xhr, str) {
+                      alert('Возникла ошибка: ' + xhr.responseCode);
+                    }
+                  })
           });
         }
+
       });
     }
     return false;
   })
 });
+
+
+$(document).ready(function() {
+    $('.slider').slick({
+        slidesToShow: 1,
+        dots: false,
+        arrows: true,
+        fade: true,
+        slidesToScroll: 1,
+        autoplay: false,
+        adaptiveHeight: false
+    });
+});
+
+
 
 // MAP overlay disable
 $('.overlay').click(function() {

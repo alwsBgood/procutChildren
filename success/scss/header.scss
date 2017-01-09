@@ -1,0 +1,193 @@
+@import "bourbon";
+@import "vars.scss";
+
+body {
+	position: relative;
+	height: 100%;
+	font: 18px/24px $main_font;
+	color: $main_text_color;
+	background-color: #f5f6f8;
+}
+h2{
+	font: 28px/50px $Raleway_700;
+	color: #000;
+}
+
+a,
+button,
+input,
+textarea {
+	text-decoration: none;
+	outline: 0;
+	border: 0;
+	@include transition(color 0.4s ease, background-color 0.4s ease, background-image 0.4s ease, border-color 0.4s ease);
+
+	&:focus {
+		outline: 0;
+	}
+}
+
+input,
+textarea {
+	box-sizing: border-box;
+}
+
+textarea {
+	resize: none;
+}
+
+button {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.md-modal.md-show{
+    opacity: 1;
+  }
+.md-modal{
+    opacity: 0;
+  }
+
+/* SCROLL BAR STYLES*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+ /* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 20px rgba(0,0,0,  0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background: $main_color;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: $main_color;
+}
+
+
+.hidden{
+    height: 0;
+    width: 0;
+}
+
+
+.btn{
+	width: 326px;
+	height: 54px;
+	box-shadow: 1px 9px 32px rgba(255, 250, 0, 0.4);
+	border-radius: 26px;
+	background-color: $second_color;
+	// background-image: linear-gradient(to top, #edcc00 0%, #feed01 100%);
+
+	font-family: $Raleway_700;
+	font-size: 18px;
+	color: #000;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.btn:hover{
+	background-color: #F8EB00;
+}
+
+.btn:active{
+	background-color: #edcc00;
+}
+
+section{
+	padding: 200px 0 85px;
+	position: relative;
+	text-align: center;
+	background: url(../img/bg.png) top center no-repeat;
+	min-height: 100vh;
+	h1{
+		color: #000000;
+		font: 48px/66px $Raleway_700;
+	}
+	p{
+		color: #dc3fa8;
+		font: 26px/30px $Raleway_700;
+	}
+	.btn{
+		margin: 30px auto 0;
+	}
+	footer{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+
+
+footer{
+  padding: 15px 0 15px;
+  background-color: #202020;
+  .politics{
+    margin-top: 17px;
+    a{
+      color: #65666a;
+      font-size: 14px;
+    }
+    a:hover{color: $main_color;}
+    a+a{margin-left: 10px;}
+  }
+  .logo_rezart{
+    margin-top: 5px;
+    margin-left: 25px;
+    width: 80px;
+    // margin-right: 20px;
+    float: right;
+  }
+  .logo_wcf{
+    float: right;
+  }
+  .footer-fire:hover {
+      animation-name: fire;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: step-end;
+      animation-direction: normal;
+      opacity: 1;
+  }
+  @keyframes fire {
+    0% {
+      background-position: 0 center;
+    }
+    25% {
+      background-position: -46px center;
+    }
+    50% {
+      background-position: -84px center;
+    }
+    75% {
+      background-position: -128px center;
+    }
+    100% {
+      background-position: -160px center;
+    }
+  }
+  .footer-fire {
+      display: inline-block;
+      height: 45px;
+      width: 35px;
+      overflow: hidden;
+      background-image: url(../img/fire.svg);
+      background-repeat: no-repeat;
+      position: relative;
+      background-position: 0 center;
+      padding: 0;
+      transition: 1s ease;
+      background-size: 200px;
+      float: right;
+      opacity: .5;
+  }
+}
+
+@import "_sketches.scss";
+@import "_media.scss";
+@import "../libs/niftymodal/component.css";

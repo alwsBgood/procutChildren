@@ -54,44 +54,28 @@ $(function() {
             type: 'POST',
             url: 'mail.php',
             data: msg,
-            success: function() {
-              $('form').trigger("reset");
-              setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
-                    // Настройки модального окна после удачной отправки
-                        if($("#modal_question").hasClass('md-show')) {
-                          window.location = "http://yurvov.com.ua/bgood/procut/success/index_question.html"
-                        } else {
-                          window.location = "http://yurvov.com.ua/bgood/procut/success/index.html"
-                        }
-                  },
-                  error: function(xhr, str) {
-                    alert('Возникла ошибка: ' + xhr.responseCode);
-                  }
-                });
-          } else {
-          $.ajax({
-            type: 'POST',
-            url: 'mail.php',
-            data: msg,
             success:
             $.ajax({
               type: 'POST',
-              url: 'https://app.getresponse.com/add_subscriber.html',
+              url: '../amo/amocontactlist.php',
               data: msg,
-              statusCode: {0:function() {
-                $( "#modal_callback_ok h4" ).remove();
-                $( "#modal_callback_ok" ).prepend("<h4>"+name+",</h4>");
+              success: function() {
                 $('form').trigger("reset");
                 setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
-                // Настройки модального окна после удачной отправки
-                window.location = "http://yurvov.com.ua/bgood/procut/success/"
-              }}
-            }),
-            error:  function(xhr, str) {
-              alert('Возникла ошибка: ' + xhr.responseCode);
-            }
+                      // Настройки модального окна после удачной отправки
+                      if($("#modal_question").hasClass('md-show')) {
+                        window.location = "http://kids.procut.com.ua/mc/success/index_question.html"
+                      } else {
+                        window.location = "http://kids.procut.com.ua/mc/success/index.html"
+                      }
+                    },
+                    error: function(xhr, str) {
+                      alert('Возникла ошибка: ' + xhr.responseCode);
+                    }
+                  })
           });
         }
+
       });
     }
     return false;
@@ -102,63 +86,4 @@ $(function() {
 
 $(".more_slides_btn").click(function() {
   $(".more_slides").slideToggle();
-});
-
-// PREVENT SCROLLING
-
-$('*').click(function() {
-  var modal= $(".md-modal");
-    if( modal.hasClass('md-show')){
-      $("body").addClass('unscroll')
-    } else {
-      $("body").removeClass('unscroll');
-    }
-});
-
-// Perfect Pxel
-
-$('body').each(function() {
-
-    var body = $(this);
-    var img_url = $(this).data('img');
-    var img = new Image();
-    img.src = img_url;
-
-    img.onload = function(){
-        var ppbox = '<div id="pp" style="background: url('+img_url+') no-repeat 50% 0%;top: 0px;width:100%;position:absolute;z-index:1000000;opacity:0.5;height:'+img.height+'px"></div>';
-        var ppbtn = '<button onclick="myOff()" id="ppbtn" style="position:fixed;top:0;right:0;z-index:1000001">ON</button>'
-        body.append(ppbox);
-        body.append(ppbtn);
-    };
-});
-
-function myOff() {
-    var ppbtntext = $('#ppbtn').text();
-    if (ppbtntext == 'ON') {
-        $('#ppbtn').text('OFF');
-        $('#pp').css('display', 'none');
-    } else {
-        $('#ppbtn').text('ON');
-        $('#pp')        .css({
-          ' z-index' : '1000000',
-          display: 'block'
-        });
-
-    }
-}
-
-$('html').keydown(function(){
-  var ppbtntext = $('#ppbtn').text();
-  if (event.keyCode == 81) {
-    if (ppbtntext == 'ON') {
-        $('#ppbtn').text('OFF');
-        $('#pp').css('display', 'none');
-    } else {
-        $('#ppbtn').text('ON');
-        $('#pp')        .css({
-          ' z-index' : '1000000',
-          display: 'block'
-        });
-    }
-  }
 });
