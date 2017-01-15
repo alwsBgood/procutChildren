@@ -3,16 +3,16 @@
 
 <head>
 
-<!-- <script>
+<script>
   dataLayer = [];
- </script> -->
+ </script>
 
 <!-- Google Tag Manager -->
-<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NKKXWP');</script> -->
+})(window,document,'script','dataLayer','GTM-NKKXWP');</script>
 <!-- End Google Tag Manager -->
 
 
@@ -82,8 +82,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body data-img="img/land.jpg">
 <!-- Google Tag Manager (noscript) -->
-<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKKXWP"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKKXWP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 
@@ -245,21 +245,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img class="bl" src="img/bl.png" alt="">
                     <!-- Hidden Required Fields -->
                     <input type="hidden" name="project_name" value="ProCut">
-                    <input type="hidden" name="admin_email" value="alien_202@mail.ru">
                     <input type="hidden" name="form_subject" value="Заказ обратного звонка">
                     <!-- <input type="hidden" name="goal" value="zvonok"> -->
                     <!-- END Hidden Required Fields -->
 
 
-
                     <span class="field">
-                        <input type="text" class="form-control" name="name" required=""  placeholder="Имя"/>
+                        <input class="name" type="text" class="form-control" name="name" required=""  placeholder="Имя"/>
                         <span class="bar"></span>
                     </span>
 
 
                     <span class="field">
-                        <input placeholder="Телефон" type="tel" class="form-control" name="custom_tel" required="">
+                        <input placeholder="Телефон" type="tel" class="form-control" name="phone" required="">
                         <span class="bar"></span>
                     </span>
 
@@ -524,10 +522,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Load Scripts Start -->
     <script>var scr = {"scripts":[
         {"src" : "js/libs.js", "async" : false},
+        {"src" : "http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU", "async" : false},
         {"src" : "js/common.js", "async" : false}
         ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
     </script>
     <!-- Load Scripts End -->
-
 </body>
 </html>

@@ -35,7 +35,7 @@ $time_submitted = strftime('%T'); #Current time for lead discription
 $date_submitted = strftime('%m.%d.%Y'); #Current date for lead discription
 $month_lead = strftime('%B'); #Current month for lead name
 $year_lead = strftime('%Y'); #Current year for lead name
-$price_lead = '7800'; #Current year for lead name
+$price_lead = '480'; #Current year for lead name
 if (empty($name)) {
 	$name = 'Имя не указано ' . $time_submitted;
 }
