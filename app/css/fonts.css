@@ -23,13 +23,13 @@
   src: url("fonts/Raleway-Regular.woff2") format("woff2"), url("fonts/Raleway-Regular.woff") format("woff"); }
 
 @font-face {
-  font-family: "Accuratist";
-  font-style: normal;
-  font-weight: normal;
-  src: url("fonts/Accuratist.woff2") format("woff2"), url("fonts/Accuratist.woff") format("woff"); }
-
-@font-face {
   font-family: "DidactGothic";
   font-style: normal;
   font-weight: normal;
   src: url("fonts/DidactGothic.woff2") format("woff2"), url("fonts/DidactGothic.woff") format("woff"); }
+
+@font-face {
+  font-family: "Accuratist";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Accuratist.woff2") format("woff2"), url("fonts/Accuratist.woff") format("woff"); }
