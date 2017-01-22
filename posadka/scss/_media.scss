@@ -1,0 +1,179 @@
+@import "bourbon";
+@import "vars.scss";
+
+
+// 599
+@include for-size(phone-only) {
+  .paralax_letter{display: none;}
+  section{padding-left: 10px; padding-right: 10px;}
+  .field input{
+    padding: 20 0;
+  }
+  div[id*="modal_politics"] h2{
+    padding-top: 60px;
+  }
+  [class*="col-"]{width: 100% !important;}
+  br{display: none;}
+  #sec_01 h1{
+    font-size: 40px;
+    line-height: 48px;
+  }
+  body{font-size: 15px;}
+  .block_title{
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .afterheader{
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .title_main{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .title{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .title_desc{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .image_row .col-12{
+    text-align: center;
+  }
+  .image_row img{
+    width: 130px;
+    margin: 20px 0;
+  }
+  #sec_02{
+    .numbers .item{
+      max-width: 320px;
+      margin: 30px auto 0 !important;
+    }
+    .number{
+      float: none;
+      height: auto;
+      margin-bottom: 5px;
+    }
+  }
+  #sec_03{
+    form{
+      padding: 60px;
+      .field{
+        display: block;
+        margin: 0 auto;
+      }
+      .field+.field{
+        margin-left: auto;
+        margin-top: 20px;
+      }
+    }
+  }
+  .btn{font-size: 16px;}
+
+  .btn{
+    font-size: 16px;
+    width: 100% !important;
+    max-width: 300px !important;
+  }
+
+  footer{
+    text-align: center;
+    .col-9, .col-3{width: 100%;}
+    .politics{
+      float: none;
+      text-align: center;
+      a{display: block;}
+      a+a{margin-left: 0;}
+    }
+    .footer-fire, .logo_rezart{
+      float: none;
+      margin: 15px 20px 10px;
+    }
+  }
+}
+
+// 600 -899
+@include for-size(tablet-portait-only) {
+  .paralax_letter{display: none;}
+  br{display: none;}
+  #sec_01 h1{
+    font-size: 40px;
+    line-height: 48px;
+  }
+  body{font-size: 15px;}
+  .block_title{
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .afterheader{
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .title_main{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .title{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .title_desc{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .image_row .col-12{
+    text-align: center;
+  }
+  .image_row img{
+    width: 135px;
+    margin: 20px 0;
+  }
+  #sec_03{
+    form{
+      padding: 60px;
+      .field{
+        display: block;
+        margin: 0 auto;
+      }
+      .field+.field{
+        margin-left: auto;
+        margin-top: 20px;
+      }
+    }
+  }
+  .btn{font-size: 16px;}
+
+  footer{
+    text-align: center;
+    .col-9, .col-3{width: 100%;}
+    .politics{
+      float: none;
+      text-align: center;
+      a{display: block;}
+      a+a{margin-left: 0;}
+    }
+    .footer-fire, .logo_rezart{
+      float: none;
+      margin: 15px 20px 10px;
+    }
+  }
+}
+// 900 - 1199
+@include for-size(tablet-landscape-only) {
+  body{font-size: 16px;}
+  .image_row img{
+    width: 120px;
+  }
+  #sec_03 form{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  #sec_03 form .field{
+    max-width: 240px;
+  }
+  #sec_03 form .field + .field {
+      margin-left: 5px;
+  }
+}
