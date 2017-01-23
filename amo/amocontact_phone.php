@@ -1,7 +1,6 @@
 <?PHP header("Content-Type: text/html; charset=utf-8");?>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <?php
-
 $contacts['request']['contacts']['update']=array(
   array(
     'id'=>$account_id,
@@ -20,14 +19,9 @@ $contacts['request']['contacts']['update']=array(
       )
   )
 );
-
-
-$subdomain='kids'; #Наш аккаунт - поддомен
+$subdomain='procut'; #Наш аккаунт - поддомен
 #Формируем ссылку для запроса
 $link='https://'.$subdomain.'.amocrm.ru/private/api/v2/json/contacts/set';
-
-
-
 $curl=curl_init(); #Сохраняем дескриптор сеанса cURL
 #Устанавливаем необходимые опции для сеанса cURL
 curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
@@ -44,7 +38,6 @@ curl_setopt($curl,CURLOPT_SSL_VERIFYHOST,0);
  
 $out=curl_exec($curl); #Инициируем запрос к API и сохраняем ответ в переменную
 $code=curl_getinfo($curl,CURLINFO_HTTP_CODE);
-
 $code=(int)$code;
 $errors=array(
   301=>'Moved permanently',
