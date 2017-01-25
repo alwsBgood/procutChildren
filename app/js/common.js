@@ -16,7 +16,7 @@
           var href = document.location.href;
           var new_url = href.split('?')[1];
           var ref = '&ref=' + document.referrer;
-          var id = 'procut_kids_masterclass';
+          var id = 'procut_kids_mc';
           var url = href.split('?')[0];
           var utm_catch = '&' + new_url + "&page_url=" + url;
           var leade_name = btn.closest('form').find('[name=name]').val();
