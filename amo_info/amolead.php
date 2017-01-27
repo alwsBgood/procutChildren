@@ -3,7 +3,7 @@
 
 $leads['request']['leads']['add']=array(
   array(
-    'name'=>'MC_kids' .$month_lead. '_' .$year_lead. '_' .$city_event,
+    'name'=>'Lead_kids' .$year_lead. '_' .$month_lead. '_' .$city_event,
     //'date_create'=>1298904164, //optional
     'price'=>$price_lead,
     'custom_fields'=>array(
