@@ -102,3 +102,9 @@ $(function() {
 jQuery(function($){
  $("input[type='tel']").mask("+99 (999) 999-9999");
 });
+
+
+$(".focus_input").click(function() {
+  console.log("bbb")
+  $('.first_input').focus();
+});

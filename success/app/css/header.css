@@ -103,6 +103,17 @@ section {
     bottom: 0;
     left: 0;
     right: 0; }
+  section .btn_wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    section .btn_wrapper .btn {
+      margin: 30px 20px 0; }
 
 footer {
   padding: 15px 0 15px;
@@ -441,6 +452,12 @@ textarea:active + .bar, textarea:focus + .bar {
     section .btn {
       width: 100%;
       max-width: 310px; }
+    section .btn_wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
   footer {
     text-align: center; }
     footer .politics {

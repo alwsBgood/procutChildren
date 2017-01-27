@@ -121,6 +121,13 @@ section{
 		left: 0;
 		right: 0;
 	}
+  .btn_wrapper{
+    display: flex;
+    justify-content: center;
+    .btn{
+      margin: 30px 20px 0;
+    }
+  }
 }
 
 
