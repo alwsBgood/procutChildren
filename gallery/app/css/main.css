@@ -162,6 +162,8 @@ footer {
     margin-left: 25px;
     width: 80px;
     float: right; }
+    footer .logo_rezart img {
+      width: 75px; }
   footer .logo_wcf {
     float: right; }
   footer .footer-fire:hover {
