@@ -82,11 +82,7 @@ $(function() {
           }, 350);
           dataLayer.push({'event': 'FormSubmit', 'form_type': data_form});
           setTimeout(function() {
-            if($("#modal_question").hasClass('md-show')) {
-              window.location = "http://kids.procut.com.ua/mc/success/index_question.html"
-            } else {
               window.location = "http://kids.procut.com.ua/mc/success/success_info.html"
-            }
           }, 1500);
         }
       });

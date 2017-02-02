@@ -265,6 +265,12 @@ textarea:active + .bar, textarea:focus + .bar {
     section .btn {
       width: 100%;
       max-width: 310px; }
+    section .btn_wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
   footer {
     text-align: center; }
     footer .politics {

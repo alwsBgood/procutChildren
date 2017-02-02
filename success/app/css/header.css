@@ -97,12 +97,27 @@ section {
     color: #dc3fa8;
     font: 26px/30px "Raleway-Bold", sans-serif; }
   section .btn {
-    margin: 30px auto 0; }
+    margin: 30px 20px 0;
+    padding: 5px 10px; }
   section footer {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0; }
+
+.btn_wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 footer {
   padding: 15px 0 15px;
@@ -441,6 +456,12 @@ textarea:active + .bar, textarea:focus + .bar {
     section .btn {
       width: 100%;
       max-width: 310px; }
+    section .btn_wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
   footer {
     text-align: center; }
     footer .politics {

@@ -113,7 +113,8 @@ section{
 		font: 26px/30px $Raleway_700;
 	}
 	.btn{
-		margin: 30px auto 0;
+		margin: 30px 20px 0;
+    padding: 5px 10px;
 	}
 	footer{
 		position: absolute;
@@ -121,6 +122,13 @@ section{
 		left: 0;
 		right: 0;
 	}
+}
+
+
+.btn_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
