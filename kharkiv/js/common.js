@@ -9,14 +9,16 @@ $(function() {
     var validaton = btn.closest('form').find('[required]');
     var msg = btn.closest('form').find('input, textarea, select');
     var send_btn = btn.closest('form').find('[name=send]');
-    var leade_name = btn.closest('form').find('[name=name]').val();
+    var send_options = btn.closest('form').find('[name=campaign_token]');
+    var gd_send_adress = btn.closest('form').find('[name=gd_send_adress]').val();
 
     var href = document.location.href;
     var new_url = href.split('?')[1];
     var ref = '&ref=' + document.referrer;
-    var id = 'procut_kids_masterclass';
+    var id = 'procut_kids_mc';
     var url = href.split('?')[0];
     var utm_catch = '&' + new_url + "&page_url=" + url;
+    var leade_name = btn.closest('form').find('[name=name]').val();
     var lead_price = "&lead_price=" + $('#price').html();
     var invite_id = "&invite_id="+href.split('invite_id=')[1];
     var cook_ga;
@@ -91,6 +93,19 @@ $(function() {
       });
       $.ajax({
         type: "POST",
+        url: gd_send_adress,
+        data: msg,
+        error: function(xhr, str) {
+          console.log('google_doc ok!');
+        }
+      });
+      $.ajax({
+        type: "POST",
+        url: 'mail.php',
+        data: msg,
+      });
+      $.ajax({
+        type: "POST",
         url:"amo/amocontactlist.php",
         data: data,
         success: function() {
@@ -100,13 +115,13 @@ $(function() {
             form.find('button').text('✔ Отправлено');
           }, 350);
           dataLayer.push({'event': 'FormSubmit', 'form_type': data_form});
-          // setTimeout(function() {
-          //   if($("#modal_question").hasClass('md-show')) {
-          //     window.location = "http://kids.procut.com.ua/mc/success/index_question.html"
-          //   } else {
-          //     window.location = "http://kids.procut.com.ua/mc/success/index.html"
-          //   }
-          // }, 1500);
+          setTimeout(function() {
+            if($("#modal_question").hasClass('md-show')) {
+              window.location = "http://kids.procut.com.ua/mc/kharkiv/success/index_question.html"
+            } else {
+              window.location = "http://kids.procut.com.ua/mc/kharkiv/success/"
+            }
+          }, 1500);
         }
       });
 

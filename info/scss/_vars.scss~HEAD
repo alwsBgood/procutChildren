@@ -1,0 +1,35 @@
+@import "bourbon";
+
+
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) { @content; }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  } @else if $size == tablet-portait-only {
+    @media (min-width: 600px) and (max-width: 899px) { @content; }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  } @else if $size == tablet-landscape-only {
+    @media (min-width: 900px) and (max-width: 1199px) { @content; }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) { @content; }
+  } @else if $size == desktop-only {
+    @media (min-width: 1200px) and (max-width: 1799px) { @content; }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+}
+
+$main_text_color: #7b7b7b;
+$main_color : #dc3fa8;
+$second_color: #f7ff00;
+
+
+$main_font: 'Raleway-Regular', sans-serif;
+$Raleway_500: 'Raleway-Medium', sans-serif;
+$Raleway_700: 'Raleway-Bold', sans-serif;
+$Raleway_900: 'Raleway-ExtraBold', sans-serif;
+
+$Accuratist: 'Accuratist', sans-serif;
+$DidactGothic: 'DidactGothic', sans-serif;

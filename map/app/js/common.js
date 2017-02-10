@@ -94,6 +94,7 @@ $(function() {
     }
     return false;
   })
+});
 
 // MAP overlay disable
 $('.overlay').click(function() {

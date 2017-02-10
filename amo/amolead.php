@@ -3,7 +3,7 @@
 
 $leads['request']['leads']['add']=array(
   array(
-    'name'=>'Procut_kidsMC_' .$month_lead. '_' .$year_lead. '_' .$city_event,
+    'name'=>'MC_kids_' .$city_event '_' .$year_lead. ,
     //'date_create'=>1298904164, //optional
     'price'=>$price_lead,
     'custom_fields'=>array(
@@ -183,7 +183,5 @@ $newlead_id="";
 foreach($Response as $v)
   if(is_array($v))
     $newlead_id.=$v['id'];
-
-
 
 ?>

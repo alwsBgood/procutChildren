@@ -1,15 +1,15 @@
 <?php
 
-$recepient = "anastasiya.procut@gmail.com, best_editor@ukr.net";
+$recepient = "anastasiya.procut@gmail.com";
 $sitename = "PROCUT KIDS";
 
-$mail = trim($_GET["mail"]);
-$phone = trim($_GET["phone"]);
+$mail = trim($_GET["entry_114323142"]);
+$phone = trim($_GET["entry_865589441"]);
 $country = trim($_GET["country"]);
 $data_form= trim($_GET["data_form"]);
-$name = trim($_GET["name"]);
+$name = trim($_GET["entry_1734074772"]);
 $city = trim($_GET["city"]);
-$additional_field = trim($_GET["question"]);
+$additional_field = trim($_GET["entry_1778222684"]);
 $utm_source= trim($_GET["utm_source"]);
 $utm_campaign= trim($_GET["utm_campaign"]);
 $utm_medium= trim($_GET["utm_medium"]);
@@ -46,13 +46,13 @@ $dbcnx = @mysql_connect($dblocation,$dbuser,$dbpasswd);
 
 if (!$dbcnx) // Если дескриптор равен 0 соединение не установлено
 {
-	echo("<P>error</P>");
+  echo("<P>error</P>");
 
 }
 if (!@mysql_select_db($dbname, $dbcnx))
 {
-	echo( "<P>В настоящий момент база данных не доступна, поэтому
-						корректное отображение страницы невозможно.</P>" );
+  echo( "<P>В настоящий момент база данных не доступна, поэтому
+            корректное отображение страницы невозможно.</P>" );
 
 }
 
@@ -94,7 +94,7 @@ $headers .= 'From: procut.com.ua';
 
 mail($recepient, $pagetitle, $message, $headers);
 
-						// Отправка хука в Slack
+            // Отправка хука в Slack
 
 $message_to_slack = "
 *$pagetitle*
@@ -137,7 +137,7 @@ $result = curl_exec($ch);
 echo var_dump($result);
 if($result === false)
 {
-		echo 'Curl error: ' . curl_error($ch);
+    echo 'Curl error: ' . curl_error($ch);
 }
 curl_close($ch);
 ?>

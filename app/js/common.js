@@ -10,8 +10,15 @@ $(function() {
     var msg = btn.closest('form').find('input, textarea, select');
     var send_btn = btn.closest('form').find('[name=send]');
     var send_options = btn.closest('form').find('[name=campaign_token]');
-    var redirect = btn.closest('form').find('[name=redirect]').val();
-    var goal = btn.closest('form').find('[name=goal]').val();
+    var gd_send_adress = btn.closest('form').find('[name=gd_send_adress]').val();
+
+    var mail_chimp = btn.closest('form').find('[name="entry.114323142"]').val();
+    var name_chimp = btn.closest('form').find('[name="entry.1734074772"]').val();
+    var phone_chimp = btn.closest('form').find('[name="entry.865589441"]').val();
+
+    btn.closest('form').find('[name=MERGE1]').val(name_chimp);
+    btn.closest('form').find('[name=MERGE0]').val(mail_chimp);
+    btn.closest('form').find('[name=MMERGE3]').val(phone_chimp);
 
     var href = document.location.href;
     var new_url = href.split('?')[1];
@@ -85,12 +92,25 @@ $(function() {
         },
         success: function() {
           console.log('register_mail ok!');
-          // $form.find('.spinner').fadeOut();
-          // setTimeout(function() {
-          //  $form.find('button').text('✔ Отправлено');
-          // }, 350);
-          // dataLayer.push({'event': 'FormSubmit', 'form_type': data_form});
         }
+      });
+      $.ajax({
+        type: "POST",
+        url: gd_send_adress,
+        data: msg,
+        error: function(xhr, str) {
+          console.log('google_doc ok!');
+        }
+      });
+      $.ajax({
+        type: 'POST',
+        url: 'mail.php',
+        data: msg,
+      });
+      $.ajax({
+        type: 'POST',
+        url: 'https://procut.us8.list-manage.com/subscribe/post?u=1e626788e6127a795fec70e41&amp;id=11766e1f53',
+        data: msg,
       });
       $.ajax({
         type: "POST",
@@ -112,7 +132,6 @@ $(function() {
           }, 1500);
         }
       });
-
     }
     return false;
   })

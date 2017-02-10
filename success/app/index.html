@@ -3,17 +3,19 @@
 
 <head>
 
-<!-- <script>
+<script>
   dataLayer = [];
- </script> -->
+ </script>
 
 <!-- Google Tag Manager -->
-<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NKKXWP');</script> -->
+})(window,document,'script','dataLayer','GTM-M9X2WL3');</script>
 <!-- End Google Tag Manager -->
+
+
 
 
     <meta charset="utf-8">
@@ -82,8 +84,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body data-img="img/land.jpg">
 <!-- Google Tag Manager (noscript) -->
-<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKKXWP"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9X2WL3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 
@@ -96,7 +98,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h1>Спасибо</h1>
                 <img src="img/undr.png" alt="">
                 <p>Ваша заявка принята. <br> В ближайшее время мы с вами свяжемся </p>
-                <a class="btn flex" href="http://yurvov.com.ua/bgood/procut/">Вернуться на главную</a>
+
+                <p class="title">Забронируте гарантированное участие <br> в мастер-классе, оплатив прямо сейчас</p>
+
+                <form class="liq_pay_btn" method="POST" accept-charset="utf-8" action="https://www.liqpay.com/api/3/checkout">
+                    <input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJwdWJsaWNfa2V5IjoiaTM2MTI4NTg5NzM3IiwiYW1vdW50IjoiNjI1IiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6Ik1LX0RFVElfS0lFViIsInR5cGUiOiJidXkiLCJsYW5ndWFnZSI6InJ1In0=" />
+                    <input type="hidden" name="signature" value="inn8WSggPY+uKT362wd5XWbP1Ws=" />
+                    <input class="btn" type="submit" name="btn_text" value="Оплатить"/>
+                </form>
+
+
             </div>
         </div>
     </div>

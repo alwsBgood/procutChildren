@@ -2,13 +2,13 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <?php
 
-$mail = trim($_POST["mail"]);
-$phone = trim($_POST["phone"]);
-$name = trim($_POST["name"]);
+$mail = trim($_POST["entry_114323142"]);
+$phone = trim($_POST["entry_865589441"]);
+$name = trim($_POST["entry_1734074772"]);
 $city = trim($_POST["city"]);
 $country = trim($_POST["country"]);
 $data_form = trim($_POST["data_form"]);
-$additional_field = trim($_POST["question"]);
+$additional_field = trim($_POST["entry_1778222684"]);
 $utm_source= trim($_POST["utm_source"]);
 $utm_campaign= trim($_POST["utm_campaign"]);
 $utm_medium= trim($_POST["utm_medium"]);
@@ -35,7 +35,7 @@ $time_submitted = strftime('%T'); #Current time for lead discription
 $date_submitted = strftime('%m.%d.%Y'); #Current date for lead discription
 $month_lead = strftime('%B'); #Current month for lead name
 $year_lead = strftime('%Y'); #Current year for lead name
-$price_lead = '480'; #Current year for lead name
+$price_lead = '625'; #Current year for lead name
 if (empty($name)) {
 	$name = 'Имя не указано ' . $time_submitted;
 }
@@ -62,7 +62,7 @@ curl_close($curl);
 
 $Response=json_decode($out, true);
 $Response=$Response['response']['contacts'];
-$response_arr =$Response; 
+$response_arr =$Response;
 
 $link='https://'.$subdomain.'.amocrm.ru/private/api/v2/json/contacts/list?limit_rows=500&limit_offset=500';
 
@@ -136,7 +136,5 @@ else {
 			include  'amolead_exist.php'; 
 	}
 }
-
-
 
 ?>

@@ -104,6 +104,19 @@ section {
     bottom: 0;
     left: 0;
     right: 0; }
+  section .btn_wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    section .btn_wrapper .btn {
+      margin: 30px 20px 0; }
+  section .title {
+    margin-top: 20px; }
 
 .btn_wrapper {
   display: -webkit-box;
