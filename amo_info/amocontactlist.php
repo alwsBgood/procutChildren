@@ -8,7 +8,7 @@ $name = trim($_POST["entry_1734074772"]);
 $city = trim($_POST["city"]);
 $country = trim($_POST["country"]);
 $data_form = trim($_POST["data_form"]);
-$additional_field = trim($_POST["question"]);
+$additional_field = trim($_POST["entry_1778222684"]);
 $utm_source= trim($_POST["utm_source"]);
 $utm_campaign= trim($_POST["utm_campaign"]);
 $utm_medium= trim($_POST["utm_medium"]);
@@ -35,7 +35,7 @@ $time_submitted = strftime('%T'); #Current time for lead discription
 $date_submitted = strftime('%m.%d.%Y'); #Current date for lead discription
 $month_lead = strftime('%B'); #Current month for lead name
 $year_lead = strftime('%Y'); #Current year for lead name
-$price_lead = '480'; #Current year for lead name
+$price_lead = '625'; #Current year for lead name
 if (empty($name)) {
 	$name = 'Имя не указано ' . $time_submitted;
 }

@@ -9,14 +9,16 @@ $(function() {
     var validaton = btn.closest('form').find('[required]');
     var msg = btn.closest('form').find('input, textarea, select');
     var send_btn = btn.closest('form').find('[name=send]');
+    var send_options = btn.closest('form').find('[name=campaign_token]');
+    var gd_send_adress = btn.closest('form').find('[name=gd_send_adress]').val();
 
-    var leade_name = btn.closest('form').find('[name=name]').val();
     var href = document.location.href;
     var new_url = href.split('?')[1];
     var ref = '&ref=' + document.referrer;
-    var id = 'procut_kids_masterclass';
+    var id = 'procut_kids_mc';
     var url = href.split('?')[0];
     var utm_catch = '&' + new_url + "&page_url=" + url;
+    var leade_name = btn.closest('form').find('[name=name]').val();
     var lead_price = "&lead_price=" + $('#price').html();
     var invite_id = "&invite_id="+href.split('invite_id=')[1];
     var cook_ga;
@@ -64,13 +66,44 @@ $(function() {
       temp_month++;
       var date_submitted = '&date_submitted=' +temp_date.getDate()+" "+temp_month+" " +temp_date.getFullYear();
       var time_submitted = '&time_submitted=' +temp_date.getHours() + ":" +temp_date.getMinutes();
-      data += leade_name;
       data += utm_catch;
       data += date_submitted;
       data += time_submitted;
       data += ref;
       data += cook_ga;
-
+      data += leade_name;
+      data += '&data_form=' + data_form;
+      data += '&hmid=' + hmid;
+      $.ajax({
+        type: "GET",
+        url: "../register_mail.php",
+        data: data,
+        beforeSend: function() {
+          form.find('button').prop( "disabled", true );
+          console.log(data);
+        },
+        success: function() {
+          console.log('register_mail ok!');
+          // $form.find('.spinner').fadeOut();
+          // setTimeout(function() {
+          //  $form.find('button').text('✔ Отправлено');
+          // }, 350);
+          // dataLayer.push({'event': 'FormSubmit', 'form_type': data_form});
+        }
+      });
+      $.ajax({
+        type: "POST",
+        url: gd_send_adress,
+        data: msg,
+        error: function(xhr, str) {
+          console.log('google_doc ok!');
+        }
+      });
+      $.ajax({
+        type: "POST",
+        url: '../mail.php',
+        data: msg,
+      });
       $.ajax({
         type: "POST",
         url:"../amo/amocontactlist.php",
@@ -91,11 +124,15 @@ $(function() {
           }, 1500);
         }
       });
-
     }
     return false;
   })
 });
+
+
+
+
+
 
 
 // MAP overlay disable

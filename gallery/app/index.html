@@ -228,62 +228,67 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <div class="hidden">
-<div class="md-modal md-effect-1" id="modal_callback">
-    <div class="md-content">
-        <span class="btn_close_modal">
-            <a class="md-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" ><style>.a{fill:#424242;}</style><path d="M26 0C11.7 0 0 11.7 0 26s11.7 26 26 26 26-11.7 26-26S40.3 0 26 0zM26 50C12.8 50 2 39.2 2 26S12.8 2 26 2s24 10.8 24 24S39.2 50 26 50z" class="a"/><path d="M35.7 16.3c-0.4-0.4-1-0.4-1.4 0L26 24.6l-8.3-8.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4L24.6 26l-8.3 8.3c-0.4 0.4-0.4 1 0 1.4C16.5 35.9 16.7 36 17 36s0.5-0.1 0.7-0.3L26 27.4l8.3 8.3C34.5 35.9 34.7 36 35 36s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4L27.4 26l8.3-8.3C36.1 17.3 36.1 16.7 35.7 16.3z" class="a"/></svg></a>
-        </span>
-        <div class="titlebox">
-            <h2 class="colored">Заказ обратного звонка</h2>
-        </div>
-        <div>
-            <form  method="POST" class="form-inline" action="javascript:void(null);">
-            <img class="tl" src="img/tl.png" alt="">
-            <img class="tr" src="img/tr.png" alt="">
-            <img class="br" src="img/br.png" alt="">
-            <img class="bl" src="img/bl.png" alt="">
-                <!-- Hidden Required Fields -->
-                <input type="hidden" name="project_name" value="ProCut">
-                <input type="hidden" name="form_subject" value="Заказ обратного звонка">
-                <!-- <input type="hidden" name="goal" value="zvonok"> -->
-                <!-- END Hidden Required Fields -->
-
-
-                <span class="field">
-                    <input class="name" type="text" class="form-control" name="name" required=""  placeholder="Имя"/>
-                    <span class="bar"></span>
-                </span>
-
-
-                <span class="field">
-                    <input placeholder="Телефон" type="tel" class="form-control" name="phone" required="">
-                    <span class="bar"></span>
-                </span>
+    <div class="md-modal md-effect-1" id="modal_callback">
+        <div class="md-content">
+            <span class="btn_close_modal">
+                <a class="md-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" ><style>.a{fill:#424242;}</style><path d="M26 0C11.7 0 0 11.7 0 26s11.7 26 26 26 26-11.7 26-26S40.3 0 26 0zM26 50C12.8 50 2 39.2 2 26S12.8 2 26 2s24 10.8 24 24S39.2 50 26 50z" class="a"/><path d="M35.7 16.3c-0.4-0.4-1-0.4-1.4 0L26 24.6l-8.3-8.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4L24.6 26l-8.3 8.3c-0.4 0.4-0.4 1 0 1.4C16.5 35.9 16.7 36 17 36s0.5-0.1 0.7-0.3L26 27.4l8.3 8.3C34.5 35.9 34.7 36 35 36s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4L27.4 26l8.3-8.3C36.1 17.3 36.1 16.7 35.7 16.3z" class="a"/></svg></a>
+            </span>
+            <div class="titlebox">
+                <h2 class="colored">Заказ обратного звонка</h2>
+            </div>
+            <div>
+                <form  method="POST" class="form-inline" action="javascript:void(null);">
+                <img class="tl" src="img/tl.png" alt="">
+                <img class="tr" src="img/tr.png" alt="">
+                <img class="br" src="img/br.png" alt="">
+                <img class="bl" src="img/bl.png" alt="">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="ProCut">
+                    <input type="hidden" name="admin_email" value="best_editor@ukr.net">
+                    <input type="hidden" name="form_subject" value="Заказ обратного звонка">
+                    <input class="geoloc" type="hidden" name="city" value="city">
+                    <input type="hidden" name="gd_send_adress" value="https://docs.google.com/forms/d/e/1FAIpQLScq1thx521x7EJrkFuWkQfLtSK6TE8gqYg9D0rWovbstT-FuA/formResponse">
+                    <!-- END Hidden Required Fields -->
 
 
 
-                <button type="submit" class="btn" name="send">Перезвоните мне</button>
-
-                <!-- Просто любое дополнительное поле -->
-                <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->
-                <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
-                <input type="hidden" class="pacet" name="form_pacet" value="">
-                <!-- GET RESPONCE INPUTS -->
-                <input type="hidden" name="start_day" value="0"/>
-                <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
-                <input type="hidden" name="campaign_token" value=""/>
-                <!-- GET RESPONCE INPUTS -->
-                <div class="clear"></div>
+                    <span class="field">
+                        <input type="text" class="form-control" name="entry.1734074772" required=""  placeholder="Имя"/>
+                        <span class="bar"></span>
+                    </span>
 
 
-            </form>
+                    <span class="field">
+                        <input placeholder="Телефон" type="tel" class="form-control" name="entry.865589441" required="">
+                        <span class="bar"></span>
+                    </span>
 
-            <div class="md_bottom">
-                <p class="tc t_small"><i class="fa fa-lock"></i>  *Ваши данные никогда не будут переданы 3-м лицам</p>
+
+
+
+                    <button type="submit" class="btn" name="send">Перезвоните мне</button>
+
+                    <!-- Просто любое дополнительное поле -->
+                    <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->
+                    <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
+                    <input type="hidden" class="pacet" name="form_pacet" value="">
+                    <!-- GET RESPONCE INPUTS -->
+                    <input type="hidden" name="start_day" value="0"/>
+                    <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
+                    <input type="hidden" name="campaign_token" value=""/>
+                    <!-- GET RESPONCE INPUTS -->
+                    <div class="clear"></div>
+
+
+                </form>
+
+                <div class="md_bottom">
+                    <p class="tc t_small"><i class="fa fa-lock"></i>  *Ваши данные никогда не будут переданы 3-м лицам</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
     <div class="md-modal md-effect-1" id="modal_subscribe">
         <div class="md-content">
             <span class="btn_close_modal">
@@ -299,30 +304,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img class="br" src="img/br.png" alt="">
                 <img class="bl" src="img/bl.png" alt="">
                     <!-- Hidden Required Fields -->
-                    <input type="hidden" name="project_name" value="ProCut">
-                    <input type="hidden" name="admin_email" value="alien_202@mail.ru">
+                    <input type="hidden" name="project_name" value="ProCutMasterClass">
                     <input type="hidden" name="form_subject" value="Запись на мастер-класс">
+                    <input class="geoloc" type="hidden" name="city" value="city">
+                    <input type="hidden" name="admin_email" value="best_editor@ukr.net">
+                    <input type="hidden" name="gd_send_adress" value="https://docs.google.com/forms/d/e/1FAIpQLScq1thx521x7EJrkFuWkQfLtSK6TE8gqYg9D0rWovbstT-FuA/formResponse">
                     <!-- <input type="hidden" name="goal" value="zvonok"> -->
                     <!-- END Hidden Required Fields -->
 
+                    <!-- Mail Chimp fields -->
+                    <input type="hidden" value="" name="MERGE1">
+                    <input type="hidden" value="" name="MERGE0">
+                    <input type="hidden" name="MMERGE3" class="" value="">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1e626788e6127a795fec70e41_11766e1f53" tabindex="-1" value=""></div>
+                    <!-- ======================= -->
+
 
 
                     <span class="field">
-                        <input type="text" class="form-control" name="name" required=""  placeholder="Имя"/>
+                        <input type="text" class="form-control" name="entry.1734074772" required=""  placeholder="Имя"/>
                         <span class="bar"></span>
                     </span>
 
 
                     <span class="field">
-                        <input placeholder="Телефон" type="tel" class="form-control" name="custom_tel" required="">
+                        <input placeholder="Телефон" type="tel" class="form-control" name="entry.865589441" required="">
                         <span class="bar"></span>
                     </span>
 
                     <span class="field">
-                        <input type="email" required="" placeholder="E-mail" name="email" class="form-control">
+                        <input type="email" required="" placeholder="E-mail" name="entry.114323142" class="form-control">
                         <span class="bar"></span>
                     </span>
-
 
 
                     <button type="submit" class="btn" name="send">Записаться</button>
@@ -364,31 +377,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img class="bl" src="img/bl.png" alt="">
                     <!-- Hidden Required Fields -->
                     <input type="hidden" name="project_name" value="ProCut">
-                    <input type="hidden" name="admin_email" value="alien_202@mail.ru">
+                    <input type="hidden" name="admin_email" value="best_editor@ukr.net">
                     <input type="hidden" name="form_subject" value="Вопрос">
+                    <input type="hidden" name="gd_send_adress" value="https://docs.google.com/forms/d/e/1FAIpQLScq1thx521x7EJrkFuWkQfLtSK6TE8gqYg9D0rWovbstT-FuA/formResponse">
+                    <input class="geoloc" type="hidden" name="city" value="city">
                     <!-- <input type="hidden" name="goal" value="zvonok"> -->
                     <!-- END Hidden Required Fields -->
-
-
+                    <!-- Mail Chimp fields -->
+                    <input type="hidden" value="" name="MERGE1">
+                    <input type="hidden" value="" name="MERGE0">
+                    <input type="hidden" name="MMERGE3" class="" value="">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1e626788e6127a795fec70e41_11766e1f53" tabindex="-1" value=""></div>
+                    <!-- ======================= -->
 
                     <span class="field">
-                        <input type="text" class="form-control" name="name" required=""  placeholder="Имя"/>
+                        <input type="text" class="form-control" name="entry.1734074772" required=""  placeholder="Имя"/>
                         <span class="bar"></span>
                     </span>
 
 
                     <span class="field">
-                        <input placeholder="Телефон" type="tel" class="form-control" name="custom_tel" required="">
+                        <input placeholder="Телефон" type="tel" class="form-control" name="entry.865589441" required="">
                         <span class="bar"></span>
                     </span>
 
                     <span class="field">
-                        <input type="email" required="" placeholder="E-mail" name="email" class="form-control">
+                        <input type="email" required="" placeholder="E-mail" name="entry.114323142" class="form-control">
                         <span class="bar"></span>
                     </span>
 
+
                     <span class="field">
-                        <textarea required="" class="form-control" name="question" placeholder="Ваш вопрос"></textarea>
+                        <textarea required="" class="form-control" name="entry.1778222684" placeholder="Ваш вопрос"></textarea>
                         <span class="bar"></span>
                     </span>
 

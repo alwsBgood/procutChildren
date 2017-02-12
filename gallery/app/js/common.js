@@ -9,14 +9,24 @@ $(function() {
     var validaton = btn.closest('form').find('[required]');
     var msg = btn.closest('form').find('input, textarea, select');
     var send_btn = btn.closest('form').find('[name=send]');
+    var send_options = btn.closest('form').find('[name=campaign_token]');
+    var gd_send_adress = btn.closest('form').find('[name=gd_send_adress]').val();
 
-    var leade_name = btn.closest('form').find('[name=name]').val();
+    var mail_chimp = btn.closest('form').find('[name="entry.114323142"]').val();
+    var name_chimp = btn.closest('form').find('[name="entry.1734074772"]').val();
+    var phone_chimp = btn.closest('form').find('[name="entry.865589441"]').val();
+
+    btn.closest('form').find('[name=MERGE1]').val(name_chimp);
+    btn.closest('form').find('[name=MERGE0]').val(mail_chimp);
+    btn.closest('form').find('[name=MMERGE3]').val(phone_chimp);
+
     var href = document.location.href;
     var new_url = href.split('?')[1];
     var ref = '&ref=' + document.referrer;
-    var id = 'procut_kids_masterclass';
+    var id = 'procut_kids_mc';
     var url = href.split('?')[0];
     var utm_catch = '&' + new_url + "&page_url=" + url;
+    var leade_name = btn.closest('form').find('[name=name]').val();
     var lead_price = "&lead_price=" + $('#price').html();
     var invite_id = "&invite_id="+href.split('invite_id=')[1];
     var cook_ga;
@@ -64,13 +74,44 @@ $(function() {
       temp_month++;
       var date_submitted = '&date_submitted=' +temp_date.getDate()+" "+temp_month+" " +temp_date.getFullYear();
       var time_submitted = '&time_submitted=' +temp_date.getHours() + ":" +temp_date.getMinutes();
-      data += leade_name;
       data += utm_catch;
       data += date_submitted;
       data += time_submitted;
       data += ref;
       data += cook_ga;
-
+      data += leade_name;
+      data += '&data_form=' + data_form;
+      data += '&hmid=' + hmid;
+      $.ajax({
+        type: "GET",
+        url: "../register_mail.php",
+        data: data,
+        beforeSend: function() {
+          form.find('button').prop( "disabled", true );
+          console.log(data);
+        },
+        success: function() {
+          console.log('register_mail ok!');
+        }
+      });
+      $.ajax({
+        type: "POST",
+        url: gd_send_adress,
+        data: msg,
+        error: function(xhr, str) {
+          console.log('google_doc ok!');
+        }
+      });
+      $.ajax({
+        type: 'POST',
+        url: '../mail.php',
+        data: msg,
+      });
+      $.ajax({
+        type: 'POST',
+        url: 'https://procut.us8.list-manage.com/subscribe/post?u=1e626788e6127a795fec70e41&amp;id=11766e1f53',
+        data: msg,
+      });
       $.ajax({
         type: "POST",
         url:"../amo/amocontactlist.php",
@@ -91,11 +132,11 @@ $(function() {
           }, 1500);
         }
       });
-
     }
     return false;
   })
 });
+
 
 $(document).ready(function() {
     $('.slider').slick({
