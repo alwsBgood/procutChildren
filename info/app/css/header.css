@@ -121,7 +121,7 @@ button:hover {
 
 #sec_01 {
   position: relative;
-  background: url(img/bg.png) top center no-repeat;
+  background: url(../img/bg.png) top center no-repeat;
   padding-bottom: 85px; }
   #sec_01 h1 {
     color: #000000;
@@ -187,7 +187,7 @@ button:hover {
   font-size: 32px;
   line-height: 36px;
   padding-bottom: 40px;
-  background: url(img/underline.png) bottom left no-repeat; }
+  background: url(../img/underline.png) bottom left no-repeat; }
 
 .title_main {
   font-family: "Raleway-Bold", sans-serif;
@@ -262,6 +262,28 @@ button:hover {
   margin-left: -5px;
   margin-bottom: 70px;
   margin-top: 30px; }
+
+.list {
+  margin-top: 20px;
+  padding-left: 20px; }
+  .list li {
+    position: relative; }
+    .list li:before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      top: 10px;
+      left: -15px;
+      background: #dc3fa8; }
+  .list li + li {
+    margin-top: 12px; }
+
+a {
+  color: #dc3fa8;
+  text-decoration: underline; }
 
 #sec_03 {
   padding: 45px 0 90px; }

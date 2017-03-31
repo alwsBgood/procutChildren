@@ -5,102 +5,102 @@
 
 
 
-// footer{
-//   padding: 15px 0 15px;
-//   background-color: #202020;
-//   .politics{
-//     margin-top: 17px;
-//     a{
-//       color: #65666a;
-//       font-size: 14px;
-//     }
-//     a:hover{color: $main_color;}
-//     a+a{margin-left: 10px;}
-//   }
-//   .logo_rezart{
-//     margin-top: 5px;
-//     margin-left: 25px;
-//     width: 80px;
-//     // margin-right: 20px;
-//     float: right;
-//   }
-//   .logo_wcf{
-//     float: right;
-//   }
-//   .footer-fire:hover {
-//       animation-name: fire;
-//       animation-duration: 0.5s;
-//       animation-iteration-count: infinite;
-//       animation-timing-function: step-end;
-//       animation-direction: normal;
-//       opacity: 1;
-//   }
-//   @keyframes fire {
-//     0% {
-//       background-position: 0 center;
-//     }
-//     25% {
-//       background-position: -46px center;
-//     }
-//     50% {
-//       background-position: -84px center;
-//     }
-//     75% {
-//       background-position: -128px center;
-//     }
-//     100% {
-//       background-position: -160px center;
-//     }
-//   }
-//   .footer-fire {
-//       display: inline-block;
-//       height: 45px;
-//       width: 35px;
-//       overflow: hidden;
-//       background-image: url(img/fire.svg);
-//       background-repeat: no-repeat;
-//       position: relative;
-//       background-position: 0 center;
-//       padding: 0;
-//       transition: 1s ease;
-//       background-size: 200px;
-//       float: right;
-//       opacity: .5;
-//   }
-// }
+footer{
+  padding: 15px 0 15px;
+  background-color: #202020;
+  .politics{
+    margin-top: 17px;
+    a{
+      color: #65666a;
+      font-size: 14px;
+    }
+    a:hover{color: $main_color;}
+    a+a{margin-left: 10px;}
+  }
+  .logo_rezart{
+    margin-top: 5px;
+    margin-left: 25px;
+    width: 80px;
+    // margin-right: 20px;
+    float: right;
+  }
+  .logo_wcf{
+    float: right;
+  }
+  .footer-fire:hover {
+      animation-name: fire;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: step-end;
+      animation-direction: normal;
+      opacity: 1;
+  }
+  @keyframes fire {
+    0% {
+      background-position: 0 center;
+    }
+    25% {
+      background-position: -46px center;
+    }
+    50% {
+      background-position: -84px center;
+    }
+    75% {
+      background-position: -128px center;
+    }
+    100% {
+      background-position: -160px center;
+    }
+  }
+  .footer-fire {
+      display: inline-block;
+      height: 45px;
+      width: 35px;
+      overflow: hidden;
+      background-image: url(../img/fire.svg);
+      background-repeat: no-repeat;
+      position: relative;
+      background-position: 0 center;
+      padding: 0;
+      transition: 1s ease;
+      background-size: 200px;
+      float: right;
+      opacity: .5;
+  }
+}
 
-// form{
-//   position: relative;
-//   padding: 0px 25px;
-//   .tl{
-//     position: absolute;
-//     z-index: 5;
-//     top: 0;
-//     left: 0;
-//   }
-//   .tr{
-//     position: absolute;
-//     z-index: 5;
-//     top: 0;
-//     right: 0;
-//   }
-//   .br{
-//     position: absolute;
-//     z-index: 5;
-//     bottom: 70px;
-//     right: 0;
-//   }
-//   .bl{
-//     position: absolute;
-//     z-index: 5;
-//     bottom: 70px;
-//     left: 0;
-//   }
-// }
+form{
+  position: relative;
+  padding: 0px 25px;
+  .tl{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+  }
+  .tr{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+  }
+  .br{
+    position: absolute;
+    z-index: 5;
+    bottom: 70px;
+    right: 0;
+  }
+  .bl{
+    position: absolute;
+    z-index: 5;
+    bottom: 70px;
+    left: 0;
+  }
+}
 
 
 //ALWAYS END
-// @import "_sketches.scss";
-// @import "_media.scss";
+@import "_sketches.scss";
+@import "_media.scss";
 @import "../libs/niftymodal/component.css";
 // @import "fonts/font-awesome/font-awesome.min.css"

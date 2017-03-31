@@ -84,7 +84,7 @@ $(function() {
       data += '&hmid=' + hmid;
       $.ajax({
         type: "GET",
-        url: "../register_mail.php",
+        url: "register.php",
         data: data,
         beforeSend: function() {
           form.find('button').prop( "disabled", true );
@@ -94,24 +94,24 @@ $(function() {
           console.log('register_mail ok!');
         }
       });
-      $.ajax({
-        type: "POST",
-        url: gd_send_adress,
-        data: msg,
-        error: function(xhr, str) {
-          console.log('google_doc ok!');
-        }
-      });
-      $.ajax({
-        type: 'POST',
-        url: '../mail.php',
-        data: msg,
-      });
+      // $.ajax({
+      //   type: "POST",
+      //   url: gd_send_adress,
+      //   data: msg,
+      //   error: function(xhr, str) {
+      //     console.log('google_doc ok!');
+      //   }
+      // });
       $.ajax({
         type: 'POST',
-        url: 'https://procut.us8.list-manage.com/subscribe/post?u=1e626788e6127a795fec70e41&amp;id=11766e1f53',
+        url: 'mail.php',
         data: msg,
       });
+      // $.ajax({
+      //   type: 'POST',
+      //   url: 'https://procut.us8.list-manage.com/subscribe/post?u=1e626788e6127a795fec70e41&amp;id=11766e1f53',
+      //   data: msg,
+      // });
       $.ajax({
         type: "POST",
         url:"../amo_info/amocontactlist.php",
@@ -134,13 +134,20 @@ $(function() {
 });
 
 
+ // Smooth scroll to anchor
 
+ $('.scroll').click(function(){
+  $('html, body').animate({
+    scrollTop: $( $.attr(this, 'href') ).offset().top
+  }, 1000);
+  return false;
+});
 
 
 //  INPUT TEL MASK
 
 jQuery(function($){
- $("input[type='tel']").mask("+99 (999) 999-9999");
+ $("input[type='tel']").mask("+38 (999) 999-9999");
 });
 
 
