@@ -2,9 +2,9 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <?php
 
-$mail = trim($_POST["entry_114323142"]);
-$phone = trim($_POST["entry_865589441"]);
-$name = trim($_POST["entry_1734074772"]);
+$mail = trim($_POST["email"]);
+$phone = trim($_POST["phone"]);
+$name = trim($_POST["name"]);
 $city = trim($_POST["city"]);
 $country = trim($_POST["country"]);
 $data_form = trim($_POST["data_form"]);

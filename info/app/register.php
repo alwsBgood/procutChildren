@@ -4,7 +4,7 @@ $recepient = "anastasiya.procut@gmail.com";
 $sitename = "PROCUT KIDS";
 
 $mail = trim($_GET["email"]);
-$phone = trim($_GET["custom_tel"]);
+$phone = trim($_GET["phone"]);
 $country = trim($_GET["country"]);
 $data_form= trim($_GET["data_form"]);
 $name = trim($_GET["name"]);
@@ -72,7 +72,7 @@ E-mail: $mail <br>
 Дополнительное поле: $additional_field <br>
 utm_source: $utm_source <br>
 utm_campaign: $utm_campaign<br>
-utm_medium: $utm_medium<br>
+utm_medium: $utm_medium<br> 
 date_submitted: $date_submitted<br>
 time_submitted: $time_submitted<br>
 page_url: $page_url<br>
@@ -95,6 +95,7 @@ $headers .= 'From: procut.com.ua';
 mail($recepient, $pagetitle, $message, $headers);
 
 
+
 // SPUTNIK API
 $first_name = $name;
 $email = $mail;
@@ -115,6 +116,7 @@ $json_contact_value->contact = $contact;
 $json_contact_value->groups = $groups;
 $json_contact_value->formType = $formType;
 send_request($subscribe_contact_url, $json_contact_value, $user, $password);
+var_dump($contact);
 
 function send_request($url, $json_value, $user, $password) {
 $ch = curl_init('https://esputnik.com.ua/api/v1/contact/subscribe');
@@ -128,11 +130,7 @@ curl_setopt($ch,CURLOPT_RETURNTRANSFER, 1);
 $output = curl_exec($ch);
 echo($output);
 curl_close($ch);
-
-var_dump(contact)
 }
-
-
 
 // Отправка хука в Slack
 
