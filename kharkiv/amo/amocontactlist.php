@@ -30,7 +30,7 @@ parse_str($parts['query'], $query);
 $GA_invite_id = $query['invite_id'];
 
 #Special data for current page
-$city_event = 'Kharkiv'; #City of current event
+$city_event = 'Харьков'; #City of current event
 $time_submitted = strftime('%T'); #Current time for lead discription
 $date_submitted = strftime('%m.%d.%Y'); #Current date for lead discription
 $month_lead = strftime('%B'); #Current month for lead name
