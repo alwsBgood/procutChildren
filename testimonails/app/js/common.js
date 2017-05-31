@@ -65,8 +65,9 @@ $(function() {
       $(send_btn).each(function() {
         $(this).attr('disabled', true);
       });
-      var loc = ymaps.geolocation.city+', '+ymaps.geolocation.region+', '+ymaps.geolocation.country;
-      form.find('.geoloc').val(loc);
+      $.get("http://ipinfo.io", function(response) {
+       $('.geoloc').val(response.city + ', ' + response.country)
+      }, "jsonp");
       var data = form.serialize();
       var data_form = form.attr('data-form');
       var temp_date = new Date();
