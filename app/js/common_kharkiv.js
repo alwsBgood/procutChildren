@@ -133,9 +133,9 @@
 
 //  INPUT TEL MASK
 
-jQuery(function($){
- $("input[type='tel']").mask("+99 (999) 999-9999");
-});
+// jQuery(function($){
+//  $("input[type='tel']").mask("+99 (999) 999-9999");
+// });
 
 
 
